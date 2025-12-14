@@ -1,0 +1,845 @@
+//!
+
+// Simple Estimation Simulator for Sample Variance and Sample Standard Deviation
+// v0.06, 10/2014
+//
+// By Julian Parris and Mia Stephens, JMP Academic Team
+
+
+Names Default To Here( 1 );
+
+
+// Assess is JMP version is SE
+
+	testTable = New Table("testSE", Invisible);
+
+	testTable << Add Rows( 5001 );
+	Wait(0);
+
+	_JMPSE = If(nRows(testTable)==0,1,0); //check if using student edition
+
+	Wait(0);
+	Close(testTable, NoSave);
+
+
+// - ---------------
+
+
+
+dbSetup = Dialog("Specify Settings ",
+	HList(
+		Lineup(2, 
+			"Population Mean", _mu = edit number(0),
+			"Population Standard Deviation", _stDev = edit number(1),
+			"Sample Size", _sampleSize = edit number(25),
+			"Number of Samples to Draw", _numberSamples = edit number(10000),
+
+		),   //end of Buitton alignment
+	Lineup(1, Button ("OK"), Button ("Cancel")   
+	 
+	) //end of hlist
+)); //end of Dialog
+
+//Button is always the OK/cancel button
+//-1 means the user selected Cancel
+//the "Throw" function stops the script and prints a message to the log.
+If( dbSetup["Button"] == -1,
+	Throw( "User cancelled" )
+);
+
+
+/*
+_sampleSize = 25;
+_numberSamples = 1000;
+
+_mu = 0;
+_stDev = 1;
+*/
+
+//unload dialog box variables
+_sampleSize = dbSetup["_sampleSize"];
+_numberSamples = dbSetup["_numberSamples"];
+
+_mu = dbSetup["_mu"];
+_stDev = dbSetup["_stDev"];
+_trueVariance = _stDev^2;
+
+
+
+//Calculate the number of rows necessary in the table
+
+_sampleTableRows = _sampleSize *_numberSamples;
+If(_JMPSE==1 & _sampleTableRows>5000,_sampleTableRows=5000); //adjustment for JMP SE Row Limitation
+
+
+dt = New Table("sampletable");  //make new table
+
+dt << New Column("SampleNumber",Numeric); //create sample number column
+dt << New Column("Y",Numeric); //create Y column
+
+
+//Create formula column with sequence to identify samples
+eval(parse(EvalInsert(
+"\[
+
+	:SampleNumber << Set Formula( Sequence(1, ^_sampleTableRows^, 1, ^_sampleSize^) )
+ 	
+]\")));
+
+
+//Create formula column with Y values
+eval(parse(EvalInsert(
+"\[
+
+	:Y << Set Formula( Random Normal(^_mu^,^_stDev^) );
+ 	
+]\")));
+
+
+
+
+//add rows to table for formulae to work on
+dt << Add Rows( _sampleTableRows );
+
+
+Wait(0); //wait for this operation to finish since it will involve calculations
+
+
+dt2 = dt << Summary( Group( :SampleNumber ), Mean( :Y ), Variance( :Y ) );
+
+
+
+//now we're working with DT2
+
+
+Current Data Table(dt2);
+
+//hide initial variance column
+:Name("Variance(Y)") << Hide << Exclude;
+
+
+//Create columns
+
+dt2 << New Column("Sum of Squares",Numeric, Format(Fixed Dec,3), Formula(:Name("Variance(Y)") * (:N Rows - 1))); //create SS column
+dt2 << New Column("Variance (using n)",Numeric, Format(Fixed Dec,3), Formula(:Sum of Squares / :N Rows) ); //create biased variance col
+dt2 << New Column("Variance (using n-1)",Numeric, Format(Fixed Dec,3), Formula(:Sum of Squares / (:N Rows - 1)) ); //create unbiased variance column
+dt2 << New Column("Standard Deviation (using n)",Numeric, Format(Fixed Dec,3), Formula(Root( :Sum of Squares / :N Rows ) )); //create biased stdev
+dt2 << New Column("Standard Deviation (using n-1)",Numeric, Format(Fixed Dec,3), Formula(Root(:Sum of Squares / (:N Rows - 1))) ); //create 'unbiased' stdev
+
+
+
+
+//Calculations to be used in scripts
+
+
+_observedMeanStDevN = ColMean(:Name("Standard Deviation (using n)") );
+_observedMeanStDevN1 = ColMean(:Name("Standard Deviation (using n-1)") );
+_observedMeanVarianceN = ColMean(:Name("Variance (using n)") );
+_observedMeanVarianceN1 = ColMean(:Name("Variance (using n-1)") );
+
+
+// Save Scripts to Table
+
+
+
+
+// eval(parse(EvalInsert(
+// "\[
+// ]\")));
+
+
+
+
+
+//variance Estimators script
+
+
+eval(parse(EvalInsert(
+"\[
+	
+
+dt2 << new table script("Compare Variance Estimators",
+		
+	
+		//Initial Values
+		showStats=0;
+		showOriginal=0;
+		showEmpP=0;
+		showQuant=0;
+		
+		
+		nw = New Window( "Distribution of Variance = from ^_numberSamples^ Samples",
+			H List Box(
+				Outline Box("Controls",
+				Panel Box("Options for ^_numberSamples^ Samples",
+					H List Box(
+						rsBox = Button Box( "Show Statistics", 
+							if(showStats==0,
+								Report1 << Summary Statistics( 1 );
+								Report1 << Summary Statistics( 1 );
+								showStats=1;
+								rsBox <<Set Button Name(" Hide Statistics");							
+							,
+								Report1 << Summary Statistics( 0 );
+								Report1 << Summary Statistics( 0 );								
+								showStats=0;
+								rsBox <<Set Button Name("Show Statistics");									
+							);
+						),
+					), // End Hlist box
+					
+					
+					//VList box inside Hlistbox to fix offset
+					HlistBox(Spacer Box( size( 4.5, 0 ) ),VlistBox(
+					
+					Text Box( " Show on Histograms:" ),
+
+
+					perBefore = 1;
+					perSelect = Combo Box({"None","Observed Average Variance","True Population Variance","Both"},
+						
+						
+						//remove script
+						
+						Match(perBefore, 
+							1, 
+								, //add nothing 
+							
+							2, 
+
+								Report1 << Dispatch(
+								{"Distributions", "Variance (using n)"},
+								"1",
+								ScaleBox,
+								{Remove Ref Line( ^_observedMeanVarianceN^, Dotted, "Black", "", 3 )}
+								);
+								
+								Report1 << Dispatch(
+								{"Distributions", "Variance (using n-1)"},
+								"1",
+								ScaleBox,
+								{Remove Ref Line( ^_observedMeanVarianceN1^, Dotted, "Black", "", 3 )}
+								)
+
+								,
+							3,
+							
+								Report1 << Dispatch(
+								{"Distributions", "Variance (using n)"},
+								"1",
+								ScaleBox,
+								{Remove Ref Line( ^_stDev^, Solid, "Dark Blue", "", 3 )}
+								);
+								
+								Report1 << Dispatch(
+								{"Distributions", "Variance (using n-1)"},
+								"1",
+								ScaleBox,
+								{Remove Ref Line( ^_stDev^, Solid, "Dark Blue", "", 3 )}
+								)
+							
+								,
+							
+							4, 
+
+								Report1 << Dispatch(
+								{"Distributions", "Variance (using n)"},
+								"1",
+								ScaleBox,
+								{Remove Ref Line( ^_observedMeanVarianceN^, Dotted, "Black", "", 3 )}
+								);
+								
+								Report1 << Dispatch(
+								{"Distributions", "SVariance (using n-1)"},
+								"1",
+								ScaleBox,
+								{Remove Ref Line( ^_observedMeanVarianceN1^, Dotted, "Black", "", 3 )}
+								);
+								
+								Report1 << Dispatch(
+								{"Distributions", "Variance (using n)"},
+								"1",
+								ScaleBox,
+								{Remove Ref Line( ^_stDev^, Solid, "Dark Blue", "", 3 )}
+								);
+								
+								Report1 << Dispatch(
+								{"Distributions", "Variance (using n-1)"},
+								"1",
+								ScaleBox,
+								{Remove Ref Line( ^_stDev^, Solid, "Dark Blue", "", 3 )}
+								)
+
+								 
+								
+						); //end Match		
+						
+						
+						//add scripts
+						
+							Match(perSelect<<Get, 
+							1, 
+
+								,
+							2, 
+								Report1 << Dispatch(
+								{"Distributions", "Variance (using n)"},
+								"1",
+								ScaleBox,
+								{Add Ref Line( ^_observedMeanVarianceN^, Dotted, "Black", "", 3 )}
+								);
+								
+								Report1 << Dispatch(
+								{"Distributions", "Variance (using n-1)"},
+								"1",
+								ScaleBox,
+								{Add Ref Line( ^_observedMeanVarianceN1^, Dotted, "Black", "", 3 )}
+								)
+															
+								
+								,
+
+							3, 
+
+								Report1 << Dispatch(
+								{"Distributions", "Variance (using n)"},
+								"1",
+								ScaleBox,
+								{Add Ref Line( ^_trueVariance^, Solid, "Dark Blue", "", 3)}
+								);
+								
+								Report1 << Dispatch(
+								{"Distributions", "Variance (using n-1)"},
+								"1",
+								ScaleBox,
+								{Add Ref Line( ^_trueVariance^, Solid, "Dark Blue", "", 3 )}
+								)
+
+
+
+								,
+								
+							4,
+
+								Report1 << Dispatch(
+								{"Distributions", "Variance (using n)"},
+								"1",
+								ScaleBox,
+								{Add Ref Line( ^_observedMeanVarianceN^, Dotted, "Black", "", 3 )}
+								);
+								
+								Report1 << Dispatch(
+								{"Distributions", "Variance (using n-1)"},
+								"1",
+								ScaleBox,
+								{Add Ref Line( ^_observedMeanVarianceN1^, Dotted, "Black", "", 3 )}
+								);
+								
+								Report1 << Dispatch(
+								{"Distributions", "Variance(using n)"},
+								"1",
+								ScaleBox,
+								{Add Ref Line( ^_trueVariance^, Solid, "Dark Blue", "", 3 )}
+								);
+								
+								Report1 << Dispatch(
+								{"Distributions", "Variance (using n-1)"},
+								"1",
+								ScaleBox,
+								{Add Ref Line( ^_trueVariance^, Solid, "Dark Blue", "", 3 )}
+								)
+								 
+								
+						); //end Match	
+						
+						
+						
+						
+						perBefore = (perSelect<<Get); //set value so next time through we can remove existing
+						
+						
+						
+						
+						
+					) //finish with combo box					
+					
+					)), //End Vlist inside of Hlist		
+					
+					Spacer Box( size( 264.5, 10 ) ),					
+					
+								
+				
+					), //end vlist box
+					Panel Box("Initial Settings",
+
+					Spacer Box( size( 303.5, 1 ) ),											
+						osbBox = Button Box( "Show Initial Settings", 
+							if(showOriginal==0,
+													
+								showOriginal=1;
+								osbBox <<Set Button Name(" Hide Initial Settings");
+								tbInitial << Hide;
+								
+								, //else
+														
+								showOriginal=0;
+								osbBox <<Set Button Name("Show Initial Settings");
+								tbInitial << Hide;							
+								
+							); //end if
+					
+						),
+					
+						//VList box inside Hlistbox to fix offset
+							HlistBox(Spacer Box( size( 7, 0 ) ),VlistBox(					
+								tbInitial = TextBox("Population Mean = ^_mu^
+Population Variance = ^_trueVariance^
+Sample Size = ^_sampleSize^
+")	
+						)) //End Vlist in HListbox
+					
+					) //end Panel Box															
+				) // End Outline Box
+				
+			, 
+
+				
+				VlistBox(							
+					Report1 = Distribution(
+							Uniform Scaling( 1 ),
+							Stack( 1 ),
+							Continuous Distribution(
+								Column( :Name( "Variance (using n)" ) ),
+								Quantiles( 0 ),
+								Horizontal Layout( 1 ),
+								Vertical( 0 ),
+								Outlier Box Plot( 0 ),
+								Customize Summary Statistics(
+									Std Dev( 0 ),
+									Std Err Mean( 0 ),
+									Upper Mean Confidence Interval( 0 ),
+									Lower Mean Confidence Interval( 0 ),
+									N( 0 )
+								)
+							),
+							Continuous Distribution(
+								Column( :Name( "Variance (using n-1)" ) ),
+								Quantiles( 0 ),
+								Horizontal Layout( 1 ),
+								Vertical( 0 ),
+								Outlier Box Plot( 0 ),
+								Customize Summary Statistics(
+									Std Dev( 0 ),
+									Std Err Mean( 0 ),
+									Upper Mean Confidence Interval( 0 ),
+									Lower Mean Confidence Interval( 0 ),
+									N( 0 )
+								)
+							),
+							SendToReport(
+								Dispatch(
+									{"Distributions", "Variance (using n)"},
+									"Distrib Histogram",
+									FrameBox,
+									{Frame Size( 440, 203 ),Grid Line Order( 1 ), Reference Line Order( 3 ), DispatchSeg( Hist Seg( 1 ), Bin Span( 2, 0 ) )}
+								)
+							),
+							
+
+							SendToReport(
+								Dispatch(
+									{"Distributions", "Variance (using n-1)"},
+									"Distrib Histogram",
+									FrameBox,
+									{Frame Size( 440, 203 ),Grid Line Order( 1 ), Reference Line Order( 3 ), DispatchSeg( Hist Seg( 1 ), Bin Span( 2, 0 ) )}
+								)
+							)							
+					),
+				)
+					,
+										
+			Report1 << Summary Statistics( 0 );
+			tbInitial << Hide			
+
+				)
+
+			)
+	
+		);
+
+
+
+]\")));
+
+
+
+
+
+
+
+//Standard deviation estimators
+
+
+eval(parse(EvalInsert(
+"\[
+	
+
+dt2 << new table script("Compare Standard Deviation Estimators",
+		
+	
+		//Initial Values
+		showStats=0;
+		showOriginal=0;
+		showEmpP=0;
+		showQuant=0;
+		
+		
+		nw = New Window( "Distribution of Standard Deviations from ^_numberSamples^ Samples",
+			H List Box(
+				Outline Box("Controls",
+				Panel Box("Options for ^_numberSamples^ Samples",
+					H List Box(
+						rsBox = Button Box( "Show Statistics", 
+							if(showStats==0,
+								Report1 << Summary Statistics( 1 );
+								Report1 << Summary Statistics( 1 );
+								showStats=1;
+								rsBox <<Set Button Name(" Hide Statistics");							
+							,
+								Report1 << Summary Statistics( 0 );
+								Report1 << Summary Statistics( 0 );								
+								showStats=0;
+								rsBox <<Set Button Name("Show Statistics");									
+							);
+						),
+					), // End Hlist box
+					
+					
+					//VList box inside Hlistbox to fix offset
+					HlistBox(Spacer Box( size( 4.5, 0 ) ),VlistBox(
+					
+					Text Box( " Show on Histograms:" ),
+
+
+					perBefore = 1;
+					perSelect = Combo Box({"None","Observed Average Standard Deviation","True Population Standard Deviation","Both"},
+						
+						
+						//remove script
+						
+						Match(perBefore, 
+							1, 
+								, //add nothing 
+							
+							2, 
+
+								Report1 << Dispatch(
+								{"Distributions", "Standard Deviation (using n)"},
+								"1",
+								ScaleBox,
+								{Remove Ref Line( ^_observedMeanStDevN^, Dotted, "Black", "", 3 )}
+								);
+								
+								Report1 << Dispatch(
+								{"Distributions", "Standard Deviation (using n-1)"},
+								"1",
+								ScaleBox,
+								{Remove Ref Line( ^_observedMeanStDevN1^, Dotted, "Black", "", 3 )}
+								)
+
+								,
+							3,
+							
+								Report1 << Dispatch(
+								{"Distributions", "Standard Deviation (using n)"},
+								"1",
+								ScaleBox,
+								{Remove Ref Line( ^_stDev^, Solid, "Dark Blue", "", 3 )}
+								);
+								
+								Report1 << Dispatch(
+								{"Distributions", "Standard Deviation (using n-1)"},
+								"1",
+								ScaleBox,
+								{Remove Ref Line( ^_stDev^, Solid, "Dark Blue", "", 3 )}
+								)
+							
+								,
+							
+							4, 
+
+								Report1 << Dispatch(
+								{"Distributions", "Standard Deviation (using n)"},
+								"1",
+								ScaleBox,
+								{Remove Ref Line( ^_observedMeanStDevN^, Dotted, "Black", "", 3 )}
+								);
+								
+								Report1 << Dispatch(
+								{"Distributions", "Standard Deviation (using n-1)"},
+								"1",
+								ScaleBox,
+								{Remove Ref Line( ^_observedMeanStDevN1^, Dotted, "Black", "", 3 )}
+								);
+								
+								Report1 << Dispatch(
+								{"Distributions", "Standard Deviation (using n)"},
+								"1",
+								ScaleBox,
+								{Remove Ref Line( ^_stDev^, Solid, "Dark Blue", "", 3 )}
+								);
+								
+								Report1 << Dispatch(
+								{"Distributions", "Standard Deviation (using n-1)"},
+								"1",
+								ScaleBox,
+								{Remove Ref Line( ^_stDev^, Solid, "Dark Blue", "", 3 )}
+								)
+
+								 
+								
+						); //end Match		
+						
+						
+						//add scripts
+						
+							Match(perSelect<<Get, 
+							1, 
+
+								,
+							2, 
+								Report1 << Dispatch(
+								{"Distributions", "Standard Deviation (using n)"},
+								"1",
+								ScaleBox,
+								{Add Ref Line( ^_observedMeanStDevN^, Dotted, "Black", "", 3 )}
+								);
+								
+								Report1 << Dispatch(
+								{"Distributions", "Standard Deviation (using n-1)"},
+								"1",
+								ScaleBox,
+								{Add Ref Line( ^_observedMeanStDevN1^, Dotted, "Black", "", 3 )}
+								)
+															
+								
+								,
+
+							3, 
+
+								Report1 << Dispatch(
+								{"Distributions", "Standard Deviation (using n)"},
+								"1",
+								ScaleBox,
+								{Add Ref Line( ^_stDev^, Solid, "Dark Blue", "", 3)}
+								);
+								
+								Report1 << Dispatch(
+								{"Distributions", "Standard Deviation (using n-1)"},
+								"1",
+								ScaleBox,
+								{Add Ref Line( ^_stDev^, Solid, "Dark Blue", "", 3 )}
+								)
+
+
+
+								,
+								
+							4,
+
+								Report1 << Dispatch(
+								{"Distributions", "Standard Deviation (using n)"},
+								"1",
+								ScaleBox,
+								{Add Ref Line( ^_observedMeanStDevN^, Dotted, "Black", "", 3 )}
+								);
+								
+								Report1 << Dispatch(
+								{"Distributions", "Standard Deviation (using n-1)"},
+								"1",
+								ScaleBox,
+								{Add Ref Line( ^_observedMeanStDevN1^, Dotted, "Black", "", 3 )}
+								);
+								
+								Report1 << Dispatch(
+								{"Distributions", "Standard Deviation (using n)"},
+								"1",
+								ScaleBox,
+								{Add Ref Line( ^_stDev^, Solid, "Dark Blue", "", 3 )}
+								);
+								
+								Report1 << Dispatch(
+								{"Distributions", "Standard Deviation (using n-1)"},
+								"1",
+								ScaleBox,
+								{Add Ref Line( ^_stDev^, Solid, "Dark Blue", "", 3 )}
+								)
+								 
+								
+						); //end Match	
+						
+						
+						
+						
+						perBefore = (perSelect<<Get); //set value so next time through we can remove existing
+						
+						
+						
+						
+						
+					) //finish with combo box					
+					
+					)), //End Vlist inside of Hlist		
+					
+					Spacer Box( size( 264.5, 10 ) ),					
+					
+								
+				
+					), //end vlist box
+					Panel Box("Initial Settings",
+
+					Spacer Box( size( 303.5, 1 ) ),											
+						osbBox = Button Box( "Show Initial Settings", 
+							if(showOriginal==0,
+													
+								showOriginal=1;
+								osbBox <<Set Button Name(" Hide Initial Settings");
+								tbInitial << Hide;
+								
+								, //else
+														
+								showOriginal=0;
+								osbBox <<Set Button Name("Show Initial Settings");
+								tbInitial << Hide;							
+								
+							); //end if
+					
+						),
+					
+						//VList box inside Hlistbox to fix offset
+							HlistBox(Spacer Box( size( 7, 0 ) ),VlistBox(					
+								tbInitial = TextBox("Population Mean = ^_mu^
+Population Standard Deviation = ^_stDev^
+Sample Size = ^_sampleSize^
+")	
+						)) //End Vlist in HListbox
+					
+					) //end Panel Box															
+				) // End Outline Box
+				
+			, 
+
+				
+				VlistBox(							
+					Report1 = Distribution(
+							Uniform Scaling( 1 ),
+							Stack( 1 ),
+							Continuous Distribution(
+								Column( :Name( "Standard Deviation (using n)" ) ),
+								Quantiles( 0 ),
+								Horizontal Layout( 1 ),
+								Vertical( 0 ),
+								Outlier Box Plot( 0 ),
+								Customize Summary Statistics(
+									Std Dev( 0 ),
+									Std Err Mean( 0 ),
+									Upper Mean Confidence Interval( 0 ),
+									Lower Mean Confidence Interval( 0 ),
+									N( 0 )
+								)
+							),
+							Continuous Distribution(
+								Column( :Name( "Standard Deviation (using n-1)" ) ),
+								Quantiles( 0 ),
+								Horizontal Layout( 1 ),
+								Vertical( 0 ),
+								Outlier Box Plot( 0 ),
+								Customize Summary Statistics(
+									Std Dev( 0 ),
+									Std Err Mean( 0 ),
+									Upper Mean Confidence Interval( 0 ),
+									Lower Mean Confidence Interval( 0 ),
+									N( 0 )
+								)
+							),
+							SendToReport(
+								Dispatch(
+									{"Distributions", "Standard Deviation (using n)"},
+									"Distrib Histogram",
+									FrameBox,
+									{Frame Size( 440, 203 ),Grid Line Order( 1 ), Reference Line Order( 3 ), DispatchSeg( Hist Seg( 1 ), Bin Span( 2, 0 ) )}
+								)
+							),
+							
+
+							SendToReport(
+								Dispatch(
+									{"Distributions", "Standard Deviation (using n-1)"},
+									"Distrib Histogram",
+									FrameBox,
+									{Frame Size( 440, 203 ),Grid Line Order( 1 ), Reference Line Order( 3 ), DispatchSeg( Hist Seg( 1 ), Bin Span( 2, 0 ) )}
+								)
+							)							
+					),
+				)
+					,
+										
+			Report1 << Summary Statistics( 0 );
+			tbInitial << Hide			
+
+				)
+
+			)
+	
+		);
+
+
+]\")));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Revision history
+
+0.06
+	- Handle 5000 row limit with JMP SE by yoking number of samples to keep raw data
+		table to be under 500 rows. 
+
+0.05
+	- added interactive variance and removed simple table scripts. 
+	- added option to show original settings
+	
+0.04
+	- fixed uniform scaling
+	
+0.03
+	- created interactive version of standard deviation profiler
+	
+	
+0.02
+	- Smaller bin sizes for histograms 
+
+0.01
+	- initial feature set
+		- dialog window
+		- generate original data
+		- generate formula columns

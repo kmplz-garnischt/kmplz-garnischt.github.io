@@ -1,0 +1,28 @@
+﻿Data Table( "NaKo_Gewicht_Deutschland_2020_QQ_Plot" ) <<
+Summary(
+	Quantiles( 0.01, :Gewicht ),
+	Quantiles( 0.1, :Gewicht ),
+	Quantiles( 0.5, :Gewicht ),
+	Quantiles( 1, :Gewicht ),
+	Quantiles( 2.5, :Gewicht ),
+	Quantiles( 5, :Gewicht ),
+	Quantiles( 10, :Gewicht ),
+	Quantiles( 20, :Gewicht ),
+	Quantiles( 30, :Gewicht ),
+	Quantiles( 40, :Gewicht ),
+	Quantiles( 50, :Gewicht ),
+	Quantiles( 60, :Gewicht ),
+	Quantiles( 70, :Gewicht ),
+	Quantiles( 80, :Gewicht ),
+	Quantiles( 90, :Gewicht ),
+	Quantiles( 95, :Gewicht ),
+	Quantiles( 97.5, :Gewicht ),
+	Quantiles( 99, :Gewicht ),
+	Quantiles( 99.5, :Gewicht ),
+	Quantiles( 99.9, :Gewicht ),
+	Quantiles( 99.99, :Gewicht ),
+	Freq( "None" ),
+	Weight( "None" ),
+	statistics column name format( "Kenngröße" ),
+	output table name( "Zusammenfassung von NaKo_Gewicht_Deutschland_2020_QQ_Plot" )
+);

@@ -1,0 +1,1165 @@
+Jahrgang;Alter;Groesse;Geschlecht;AlterV;AlterM;GroesseV;GroesseM;Geschwister;Farbe;AusgKomm;AnzSchuhe;AusgSchuhe;Essgewohnheiten;Raucher;NoteMathe;MatheZufr;Studiengang;Fragebogen
+2014;23;166;Frau;58;53;180;165;0;rot;250;23;500;;;1,0;sehr zufrieden;;
+2014;19;173;Mann;54;50;175;165;1;schwarz;630;4;250;;;1,0;geht so;;
+2014;19;187;Mann;50;46;182;172;1;weiss;540;8;210;;;1,0;sehr zufrieden;;
+2014;26;174;Mann;65;49;160;158;2;schwarz;132;7;200;;;1,0;sehr zufrieden;;
+2014;21;177;Frau;50;49;195;183;2;schwarz;200;30;400;;;1,3;sehr zufrieden;;
+2014;22;185;Mann;54;50;180;160;1;schwarz;600;10;100;;;1,3;sehr zufrieden;;
+2014;20;164;Frau;57;57;172;166;0;weiss;450;22;500;;;1,7;sehr zufrieden;;
+2014;18;165;Frau;45;44;180;155;1;schwarz;160;36;400;;;1,7;sehr zufrieden;;
+2014;22;170;Frau;54;51;173;165;1;weiss;350;50;300;;;1,7;sehr zufrieden;;
+2014;18;159;Frau;58;51;168;172;1;weiss;264;50;150;;;1,7;sehr zufrieden;;
+2014;20;190;Mann;55;51;175;172;2;schwarz;700;5;150;;;1,7;sehr zufrieden;;
+2014;19;170;Frau;58;54;173;174;1;schwarz;140;20;120;;;1,7;sehr zufrieden;;
+2014;29;160;Frau;59;57;172;158;0;blau;50;20;100;;;1,7;zufrieden;;
+2014;21;158;Frau;53;49;163;158;1;weiss;50;10;500;;;2,0;zufrieden;;
+2014;20;169;Frau;43;42;182;164;5;weiss;450;22;450;;;2,0;sehr zufrieden;;
+2014;21;164;Frau;57;51;181;159;0;weiss;370;35;400;;;2,0;sehr zufrieden;;
+2014;22;168;Frau;59;53;180;165;1;weiss;300;35;350;;;2,0;sehr zufrieden;;
+2014;19;160;Frau;48;48;180;161;1;weiss;750;20;300;;;2,0;zufrieden;;
+2014;19;160;Frau;40;37;180;170;2;silber;100;10;300;;;2,0;zufrieden;;
+2014;20;167;Frau;50;43;180;175;2;weiss;300;35;250;;;2,0;sehr zufrieden;;
+2014;18;172;Frau;57;53;185;175;0;rot;250;8;250;;;2,0;sehr zufrieden;;
+2014;21;175;Mann;48;51;177;152;1;blau;350;10;200;;;2,0;sehr zufrieden;;
+2014;19;178;Mann;49;48;180;161;1;schwarz;300;10;200;;;2,0;zufrieden;;
+2014;22;162;Frau;54;52;184;160;1;weiss;120;23;150;;;2,0;geht so;;
+2014;18;178;Frau;43;37;176;165;1;rot;350;15;100;;;2,0;zufrieden;;
+2014;20;168;Frau;45;49;185;164;3;schwarz;35,8;15;100;;;2,0;sehr zufrieden;;
+2014;29;163;Frau;54;61;179;163;1;gelb;600;10;100;;;2,0;zufrieden;;
+2014;20;176;Mann;53;51;183;156;1;weiss;300;8;100;;;2,0;zufrieden;;
+2014;28;171;Mann;59;54;178;162;1;schwarz;570;5;90;;;2,0;zufrieden;;
+2014;24;170;Frau;50;52;190;168;1;schwarz;450;6;70;;;2,0;sehr zufrieden;;
+2014;22;162;Frau;54;47;182;170;1;weiss;380;50;700;;;2,3;zufrieden;;
+2014;20;168;Frau;51;47;173;165;0;rot;540;50;500;;;2,3;zufrieden;;
+2014;23;177;Mann;55;50;185;165;1;weiss;240;70;450;;;2,3;sehr zufrieden;;
+2014;19;172;Frau;49;58;193;162;3;schwarz;240;15;400;;;2,3;sehr zufrieden;;
+2014;22;163;Frau;57;54;180;165;1;schwarz;390;40;300;;;2,3;unzufrieden;;
+2014;22;166;Frau;50;48;168;167;7;schwarz;250;13;270;;;2,3;geht so;;
+2014;31;171;Frau;65;63;183;169;1;silber;720;60;200;;;2,3;zufrieden;;
+2014;19;162;Frau;56;52;182;172;1;weiss;140;25;200;;;2,3;zufrieden;;
+2014;20;178;Mann;53;52;178;172;2;schwarz;120;5;180;;;2,3;sehr zufrieden;;
+2014;23;186;Mann;53;50;182;175;1;schwarz;430;10;100;;;2,3;sehr zufrieden;;
+2014;24;178;Mann;57;54;193;175;1;schwarz;340;5;70;;;2,3;geht so;;
+2014;19;170;Frau;58;50;177;172;2;schwarz;360;20;60;;;2,3;zufrieden;;
+2014;28;180;Mann;62;41;170;168;9;schwarz;235;5;16;;;2,3;zufrieden;;
+2014;19;168;Frau;50;50;178;168;1;weiss;850;20;500;;;2,7;unzufrieden;;
+2014;21;166;Frau;55;53;196;161;1;schwarz;450;25;450;;;2,7;geht so;;
+2014;21;183;Mann;51;49;175;168;1;schwarz;600;6;400;;;2,7;zufrieden;;
+2014;23;168;Frau;62;62;175;160;1;schwarz;500;50;350;;;2,7;zufrieden;;
+2014;20;170;Frau;55;51;175;173;2;silber;600;40;300;;;2,7;geht so;;
+2014;23;160;Frau;55;52;188;160;1;rot;300;30;300;;;2,7;zufrieden;;
+2014;20;170;Frau;53;50;180;170;1;schwarz;300;20;300;;;2,7;zufrieden;;
+2014;20;180;Mann;49;48;175;165;2;rot;400;15;300;;;2,7;unzufrieden;;
+2014;19;162;Frau;38;37;180;165;1;weiss;1100;10;300;;;2,7;zufrieden;;
+2014;23;184;Mann;52;48;182;175;2;schwarz;450;3;300;;;2,7;zufrieden;;
+2014;21;160;Frau;51;51;174;163;1;schwarz;500;40;250;;;2,7;zufrieden;;
+2014;19;175;Frau;52;52;185;165;2;schwarz;600;30;200;;;2,7;geht so;;
+2014;19;162;Frau;49;50;180;160;2;schwarz;180;20;200;;;2,7;zufrieden;;
+2014;21;173;Frau;51;50;169;168;1;weiss;230;12;200;;;2,7;sehr zufrieden;;
+2014;21;178;Mann;55;55;180;168;1;weiss;1300;7;200;;;2,7;zufrieden;;
+2014;21;166;Frau;52;50;177;172;2;weiss;310;35;180;;;2,7;geht so;;
+2014;18;168;Frau;47;49;189;169;1;schwarz;780;20;150;;;2,7;geht so;;
+2014;25;167;Frau;64;61;178;160;3;weiss;264;12;100;;;2,7;zufrieden;;
+2014;22;170;Frau;45;44;180;173;2;weiss;120;30;550;;;3,0;geht so;;
+2014;26;170;Frau;59;60;178;163;1;schwarz;250;10;500;;;3,0;unzufrieden;;
+2014;28;174;Mann;52;51;178;165;2;schwarz;500;13;480;;;3,0;unzufrieden;;
+2014;20;161;Frau;48;46;170;158;1;weiss;700;17;400;;;3,0;geht so;;
+2014;20;179;Mann;58;55;180;165;9;schwarz;500;8;400;;;3,0;geht so;;
+2014;25;170;Frau;54;52;179;165;1;weiss;400;20;350;;;3,0;zufrieden;;
+2014;19;177;Mann;52;49;193;160;1;schwarz;400;14;350;;;3,0;sehr zufrieden;;
+2014;21;166;Frau;47;50;180;176;1;blau;460;27;340;;;3,0;geht so;;
+2014;19;173;Frau;49;50;170;165;1;weiss;750;17;300;;;3,0;zufrieden;;
+2014;24;183;Mann;65;62;180;170;2;schwarz;500;15;300;;;3,0;zufrieden;;
+2014;24;187;Mann;54;51;185;175;1;schwarz;300;15;300;;;3,0;geht so;;
+2014;24;164;Frau;49;53;187;162;1;weiss;300;38;250;;;3,0;geht so;;
+2014;22;180;Mann;59;56;186;169;2;weiss;570;8;250;;;3,0;unzufrieden;;
+2014;22;197;Mann;77;53;185;170;1;schwarz;700;5;250;;;3,0;zufrieden;;
+2014;21;160;Frau;52;48;172;165;1;schwarz;150;45;200;;;3,0;geht so;;
+2014;19;167;Frau;55;54;184;169;3;schwarz;300;40;200;;;3,0;geht so;;
+2014;21;169;Frau;55;54;180;170;1;schwarz;300;9;200;;;3,0;unzufrieden;;
+2014;21;193;Mann;51;52;180;175;1;schwarz;800;3;200;;;3,0;zufrieden;;
+2014;22;179;Mann;47;50;180;165;5;schwarz;600;8;180;;;3,0;unzufrieden;;
+2014;19;157;Frau;49;48;189;158;0;weiss;350;21;150;;;3,0;geht so;;
+2014;22;181;Mann;55;50;175;165;6;blau;400;4;150;;;3,0;geht so;;
+2014;22;176;Mann;45;42;168;160;3;schwarz;240;5;100;;;3,0;zufrieden;;
+2014;20;167;Frau;51;48;182;165;1;weiss;245;20;70;;;3,0;zufrieden;;
+2014;25;170;Frau;50;46;175;165;4;silber;850;50;700;;;3,3;geht so;;
+2014;20;165;Frau;57;58;190;158;0;silber;770;25;650;;;3,3;unzufrieden;;
+2014;19;178;Mann;58;56;170;165;2;schwarz;720;5;500;;;3,3;unzufrieden;;
+2014;19;170;Frau;41;42;168;156;0;weiss;550;40;450;;;3,3;unzufrieden;;
+2014;20;183;Mann;56;54;185;170;2;schwarz;200;15;450;;;3,3;geht so;;
+2014;23;162;Frau;56;53;182;168;0;schwarz;60;18;400;;;3,3;geht so;;
+2014;20;176;Mann;56;54;181;171;0;schwarz;950;11;400;;;3,3;zufrieden;;
+2014;21;160;Frau;44;42;180;170;1;silber;350;40;300;;;3,3;geht so;;
+2014;24;180;Mann;49;48;176;168;1;schwarz;900;10;300;;;3,3;unzufrieden;;
+2014;22;164;Frau;54;51;182;160;0;weiss;360;27;230;;;3,3;zufrieden;;
+2014;21;167;Frau;53;47;187;160;2;weiss;180;35;200;;;3,3;zufrieden;;
+2014;20;169;Frau;50;46;183;169;1;weiss;150;30;200;;;3,3;geht so;;
+2014;28;169;Frau;62;63;176;160;1;blau;300;16;200;;;3,3;geht so;;
+2014;20;193;Mann;55;55;185;162;2;schwarz;330;8;170;;;3,3;zufrieden;;
+2014;20;172;Frau;58;53;182;165;1;schwarz;500;20;150;;;3,3;zufrieden;;
+2014;23;185;Mann;60;51;183;168;4;schwarz;540;5;150;;;3,3;geht so;;
+2014;19;179;Mann;50;50;182;170;2;gelb;500;5;150;;;3,3;geht so;;
+2014;34;168;Frau;54;57;175;160;2;silber;140;25;70;;;3,3;geht so;;
+2014;21;158;Frau;58;46;176;163;1;silber;643;27;60;;;3,3;zufrieden;;
+2014;24;168;Frau;52;52;182;164;2;schwarz;380;25;30;;;3,3;geht so;;
+2014;20;185;Mann;48;48;185;170;1;blau;350;8;1000;;;3,7;unzufrieden;;
+2014;28;165;Frau;63;55;175;168;2;schwarz;500;40;800;;;3,7;unzufrieden;;
+2014;23;162;Frau;52;51;179;168;1;schwarz;670;35;700;;;3,7;geht so;;
+2014;23;169;Frau;55;54;180;167;1;schwarz;220;60;450;;;3,7;geht so;;
+2014;20;170;Frau;51;49;176;171;1;weiss;950;43;450;;;3,7;zufrieden;;
+2014;23;166;Frau;56;50;180;165;1;blau;550;40;400;;;3,7;zufrieden;;
+2014;21;164;Frau;52;50;176;180;2;weiss;150;32;400;;;3,7;unzufrieden;;
+2014;22;175;Mann;60;56;175;158;2;schwarz;530;25;250;;;3,7;geht so;;
+2014;28;175;Frau;62;62;177;175;1;silber;600;30;200;;;3,7;unzufrieden;;
+2014;20;174;Frau;60;56;181;166;2;silber;420;30;200;;;3,7;unzufrieden;;
+2014;21;168;Frau;54;50;175;168;1;schwarz;300;30;150;;;3,7;geht so;;
+2014;19;160;Frau;48;47;180;165;1;schwarz;300;20;150;;;3,7;unzufrieden;;
+2014;20;162;Frau;42;44;183;158;1;weiss;260;15;140;;;3,7;geht so;;
+2014;22;193;Mann;49;46;190;170;1;schwarz;545;13;35;;;3,7;unzufrieden;;
+2014;23;170;Frau;50;45;180;172;1;schwarz;500;55;600;;;4,0;unzufrieden;;
+2014;19;176;Frau;49;47;187;176;0;schwarz;250;28;600;;;4,0;geht so;;
+2014;23;174;Frau;55;50;180;168;2;weiss;350;27;600;;;4,0;unzufrieden;;
+2014;23;174;Frau;50;51;175;165;1;schwarz;700;80;500;;;4,0;unzufrieden;;
+2014;18;178;Mann;52;46;176;162;1;schwarz;505;11;450;;;4,0;unzufrieden;;
+2014;23;182;Mann;57;55;180;170;1;schwarz;630;4;450;;;4,0;geht so;;
+2014;21;169;Frau;47;48;186;160;1;rot;300;30;400;;;4,0;unzufrieden;;
+2014;19;176;Mann;60;52;180;161;1;schwarz;400;20;400;;;4,0;unzufrieden;;
+2014;22;167;Frau;47;46;172;165;1;weiss;320;40;300;;;4,0;geht so;;
+2014;27;170;Frau;64;60;180;150;2;silber;30;20;300;;;4,0;geht so;;
+2014;21;182;Mann;51;50;172;173;0;silber;825;12;300;;;4,0;geht so;;
+2014;21;178;Mann;61;54;178;165;2;schwarz;240;11;300;;;4,0;geht so;;
+2014;26;172;Mann;57;56;186;156;2;gelb;350;10;260;;;4,0;geht so;;
+2014;20;181;Frau;56;48;192;170;1;schwarz;200;17;220;;;4,0;geht so;;
+2014;18;185;Frau;49;53;202;180;0;weiss;300;30;200;;;4,0;unzufrieden;;
+2014;20;180;Frau;54;46;185;170;1;rot;200;25;200;;;4,0;zufrieden;;
+2014;19;165;Frau;48;47;183;165;4;rot;270;22;200;;;4,0;geht so;;
+2014;27;165;Frau;53;53;175;165;1;weiss;300;10;200;;;4,0;unzufrieden;;
+2014;22;178;Frau;68;60;176;170;2;schwarz;120;20;150;;;4,0;geht so;;
+2014;29;180;Mann;74;67;180;170;3;weiss;720;6;120;;;4,0;zufrieden;;
+2014;21;175;Frau;43;39;169;163;2;schwarz;350;27;100;;;4,0;unzufrieden;;
+2014;24;185;Mann;54;52;179;163;2;schwarz;250;8;90;;;4,0;geht so;;
+2014;23;164;Frau;50;50;167;167;2;schwarz;200;6;80;;;4,0;geht so;;
+2014;22;173;Frau;53;49;185;165;1;weiss;245;80;400;;;4,7;unzufrieden;;
+2014;27;176;Frau;57;56;178;165;0;weiss;1868;20;717;;;5,0;zufrieden;;
+2014;23;163;Frau;54;46;183;166;1;weiss;880;40;600;;;5,0;unzufrieden;;
+2014;19;170;Frau;53;52;180;167;1;weiss;340;10;540;;;5,0;unzufrieden;;
+2014;20;167;Frau;50;50;189;172;1;weiss;800;65;500;;;5,0;unzufrieden;;
+2014;20;169;Frau;58;59;192;160;3;weiss;800;30;500;;;5,0;unzufrieden;;
+2014;21;178;Frau;52;61;192;165;0;schwarz;800;30;500;;;5,0;unzufrieden;;
+2014;24;166;Frau;51;51;180;166;1;gelb;600;12;500;;;5,0;unzufrieden;;
+2014;20;183;Mann;64;53;180;170;2;schwarz;192;7;500;;;5,0;unzufrieden;;
+2014;20;194;Mann;44;43;187;179;1;rot;815;15;400;;;5,0;unzufrieden;;
+2014;23;159;Frau;59;56;178;174;1;schwarz;500;55;350;;;5,0;unzufrieden;;
+2014;21;157;Frau;46;53;174;168;1;silber;500;35;350;;;5,0;unzufrieden;;
+2014;22;163;Frau;47;48;180;173;1;schwarz;540;35;300;;;5,0;unzufrieden;;
+2014;19;178;Frau;50;45;190;168;1;schwarz;280;40;280;;;5,0;unzufrieden;;
+2014;25;185;Mann;55;53;170;168;0;schwarz;1200;12;280;;;5,0;unzufrieden;;
+2014;27;160;Frau;50;49;175;165;1;schwarz;250;20;250;;;5,0;unzufrieden;;
+2014;22;180;Mann;52;53;180;158;1;weiss;120;5;240;;;5,0;unzufrieden;;
+2014;24;169;Frau;50;49;173;192;0;rot;240;18;220;;;5,0;unzufrieden;;
+2014;18;162;Frau;48;46;180;160;2;weiss;300;30;200;;;5,0;unzufrieden;;
+2014;36;176;Frau;59;59;178;170;2;weiss;700;20;200;;;5,0;unzufrieden;;
+2014;22;164;Frau;43;45;180;160;1;schwarz;400;15;200;;;5,0;unzufrieden;;
+2014;28;190;Mann;55;48;180;180;0;blau;350;10;200;;;5,0;unzufrieden;;
+2014;20;189;Mann;49;45;171;170;1;schwarz;1250;5;200;;;5,0;unzufrieden;;
+2014;23;182;Mann;56;52;170;165;2;schwarz;700;4;200;;;5,0;unzufrieden;;
+2014;27;156;Frau;63;59;163;156;2;weiss;360;29;130;;;5,0;unzufrieden;;
+2014;20;194;Mann;46;47;186;167;2;schwarz;300;10;130;;;5,0;unzufrieden;;
+2014;23;182;Frau;66;59;183;179;2;weiss;200;30;120;;;5,0;unzufrieden;;
+2014;27;186;Mann;51;47;180;174;1;weiss;605;10;110;;;5,0;unzufrieden;;
+2014;20;186;Mann;50;48;183;165;1;schwarz;200;6;100;;;5,0;unzufrieden;;
+2014;21;173;Frau;54;51;187;170;1;weiss;156;17;50;;;5,0;unzufrieden;;
+2014;26;159;Frau;66;62;170;168;0;silber;1000;60;2000;;;;geht so;;
+2014;23;181;Frau;51;63;196;175;3;weiss;800;35;1300;;;;;;
+2014;25;170;Frau;53;48;183;175;2;schwarz;800;30;800;;;;;;
+2014;19;161;Frau;59;57;174;165;2;weiss;80;15;550;;;;unzufrieden;;
+2014;20;175;Mann;45;41;170;165;1;weiss;400;7;550;;;;unzufrieden;;
+2014;24;172;Frau;54;48;182;171;2;schwarz;299;45;500;;;;;;
+2014;32;184;Mann;59;56;182;175;2;schwarz;310;12;450;;;;unzufrieden;;
+2014;29;168;Frau;54;54;176;160;1;schwarz;300;18;400;;;;unzufrieden;;
+2014;24;176;Mann;49;49;176;171;2;schwarz;500;11;400;;;;;;
+2014;22;162;Frau;65;58;175;159;2;weiss;200;30;300;;;;unzufrieden;;
+2014;32;164;Frau;57;58;183;165;2;blau;303;25;300;;;;;;
+2014;18;175;Frau;54;51;188;168;1;schwarz;200;25;300;;;;;;
+2014;21;168;Frau;46;47;180;170;2;silber;500;10;300;;;;;;
+2014;21;160;Frau;57;49;177;160;2;weiss;600;20;250;;;;;;
+2014;20;170;Frau;49;53;182;172;2;rot;100;20;250;;;;unzufrieden;;
+2014;26;187;Mann;64;62;188;160;1;schwarz;400;10;250;;;;;;
+2014;20;166;Frau;60;60;175;165;1;blau;96;30;200;;;;unzufrieden;;
+2014;26;194;Mann;54;68;185;175;0;schwarz;500;20;200;;;;;;
+2014;21;170;Frau;54;56;175;170;3;schwarz;140;20;200;;;;;;
+2014;20;174;Frau;65;55;183;172;0;silber;300;18;200;;;;;;
+2014;20;187;Mann;52;53;176;168;1;schwarz;100;11;200;;;;;;
+2014;24;188;Mann;71;59;180;168;1;weiss;800;8;200;;;;;;
+2014;23;183;Mann;61;50;180;177;0;schwarz;360;2;160;;;;;;
+2014;23;169;Frau;52;53;178;164;1;silber;420;30;150;;;;;;
+2014;33;158;Frau;53;55;170;158;0;rot;550;15;150;;;;;;
+2014;24;165;Frau;60;58;170;170;1;weiss;200;20;120;;;;unzufrieden;;
+2014;32;165;Frau;76;64;185;170;4;blau;50;7;120;;;;;;
+2014;25;182;Mann;55;47;172;170;1;weiss;450;12;80;;;;;;
+2014;18;165;Frau;52;50;189;163;1;schwarz;800;6;80;;;;unzufrieden;;
+2014;20;171;Mann;48;45;180;178;2;schwarz;220;5;80;;;;unzufrieden;;
+2014;22;182;Mann;55;52;180;162;3;schwarz;130;2;80;;;;sehr zufrieden;;
+2014;22;185;Mann;60;55;186;168;2;schwarz;500;4;70;;;;;;
+2014;26;181;Mann;65;64;180;165;1;schwarz;400;7;60;;;;;;
+2014;22;188;Mann;58;53;180;167;1;weiss;655;25;0;;;;unzufrieden;;
+2015;20;169;Frau;52;50;183;165;1;weiss;300;25;500;carnivor;nein;1,3;sehr zufrieden;;
+2015;18;169;Frau;56;46;185;165;1;schwarz;150;25;400;carnivor;nein;1,3;sehr zufrieden;;
+2015;20;176;Frau;52;51;187;174;1;schwarz;1100;20;300;carnivor;;1,3;zufrieden;;
+2015;25;174;Mann;62;57;182;169;1;schwarz;1000;4;300;carnivor;nein;1,3;geht so;;
+2015;21;193;Mann;53;47;180;170;1;schwarz;860;5;200;carnivor;nein;1,3;sehr zufrieden;;
+2015;19;182;Mann;52;50;189;165;1;weiss;80;3;200;carnivor;nein;1,3;sehr zufrieden;;
+2015;19;183;Mann;54;53;175;175;1;schwarz;420;5;80;carnivor;nein;1,3;sehr zufrieden;;
+2015;19;170;Frau;73;59;175;163;0;weiss;180;10;60;carnivor;nein;1,3;sehr zufrieden;;
+2015;21;172;Frau;48;48;178;178;3;schwarz;550;25;400;carnivor;nein;1,7;sehr zufrieden;;
+2015;19;165;Frau;49;49;180;168;1;schwarz;500;29;350;carnivor;nein;1,7;geht so;;
+2015;20;175;Frau;48;47;183;170;1;schwarz;700;12;200;carnivor;nein;1,7;sehr zufrieden;;
+2015;20;188;Mann;57;50;180;160;1;weiss;240;3;120;carnivor;ja;1,7;zufrieden;;
+2015;23;166;Frau;61;59;175;165;2;rot;200;30;100;carnivor;nein;1,7;geht so;;
+2015;19;163;Frau;51;49;178;168;1;schwarz;270;25;100;carnivor;nein;1,7;geht so;;
+2015;18;160;Frau;51;50;180;170;2;schwarz;400;20;100;carnivor;nein;1,7;sehr zufrieden;;
+2015;20;179;Mann;50;49;183;172;1;schwarz;300;3;80;carnivor;ja;1,7;sehr zufrieden;;
+2015;21;189;Mann;59;57;181;175;3;schwarz;237;5;50;carnivor;nein;1,7;zufrieden;;
+2015;20;169;Frau;55;54;190;168;1;schwarz;270;30;40;carnivor;nein;1,7;sehr zufrieden;;
+2015;19;168;Mann;48;47;176;158;0;weiss;420;12;450;carnivor;nein;2,0;zufrieden;;
+2015;19;183;Mann;49;47;180;162;4;rot;210;6;425;carnivor;nein;2,0;unzufrieden;;
+2015;21;170;Frau;48;46;182;170;0;schwarz;180;40;400;pescetarisch;nein;2,0;zufrieden;;
+2015;18;172;Frau;49;50;196;171;1;rot;350;30;200;carnivor;nein;2,0;sehr zufrieden;;
+2015;21;168;Frau;68;64;175;164;3;weiss;120;30;150;carnivor;nein;2,0;zufrieden;;
+2015;22;180;Mann;56;55;176;159;1;schwarz;390;5;150;carnivor;nein;2,0;zufrieden;;
+2015;19;160;Frau;47;47;180;168;1;blau;120;25;100;carnivor;nein;2,0;zufrieden;;
+2015;21;185;Mann;52;50;183;165;4;schwarz;40;6;100;carnivor;nein;2,0;geht so;;
+2015;22;173;Mann;54;52;168;160;1;schwarz;480;7;40;carnivor;nein;2,0;zufrieden;;
+2015;20;174;Frau;55;53;187;169;3;schwarz;240;25;450;carnivor;;2,3;geht so;;
+2015;22;166;Frau;55;52;179;172;1;weiss;120;30;300;carnivor;nein;2,3;geht so;;
+2015;20;170;Frau;53;50;176;166;2;silber;426;20;200;carnivor;nein;2,3;sehr zufrieden;;
+2015;19;170;Frau;55;50;175;168;3;schwarz;185;15;105;carnivor;nein;2,3;geht so;;
+2015;24;151;Frau;54;58;176;158;2;weiss;240;50;100;carnivor;nein;2,3;sehr zufrieden;;
+2015;18;160;Frau;49;47;173;162;0;schwarz;240;25;100;carnivor;nein;2,3;zufrieden;;
+2015;20;161;Frau;50;50;180;160;1;weiss;240;20;100;carnivor;nein;2,3;zufrieden;;
+2015;21;189;Mann;53;49;186;176;2;schwarz;280;7;100;carnivor;ja;2,3;zufrieden;;
+2015;18;160;Frau;54;53;168;158;0;rot;529;30;500;carnivor;nein;2,7;zufrieden;;
+2015;24;172;Frau;56;55;180;166;1;schwarz;480;50;400;carnivor;nein;2,7;zufrieden;;
+2015;20;175;Mann;52;49;175;169;1;weiss;400;7;400;carnivor;nein;2,7;geht so;;
+2015;20;165;Frau;55;52;187;162;1;weiss;200;27;300;carnivor;nein;2,7;unzufrieden;;
+2015;20;178;Frau;56;54;185;160;3;weiss;240;20;300;carnivor;nein;2,7;geht so;;
+2015;22;166;Frau;57;55;175;163;0;weiss;240;20;300;carnivor;nein;2,7;zufrieden;;
+2015;26;167;Frau;53;50;178;165;1;schwarz;630;30;280;carnivor;nein;2,7;zufrieden;;
+2015;21;168;Frau;50;50;176;169;2;schwarz;120;30;200;carnivor;nein;2,7;unzufrieden;;
+2015;24;172;Frau;47;48;195;162;4;weiss;780;15;200;vegetarisch;nein;2,7;geht so;;
+2015;19;173;Frau;54;52;185;166;1;weiss;600;20;80;pescetarisch;nein;2,7;geht so;;
+2015;19;168;Frau;54;50;174;170;1;weiss;600;90;840;carnivor;nein;3,0;geht so;;
+2015;28;163;Frau;46;44;185;163;3;schwarz;1800;86;650;carnivor;nein;3,0;sehr zufrieden;;
+2015;19;172;Frau;54;52;185;168;2;weiss;120;60;500;pescetarisch;nein;3,0;zufrieden;;
+2015;23;184;Mann;57;54;181;162;1;schwarz;360;7;320;carnivor;nein;3,0;zufrieden;;
+2015;19;175;Frau;58;51;178;160;2;silber;480;22;310;carnivor;nein;3,0;zufrieden;;
+2015;19;162;Frau;58;55;182;163;3;silber;200;28;300;carnivor;nein;3,0;sehr zufrieden;;
+2015;22;189;Mann;59;59;176;164;0;silber;1100;7;300;carnivor;nein;3,0;zufrieden;;
+2015;20;177;Mann;45;45;178;156;0;weiss;924;7;300;carnivor;nein;3,0;geht so;;
+2015;33;165;Frau;59;60;182;165;2;schwarz;250;20;250;carnivor;nein;3,0;unzufrieden;;
+2015;20;165;Frau;52;52;178;173;1;schwarz;300;100;200;carnivor;nein;3,0;geht so;;
+2015;25;188;Mann;69;60;185;170;2;silber;1900;4;200;carnivor;ja;3,0;unzufrieden;;
+2015;20;151;Frau;47;47;178;155;1;weiss;350;12;150;carnivor;nein;3,0;unzufrieden;;
+2015;23;186;Mann;53;51;178;170;2;weiss;600;9;150;carnivor;ja;3,0;unzufrieden;;
+2015;21;170;Frau;52;53;180;164;2;silber;150;40;100;carnivor;nein;3,0;zufrieden;;
+2015;20;164;Frau;55;50;168;160;2;weiss;276;25;100;carnivor;nein;3,0;unzufrieden;;
+2015;19;169;Frau;56;56;179;162;1;weiss;240;25;100;carnivor;nein;3,0;geht so;;
+2015;21;161;Frau;60;50;170;162;2;blau;150;25;100;carnivor;nein;3,0;geht so;;
+2015;32;175;Frau;62;60;188;174;2;silber;150;30;80;carnivor;;3,0;unzufrieden;;
+2015;19;181;Mann;52;48;180;170;1;schwarz;300;8;30;carnivor;nein;3,0;unzufrieden;;
+2015;23;158;Frau;65;57;171;156;2;rot;99;8;20;carnivor;ja;3,0;unzufrieden;;
+2015;20;162;Frau;51;51;183;167;1;blau;350;67;1200;carnivor;ja;3,3;unzufrieden;;
+2015;19;167;Frau;48;43;176;168;4;weiss;270;50;350;carnivor;nein;3,3;zufrieden;;
+2015;19;168;Frau;57;54;182;172;1;schwarz;250;30;300;carnivor;nein;3,3;unzufrieden;;
+2015;25;157;Frau;54;61;185;160;1;weiss;119,4;30;300;carnivor;nein;3,3;geht so;;
+2015;21;161;Frau;70;55;180;165;2;schwarz;600;22;300;carnivor;ja;3,3;geht so;;
+2015;20;170;Frau;53;51;178;177;2;schwarz;300;15;250;carnivor;nein;3,3;unzufrieden;;
+2015;25;165;Frau;60;60;185;170;4;blau;200;10;150;vegetarisch;nein;3,3;geht so;;
+2015;23;180;Mann;53;54;180;165;2;schwarz;480;12;120;carnivor;ja;3,3;geht so;;
+2015;18;163;Frau;45;45;178;155;2;silber;150;4;120;carnivor;nein;3,3;unzufrieden;;
+2015;18;165;Frau;49;45;183;169;2;blau;160;22;100;carnivor;nein;3,3;unzufrieden;;
+2015;18;163;Frau;42;42;162;161;1;schwarz;520;7;100;carnivor;nein;3,3;unzufrieden;;
+2015;23;164;Frau;58;54;183;157;2;weiss;360;50;500;carnivor;nein;3,7;geht so;;
+2015;20;176;Frau;50;51;185;175;3;weiss;120;30;500;carnivor;nein;3,7;unzufrieden;;
+2015;22;175;Mann;56;54;165;160;2;schwarz;180;11;450;carnivor;nein;3,7;unzufrieden;;
+2015;21;168;Frau;55;65;175;155;2;weiss;400;40;400;carnivor;nein;3,7;geht so;;
+2015;24;163;Frau;56;56;174;162;1;weiss;250;25;300;vegetarisch;nein;3,7;unzufrieden;;
+2015;28;180;Mann;50;49;196;165;1;weiss;200;12;300;vegan;nein;3,7;unzufrieden;;
+2015;18;178;Mann;48;44;180;160;1;silber;1000;10;300;carnivor;nein;3,7;geht so;;
+2015;19;179;Mann;54;52;181;160;1;schwarz;540;4;300;carnivor;nein;3,7;geht so;;
+2015;19;186;Frau;55;49;202;178;1;silber;650;20;250;carnivor;nein;3,7;unzufrieden;;
+2015;24;169;Frau;56;50;185;160;1;weiss;0;30;200;pescetarisch;nein;3,7;unzufrieden;;
+2015;23;180;Mann;56;50;175;170;1;schwarz;220;10;150;carnivor;nein;3,7;geht so;;
+2015;26;172;Mann;59;57;170;155;2;schwarz;720;10;70;carnivor;nein;3,7;geht so;;
+2015;21;180;Mann;48;47;180;160;1;blau;100;4;70;carnivor;ja;3,7;zufrieden;;
+2015;21;170;Frau;42;42;183;165;1;schwarz;580;25;60;carnivor;nein;3,7;unzufrieden;;
+2015;22;187;Mann;52;49;172;170;3;weiss;460;6;50;carnivor;nein;3,7;geht so;;
+2015;21;183;Mann;51;49;180;160;1;schwarz;260;4;0;carnivor;nein;3,7;unzufrieden;;
+2015;21;156;Frau;57;50;184;160;2;schwarz;180;50;1000;carnivor;nein;4,0;unzufrieden;;
+2015;24;179;Mann;51;51;178;163;1;schwarz;600;15;1000;carnivor;nein;4,0;unzufrieden;;
+2015;31;173;Frau;63;61;185;165;1;weiss;100;35;500;carnivor;nein;4,0;unzufrieden;;
+2015;18;165;Frau;52;51;185;175;2;schwarz;1000;20;500;carnivor;nein;4,0;unzufrieden;;
+2015;24;165;Frau;56;51;185;173;0;schwarz;300;275;300;carnivor;nein;4,0;unzufrieden;;
+2015;20;167;Frau;49;47;189;158;1;weiss;395;30;300;carnivor;nein;4,0;zufrieden;;
+2015;20;170;Frau;50;55;183;160;2;weiss;420;65;250;carnivor;nein;4,0;geht so;;
+2015;28;155;Frau;65;56;178;151;2;weiss;200;25;250;carnivor;nein;4,0;geht so;;
+2015;23;171;Frau;56;54;181;168;2;schwarz;500;20;200;carnivor;nein;4,0;geht so;;
+2015;23;156;Frau;57;56;178;155;1;schwarz;246;23;170;carnivor;nein;4,0;geht so;;
+2015;19;160;Frau;50;47;180;160;1;weiss;420;10;150;carnivor;nein;4,0;unzufrieden;;
+2015;24;181;Mann;59;54;178;172;2;schwarz;120;10;150;vegetarisch;nein;4,0;unzufrieden;;
+2015;20;177;Mann;56;51;172;165;2;schwarz;150;4;120;carnivor;nein;4,0;zufrieden;;
+2015;25;178;Mann;60;63;170;160;2;blau;550;5;80;carnivor;ja;4,0;geht so;;
+2015;19;167;Frau;51;49;175;169;1;weiss;420;25;70;carnivor;nein;4,0;unzufrieden;;
+2015;22;160;Frau;51;49;183;162;2;schwarz;750;40;600;fruktarisch;nein;5,0;unzufrieden;;
+2015;21;170;Frau;55;54;185;167;0;weiss;600;50;400;carnivor;nein;5,0;unzufrieden;;
+2015;21;174;Frau;51;48;185;170;2;weiss;150;30;400;carnivor;nein;5,0;unzufrieden;;
+2015;21;189;Mann;50;50;198;165;2;schwarz;180;10;400;carnivor;nein;5,0;unzufrieden;;
+2015;22;157;Frau;48;41;181;167;2;silber;200;30;350;carnivor;nein;5,0;unzufrieden;;
+2015;23;163;Frau;52;52;172;165;1;schwarz;15;50;300;carnivor;nein;5,0;unzufrieden;;
+2015;29;161;Frau;52;51;170;164;1;schwarz;1300;50;200;carnivor;nein;5,0;unzufrieden;;
+2015;21;170;Frau;57;58;176;172;1;schwarz;300;32;200;carnivor;nein;5,0;unzufrieden;;
+2015;26;169;Frau;61;57;180;165;2;schwarz;600;30;200;carnivor;nein;5,0;unzufrieden;;
+2015;20;164;Frau;49;49;176;165;2;weiss;200;30;200;carnivor;nein;5,0;unzufrieden;;
+2015;28;163;Frau;57;56;165;159;1;weiss;30;20;200;pescetarisch;nein;5,0;unzufrieden;;
+2015;22;180;Mann;57;49;175;164;1;schwarz;275;7;200;carnivor;nein;5,0;unzufrieden;;
+2015;19;160;Frau;53;62;172;168;2;silber;760;15;150;carnivor;nein;5,0;unzufrieden;;
+2015;22;186;Mann;52;53;184;173;0;weiss;220;12;150;carnivor;ja;5,0;unzufrieden;;
+2015;22;171;Frau;63;59;186;165;3;schwarz;630;10;150;carnivor;ja;5,0;unzufrieden;;
+2015;20;171;Frau;59;49;185;160;1;weiss;300;4;150;vegetarisch;nein;5,0;unzufrieden;;
+2015;20;172;Frau;53;48;175;170;2;schwarz;400;35;130;carnivor;nein;5,0;unzufrieden;;
+2015;24;174;Frau;57;52;183;172;1;silber;96;18;130;carnivor;nein;5,0;unzufrieden;;
+2015;32;160;Frau;59;56;175;163;2;silber;500;25;100;carnivor;nein;5,0;unzufrieden;;
+2015;19;172;Frau;51;50;180;170;1;schwarz;180;17;100;carnivor;nein;5,0;unzufrieden;;
+2015;20;180;Frau;62;52;180;178;0;schwarz;200;15;100;carnivor;nein;5,0;unzufrieden;;
+2015;18;170;Frau;52;48;193;159;0;schwarz;180;12;100;carnivor;nein;5,0;geht so;;
+2015;30;179;Mann;54;52;172;172;1;silber;150;7;80;carnivor;nein;5,0;unzufrieden;;
+2015;23;166;Frau;59;60;173;160;3;schwarz;650;30;60;carnivor;ja;5,0;unzufrieden;;
+2015;35;185;Mann;61;57;175;164;0;weiss;15;9;0;carnivor;nein;5,0;unzufrieden;;
+2015;30;180;Mann;55;52;170;170;1;blau;400;7;0;carnivor;nein;5,0;unzufrieden;;
+2015;21;174;Mann;54;50;175;165;2;blau;505;9;600;carnivor;nein;;;;
+2015;19;195;Mann;54;49;175;160;1;schwarz;800;6;600;carnivor;nein;;;;
+2015;18;164;Frau;51;47;180;175;1;weiss;700;50;500;carnivor;nein;;;;
+2015;23;172;Frau;47;46;178;169;1;silber;200;25;450;carnivor;nein;;;;
+2015;21;167;Frau;50;48;185;159;1;weiss;600;40;400;carnivor;ja;;;;
+2015;23;189;Mann;60;54;180;177;1;schwarz;100;30;400;carnivor;nein;;;;
+2015;21;160;Frau;65;58;185;158;1;schwarz;500;20;400;vegetarisch;nein;;;;
+2015;28;175;Mann;61;56;180;165;3;schwarz;480;12;350;carnivor;nein;;;;
+2015;22;171;Mann;51;49;171;165;3;schwarz;120;8;320;carnivor;nein;;;;
+2015;19;170;Frau;48;48;178;168;1;weiss;1000;20;300;carnivor;nein;;;;
+2015;20;160;Frau;49;42;170;160;1;schwarz;590;15;300;carnivor;nein;;;;
+2015;29;180;Mann;57;56;175;165;2;schwarz;240;12;300;carnivor;ja;;;;
+2015;22;184;Mann;56;53;168;160;2;schwarz;480;6;300;carnivor;ja;;;;
+2015;20;178;Mann;44;43;180;165;3;weiss;0;5;300;carnivor;nein;;;;
+2015;20;178;Mann;50;48;174;169;2;schwarz;1570;7;290;carnivor;ja;;;;
+2015;20;170;Frau;51;49;169;171;1;schwarz;200;30;250;carnivor;nein;;;;
+2015;18;166;Frau;54;57;170;156;1;weiss;120;20;250;carnivor;nein;;;;
+2015;29;170;Frau;55;51;172;170;1;weiss;10;15;250;pescetarisch;nein;;;;
+2015;27;172;Mann;59;53;173;159;1;schwarz;345;8;210;carnivor;nein;;;;
+2015;19;161;Frau;52;50;180;175;2;schwarz;280;20;200;carnivor;nein;;;;
+2015;22;177;Mann;52;51;185;160;2;weiss;410;8;200;carnivor;nein;;;;
+2015;23;174;Mann;60;53;172;155;1;blau;130;4;200;carnivor;ja;;;;
+2015;22;165;Frau;57;50;185;170;1;weiss;300;35;180;carnivor;nein;;sehr zufrieden;;
+2015;19;183;Mann;54;57;182;160;1;silber;300;7;160;carnivor;nein;;;;
+2015;23;170;Frau;65;50;178;176;3;rot;420;24;150;carnivor;ja;;;;
+2015;23;177;Mann;55;50;173;170;1;weiss;600;15;150;carnivor;nein;;;;
+2015;24;174;Mann;53;52;175;170;1;schwarz;300;7;150;carnivor;nein;;;;
+2015;24;167;Frau;67;56;169;160;2;schwarz;;7;120;vegetarisch;nein;;;;
+2015;20;179;Frau;55;50;191;180;2;schwarz;240;40;100;carnivor;nein;;unzufrieden;;
+2015;23;169;Frau;62;60;175;165;5;weiss;420;26;100;carnivor;nein;;;;
+2015;21;158;Frau;51;50;170;168;1;weiss;350;20;100;carnivor;nein;;;;
+2015;27;177;Frau;55;55;170;167;1;schwarz;900;10;90;carnivor;ja;;;;
+2015;19;168;Frau;54;57;183;170;1;schwarz;180;8;90;carnivor;nein;;;;
+2015;18;160;Frau;55;50;175;162;1;weiss;450;50;80;carnivor;nein;;;;
+2015;19;173;Frau;49;47;185;174;1;weiss;500;40;80;carnivor;nein;;;;
+2015;26;171;Frau;55;53;178;169;1;silber;120;20;50;carnivor;nein;;;;
+2015;20;176;Frau;57;54;183;160;3;weiss;150;15;50;carnivor;nein;;unzufrieden;;
+2015;22;162;Frau;45;43;175;165;1;silber;10;5;50;carnivor;nein;;unzufrieden;;
+2015;19;177;Mann;59;54;172;170;1;schwarz;220;3;50;carnivor;nein;;;;
+2016;21;172;Frau;59;53;189;159;1;silber;600;18;380;carnivor;nein;1,3;sehr zufrieden;BW;
+2016;20;192;Mann;55;55;183;175;1;schwarz;600;8;100;carnivor;nein;1,7;zufrieden;BW;
+2016;20;173;Frau;57;50;185;172;1;weiss;620;20;350;carnivor;nein;2,0;sehr zufrieden;BW;
+2016;18;166;Frau;51;49;187;165;0;schwarz;420;28;180;carnivor;nein;2,0;sehr zufrieden;BW;
+2016;21;182;Mann;54;48;182;170;2;schwarz;820;18;150;carnivor;nein;2,0;geht so;BW;
+2016;21;183;Mann;51;48;175;168;0;silber;96;8;100;carnivor;nein;2,0;sehr zufrieden;BW;
+2016;22;165;Frau;56;52;177;163;1;schwarz;200;50;1000;carnivor;nein;2,3;unzufrieden;BW;
+2016;25;151;Frau;55;59;187;158;2;weiss;120;90;600;carnivor;nein;2,3;sehr zufrieden;BW;
+2016;22;164;Frau;50;48;174;172;2;silber;540;45;500;carnivor;nein;2,3;zufrieden;BW;
+2016;22;158;Frau;53;51;172;165;1;weiss;750;20;100;pescetarisch;nein;2,3;zufrieden;BW;
+2016;19;169;Frau;54;50;185;162;4;weiss;1000;40;800;carnivor;nein;2,5;geht so;BW;
+2016;19;168;Frau;46;42;190;166;1;schwarz;1300;40;700;carnivor;nein;2,7;zufrieden;BW;
+2016;21;185;Mann;50;48;188;170;1;silber;800;25;600;carnivor;nein;2,7;zufrieden;BW;
+2016;21;179;Mann;55;54;183;164;4;weiss;450;9;500;carnivor;nein;2,7;geht so;BW;
+2016;22;180;Mann;60;50;168;168;2;schwarz;300;12;300;carnivor;nein;2,7;zufrieden;BW;
+2016;19;186;Mann;48;48;185;173;1;schwarz;300;12;300;carnivor;ja;2,7;zufrieden;BW;
+2016;21;178;Frau;44;44;180;170;2;schwarz;500;30;250;carnivor;nein;2,7;zufrieden;BW;
+2016;19;161;Frau;46;47;163;162;0;schwarz;80;70;200;pescetarisch;ja;2,7;geht so;BW;
+2016;20;160;Frau;57;56;178;160;2;silber;90;30;200;pescetarisch;nein;2,7;geht so;BW;
+2016;23;170;Frau;49;48;178;173;1;weiss;120;25;200;pescetarisch;nein;2,7;geht so;BW;
+2016;21;188;Mann;56;55;182;175;0;schwarz;1500;4;200;carnivor;nein;2,7;sehr zufrieden;BW;
+2016;19;165;Frau;49;48;180;165;0;weiss;600;20;100;carnivor;ja;2,7;zufrieden;BW;
+2016;19;190;Mann;54;53;177;170;2;schwarz;500;20;800;carnivor;nein;3,0;geht so;BW;
+2016;18;173;Frau;48;48;185;173;1;schwarz;700;40;700;carnivor;nein;3,0;zufrieden;BW;
+2016;21;164;Frau;52;48;173;165;2;schwarz;480;50;500;carnivor;ja;3,0;geht so;BW;
+2016;20;165;Frau;55;45;175;171;1;weiss;400;30;350;carnivor;nein;3,0;unzufrieden;BW;
+2016;19;169;Frau;55;53;180;175;2;weiss;420;30;300;vegetarisch;nein;3,0;zufrieden;BW;
+2016;21;180;Mann;58;57;172;170;1;schwarz;1200;17;300;carnivor;ja;3,0;geht so;BW;
+2016;19;179;Frau;66;54;;160;2;silber;260;16;300;carnivor;nein;3,0;geht so;BW;
+2016;20;165;Frau;52;52;180;175;1;schwarz;720;30;280;carnivor;nein;3,0;geht so;BW;
+2016;23;161;Frau;61;56;184;165;1;schwarz;360;30;200;carnivor;nein;3,0;geht so;BW;
+2016;20;175;Frau;57;56;170;178;2;schwarz;250;8;100;carnivor;nein;3,0;unzufrieden;BW;
+2016;28;182;Mann;53;54;175;170;2;silber;800;16;90;carnivor;nein;3,0;zufrieden;BW;
+2016;25;176;Mann;67;63;172;168;2;weiss;280;14;80;carnivor;ja;3,0;zufrieden;BW;
+2016;19;168;Frau;51;49;179;172;1;schwarz;15;7;0;carnivor;nein;3,0;geht so;BW;
+2016;22;170;Frau;58;56;180;170;2;schwarz;800;40;500;carnivor;ja;3,3;geht so;BW;
+2016;25;174;Mann;55;55;170;160;1;silber;430;16;500;carnivor;nein;3,3;zufrieden;BW;
+2016;20;168;Frau;52;49;190;165;2;weiss;450;20;400;carnivor;nein;3,3;zufrieden;BW;
+2016;19;164;Frau;56;55;183;159;0;weiss;1100;35;300;carnivor;nein;3,3;geht so;BW;
+2016;18;173;Frau;49;50;182;163;0;schwarz;470;30;300;carnivor;nein;3,3;geht so;BW;
+2016;19;169;Frau;60;50;172;170;3;schwarz;122;30;250;carnivor;nein;3,3;geht so;BW;
+2016;20;172;Frau;49;48;180;165;1;weiss;120;20;250;carnivor;nein;3,3;unzufrieden;BW;
+2016;19;166;Frau;55;52;178;160;2;schwarz;450;25;230;carnivor;nein;3,3;geht so;BW;
+2016;22;161;Frau;54;53;178;175;1;weiss;210;30;220;carnivor;nein;3,3;geht so;BW;
+2016;21;182;Mann;55;50;180;168;1;schwarz;320;9;220;carnivor;ja;3,3;geht so;BW;
+2016;19;172;Frau;44;48;190;168;1;blau;800;40;150;carnivor;nein;3,3;geht so;BW;
+2016;23;180;Mann;53;49;180;170;1;blau;1200;10;100;carnivor;nein;3,3;unzufrieden;BW;
+2016;20;188;Mann;49;52;190;170;2;schwarz;800;7;25;carnivor;nein;3,3;unzufrieden;BW;
+2016;21;164;Frau;58;51;174;160;0;weiss;40;30;400;carnivor;nein;3,5;geht so;BW;
+2016;20;165;Frau;50;48;180;174;2;weiss;550;40;40;carnivor;ja;3,6;geht so;BW;
+2016;25;180;Mann;87;57;170;165;4,5;schwarz;600;15;1200;carnivor;nein;3,7;zufrieden;BW;
+2016;21;173;Mann;70;45;172;155;2;silber;225;12;600;carnivor;nein;3,7;geht so;BW;
+2016;20;188;Mann;52;53;182;163;0;silber;450;11;400;carnivor;nein;3,7;geht so;BW;
+2016;19;192;Mann;53;52;190;170;2;schwarz;160;9;400;carnivor;ja;3,7;unzufrieden;BW;
+2016;22;193;Mann;45;44;185;182;1;schwarz;200;15;350;carnivor;nein;3,7;sehr zufrieden;BW;
+2016;21;171;Frau;49;50;184;165;4;weiss;1000;45;200;carnivor;ja;3,7;geht so;BW;
+2016;22;177;Mann;63;60;170;160;0;schwarz;407;15;200;carnivor;ja;3,7;geht so;BW;
+2016;21;162;Frau;49;47;182;163;2;schwarz;120;20;100;carnivor;nein;3,7;geht so;BW;
+2016;18;175;Mann;57;52;178;165;1;weiss;550;7;80;carnivor;nein;3,7;geht so;BW;
+2016;23;181;Mann;65;52;165;160;1;weiss;600;5;50;carnivor;nein;3,7;geht so;BW;
+2016;27;160;Frau;64;59;168;160;4;schwarz;216;5;0;carnivor;nein;3,7;zufrieden;BW;
+2016;20;170;Frau;52;55;185;170;1;schwarz;300;20;800;carnivor;nein;4,0;unzufrieden;BW;
+2016;19;175;Frau;51;58;186;176;3;weiss;500;12;400;carnivor;ja;4,0;zufrieden;BW;
+2016;18;168;Frau;48;46;185;175;2;silber;500;20;300;carnivor;nein;4,0;geht so;BW;
+2016;20;186;Mann;54;55;184;160;1;schwarz;85;15;300;carnivor;nein;4,0;zufrieden;BW;
+2016;23;175;Mann;55;54;170;155;2;silber;250;6;120;carnivor;nein;4,0;geht so;BW;
+2016;19;176;Mann;47;43;183;158;2;weiss;50;6;100;carnivor;nein;4,0;geht so;BW;
+2016;23;170;Frau;65;63;180;168;2;weiss;240;40;900;carnivor;nein;5,0;;BW;
+2016;22;185;Mann;49;46;182;172;1;schwarz;600;12;650;carnivor;nein;5,0;unzufrieden;BW;
+2016;23;181;Mann;56;56;178;171;1;schwarz;400;23;500;carnivor;nein;5,0;geht so;BW;
+2016;22;158;Frau;52;48;173;163;3,5;weiss;500;40;400;carnivor;nein;5,0;unzufrieden;BW;
+2016;21;171;Frau;54;51;188;160;1;silber;300;40;400;carnivor;nein;5,0;unzufrieden;BW;
+2016;34;165;Frau;62;59;178;162;1;weiss;530;20;390;carnivor;nein;5,0;unzufrieden;BW;
+2016;19;169;Frau;60;55;185;170;1;silber;89;7;305;carnivor;nein;5,0;unzufrieden;BW;
+2016;24;180;Frau;58;52;185;164;0;schwarz;1400;35;300;carnivor;nein;5,0;unzufrieden;BW;
+2016;24;165;Frau;61;54;180;156;3;weiss;1500;20;250;carnivor;ja;5,0;unzufrieden;BW;
+2016;24;173;Mann;56;54;171;165;1;schwarz;65;12;150;carnivor;nein;5,0;geht so;BW;
+2016;25;173;Mann;53;61;182;165;0;schwarz;430;10;150;carnivor;nein;5,0;unzufrieden;BW;
+2016;24;190;Mann;50;49;180;175;1;schwarz;120;18;100;carnivor;nein;5,0;unzufrieden;BW;
+2016;26;175;Mann;50;46;175;166;2;schwarz;350;11;100;carnivor;ja;5,0;unzufrieden;BW;
+2016;18;158;Frau;48;46;170;155;1;weiss;300;6;60;vegetarisch;nein;5,0;unzufrieden;BW;
+2016;26;180;Frau;53;51;185;180;0;rot;410;30;50;carnivor;nein;5,0;unzufrieden;BW;
+2016;19;164;Frau;47;46;175;172;1;silber;780;30;700;carnivor;nein;;;BW;
+2016;21;167;Frau;45;42;181;170;2;weiss;500;45;500;carnivor;nein;;;BW;
+2016;26;167;Frau;55;52;183;163;3;schwarz;700;35;500;vegetarisch;nein;;;BW;
+2016;19;160;Frau;52;54;170;160;1;rot;730;40;400;carnivor;ja;;;BW;
+2016;23;154;Frau;50;42;175;158;2;silber;150;40;400;carnivor;nein;;;BW;
+2016;19;169;Frau;49;46;175;170;2;schwarz;920;50;300;carnivor;nein;;;BW;
+2016;31;185;Mann;56;54;172;175;0;schwarz;180;30;300;carnivor;nein;;;BW;
+2016;23;182;Mann;57;53;180;170;1;schwarz;680;25;300;carnivor;nein;;;BW;
+2016;27;161;Frau;63;58;178;165;2;silber;0;15;300;carnivor;nein;;;BW;
+2016;19;170;Mann;55;50;168;160;2;schwarz;250;20;250;carnivor;nein;;;BW;
+2016;22;182;Mann;56;55;185;171;2;schwarz;380;9;250;carnivor;nein;;;BW;
+2016;21;172;Frau;49;41;178;170;1;blau;600;8;250;pescetarisch;nein;;;BW;
+2016;27;165;Frau;62;54;177;160;2;weiss;120;7;230;carnivor;ja;;geht so;BW;
+2016;23;169;Frau;56;56;183;165;0;weiss;500;43;200;carnivor;nein;;;BW;
+2016;19;169;Frau;50;44;183;165;2;weiss;420;25;200;carnivor;nein;;;BW;
+2016;20;178;Mann;53;50;178;162;1;schwarz;900;10;200;carnivor;nein;;;BW;
+2016;19;166;Frau;49;51;182;167;1;silber;1500;18;195;carnivor;nein;;;BW;
+2016;23;175;Frau;53;49;182;165;2;weiss;420;70;150;carnivor;nein;;;BW;
+2016;24;168;Frau;44;43;182;184;2;schwarz;230;17;100;pescetarisch;ja;;;BW;
+2016;27;168;Frau;51;45;168;170;1,5;gelb;680;15;80;carnivor;ja;;;BW;
+2016;23;189;Mann;57;54;194;173;1;schwarz;1100;11;80;carnivor;ja;;;BW;
+2016;19;172;Frau;49;48;185;159;2;silber;55;11;80;carnivor;nein;;;BW;
+2016;24;187;Mann;58;52;172;180;1;schwarz;240;3;80;carnivor;nein;;;BW;
+2016;22;176;Frau;51;48;170;168;3;weiss;400;16;20;carnivor;nein;;;BW;
+2016;23;178;Mann;65;62;;;1;schwarz;70;16;0;carnivor;nein;;;BW;
+2016;22;185;Mann;45;43;178;170;1;schwarz;35;8;100;carnivor;nein;4,0;unzufrieden;ET;
+2016;19;165;Frau;52;48;182;162;0;weiss;150;40;400;carnivor;nein;1,0;sehr zufrieden;IM;
+2016;19;175;Frau;59;58;172;168;2;weiss;250;25;250;carnivor;nein;1,0;sehr zufrieden;IM;
+2016;19;165;Frau;42;40;182;165;1;schwarz;1400;20;200;carnivor;nein;1,0;sehr zufrieden;IM;
+2016;20;180;Frau;60;58;195;165;0;schwarz;150;30;200;carnivor;nein;1,3;sehr zufrieden;IM;
+2016;19;188;Mann;62;53;180;172;1;schwarz;110;6;50;carnivor;nein;1,7;geht so;IM;
+2016;21;170;Frau;50;49;165;165;1;weiss;400;30;200;pescetarisch;nein;2,0;sehr zufrieden;IM;
+2016;21;175;Frau;62;57;198;163;1;silber;240;35;300;carnivor;ja;2,3;geht so;IM;
+2016;18;186;Mann;55;52;180;170;1;schwarz;240;15;200;carnivor;nein;2,3;sehr zufrieden;IM;
+2016;25;186;Mann;57;54;175;169;1,5;silber;130;9;155;carnivor;ja;2,3;sehr zufrieden;IM;
+2016;25;170;Frau;59;54;180;160;3;weiss;170;25;150;carnivor;nein;2,3;zufrieden;IM;
+2016;24;182;Mann;50;49;179;170;2;silber;750;7;100;carnivor;nein;2,3;sehr zufrieden;IM;
+2016;18;183;Mann;57;50;183;170;3;silber;65;10;70;carnivor;nein;2,3;zufrieden;IM;
+2016;23;180;Mann;54;49;180;170;2;weiss;600;15;500;carnivor;nein;2,7;unzufrieden;IM;
+2016;21;168;Frau;49;46;185;160;3;weiss;2500;50;400;pescetarisch;nein;2,7;geht so;IM;
+2016;20;173;Mann;54;51;180;163;1;schwarz;600;12;350;carnivor;nein;2,7;zufrieden;IM;
+2016;21;190;Mann;60;57;180;176;0;schwarz;1000;10;300;carnivor;nein;2,7;geht so;IM;
+2016;22;179;Mann;49;48;183;170;1;schwarz;250;7;250;carnivor;ja;2,7;geht so;IM;
+2016;20;160;Frau;48;47;180;168;1;schwarz;500;25;200;carnivor;nein;2,7;unzufrieden;IM;
+2016;21;150;Frau;50;46;162;148;0;weiss;400;20;200;carnivor;nein;2,7;geht so;IM;
+2016;19;180;Mann;56;50;180;178;2;weiss;200;10;200;carnivor;nein;2,7;unzufrieden;IM;
+2016;26;168;Frau;62;57;167;174;2;blau;300;40;130;carnivor;nein;2,7;zufrieden;IM;
+2016;19;172;Frau;53;51;182;165;1;weiss;430;10;100;carnivor;nein;2,7;geht so;IM;
+2016;19;166;Frau;54;49;180;158;3;weiss;100;30;500;carnivor;nein;3,0;unzufrieden;IM;
+2016;19;167;Frau;57;55;175;165;1;silber;150;15;400;carnivor;nein;3,0;geht so;IM;
+2016;22;176;Frau;52;52;189;167;1;schwarz;200;35;350;vegetarisch;nein;3,0;geht so;IM;
+2016;20;173;Frau;49;47;183;170;1;schwarz;630;25;300;carnivor;nein;3,0;geht so;IM;
+2016;21;177;Frau;54;51;190;168;3;schwarz;210;7;300;carnivor;nein;3,0;zufrieden;IM;
+2016;23;177;Mann;46;44;174;160;3;weiss;30;10;200;carnivor;nein;3,0;geht so;IM;
+2016;21;163;Frau;75;50;185;168;2;weiss;270;30;150;carnivor;nein;3,0;geht so;IM;
+2016;18;182;Mann;44;40;180;175;1;schwarz;400;12;120;carnivor;ja;3,0;geht so;IM;
+2016;21;168;Frau;72;60;183;160;3;schwarz;400;25;300;carnivor;nein;3,3;zufrieden;IM;
+2016;19;178;Mann;51;50;184;174;1;schwarz;700;10;300;carnivor;nein;3,3;zufrieden;IM;
+2016;20;169;Frau;46;46;178;165;1;weiss;770;20;250;pescetarisch;nein;3,3;geht so;IM;
+2016;19;165;Frau;48;49;180;163;0;schwarz;170;60;200;carnivor;nein;3,3;geht so;IM;
+2016;20;164;Frau;61;54;181;162;1;weiss;200;25;100;carnivor;nein;3,3;geht so;IM;
+2016;21;168;Frau;49;47;180;159;0;silber;600;20;100;carnivor;nein;3,3;geht so;IM;
+2016;19;155;Mann;50;49;165;146;0;schwarz;400;10;100;carnivor;nein;3,3;geht so;IM;
+2016;24;188;Mann;56;54;182;175;2;schwarz;500;8;100;carnivor;nein;3,3;zufrieden;IM;
+2016;19;168;Frau;52;50;190;172;0;weiss;1800;50;400;pescetarisch;nein;3,7;unzufrieden;IM;
+2016;20;175;Mann;54;57;171;164;4;silber;200;12;300;carnivor;nein;3,7;geht so;IM;
+2016;21;164;Frau;49;47;180;158;2;schwarz;130;40;200;vegan;nein;3,7;unzufrieden;IM;
+2016;34;171;Mann;61;59;171;165;1;silber;600;10;120;carnivor;ja;3,7;unzufrieden;IM;
+2016;19;165;Frau;54;54;171;168;2;weiss;500;15;1500;carnivor;nein;4,0;geht so;IM;
+2016;20;165;Frau;55;56;172;175;2;silber;450;30;500;carnivor;nein;4,0;geht so;IM;
+2016;20;170;Frau;58;56;180;170;1;schwarz;600;30;450;carnivor;nein;4,0;unzufrieden;IM;
+2016;26;195;Mann;62;60;204;178;2;schwarz;280;13;350;carnivor;ja;4,0;zufrieden;IM;
+2016;22;190;Mann;49;52;182;172;2;schwarz;30;6;250;carnivor;nein;4,0;geht so;IM;
+2016;24;167;Frau;54;52;190;160;1;weiss;240;40;200;carnivor;nein;4,0;geht so;IM;
+2016;19;176;Frau;51;47;180;170;2;weiss;80;25;120;vegetarisch;nein;4,0;unzufrieden;IM;
+2016;19;178;Mann;54;51;175;168;1;schwarz;370;8;100;carnivor;nein;4,0;unzufrieden;IM;
+2016;20;165;Frau;44;44;183;166;0,5;weiss;980;20;50;pescetarisch;nein;4,0;geht so;IM;
+2016;26;164;Frau;49;47;172;163;1,5;silber;250;80;650;pescetarisch;nein;5,0;unzufrieden;IM;
+2016;22;170;Frau;58;52;177;165;0;weiss;300;40;400;carnivor;nein;5,0;unzufrieden;IM;
+2016;20;184;Mann;46;50;178;169;1;schwarz;370;14;400;carnivor;nein;5,0;unzufrieden;IM;
+2016;24;157;Frau;51;50;175;164;3;schwarz;400;30;250;carnivor;nein;5,0;unzufrieden;IM;
+2016;19;174;Frau;59;54;180;170;1;weiss;1200;15;200;carnivor;nein;5,0;unzufrieden;IM;
+2016;20;170;Mann;50;50;170;167;1;schwarz;550;10;140;carnivor;nein;5,0;unzufrieden;IM;
+2016;24;172;Frau;53;53;178;168;0;weiss;460;40;40;carnivor;ja;5,0;unzufrieden;IM;
+2016;29;165;Frau;68;68;170;160;3;weiss;660;250;2100;carnivor;nein;;;IM;
+2016;29;156;Frau;65;61;169;155;2;schwarz;0;50;800;carnivor;nein;;;IM;
+2016;32;177;Frau;63;59;170;164;1;silber;550;27;700;carnivor;nein;;;IM;
+2016;20;178;Mann;43;43;177;164;2;schwarz;600;9;610;carnivor;ja;;;IM;
+2016;28;160;Frau;58;56;182;158;1;schwarz;1000;40;600;carnivor;nein;;;IM;
+2016;27;175;Frau;53;55;175;164;1;silber;860;25;400;carnivor;nein;;;IM;
+2016;28;165;Frau;56;56;179;162;2;weiss;1200;40;300;carnivor;nein;;;IM;
+2016;23;168;Frau;49;51;170;168;1;weiss;2000;25;300;carnivor;nein;;;IM;
+2016;28;160;Frau;57;50;170;155;2;schwarz;800;20;300;carnivor;nein;;;IM;
+2016;24;170;Mann;57;55;182;164;2;schwarz;450;15;300;carnivor;ja;;;IM;
+2016;22;193;Mann;49;47;190;170;1;schwarz;250;11;200;carnivor;nein;;;IM;
+2016;29;154;Frau;51;47;175;154;3;silber;250;20;150;carnivor;ja;;;IM;
+2016;22;168;Frau;50;50;185;160;2;silber;250;10;150;carnivor;nein;;;IM;
+2016;22;163;Frau;49;50;180;157;1;schwarz;370;6;100;carnivor;nein;;;IM;
+2016;26;173;Mann;55;53;170;165;2;schwarz;480;6;40;carnivor;ja;;;IM;
+2016;21;179;Mann;55;52;177;170;2;silber;300;3;0;carnivor;nein;;;IM;
+2016;26;183;Mann;57;56;181;165;1;schwarz;800;6;150;carnivor;nein;1,0;sehr zufrieden;Inf;
+2016;19;161;Frau;61;60;170;162;4;silber;170;20;100;vegetarisch;nein;1,0;sehr zufrieden;Inf;
+2016;22;184;Mann;56;58;170;168;1;blau;70;7;75;carnivor;nein;1,0;sehr zufrieden;Inf;
+2016;23;181;Mann;45;55;175;165;0;schwarz;30;10;350;carnivor;nein;1,3;sehr zufrieden;Inf;
+2016;23;185;Mann;56;49;175;166;0;blau;84;7;280;carnivor;nein;1,3;sehr zufrieden;Inf;
+2016;24;173;Mann;53;51;169;168;4;schwarz;420;8;120;vegetarisch;ja;1,3;zufrieden;Inf;
+2016;25;178;Mann;57;54;170;170;0;silber;600;8;60;carnivor;nein;1,3;sehr zufrieden;Inf;
+2016;24;193;Mann;58;64;175;165;1;rot;100;3;0;carnivor;nein;1,3;geht so;Inf;
+2016;20;179;Mann;52;48;190;168;2;schwarz;240;7;300;carnivor;nein;1,7;zufrieden;Inf;
+2016;27;190;Mann;56;54;175;175;2;schwarz;240;7;200;carnivor;nein;1,7;zufrieden;Inf;
+2016;20;170;Frau;50;49;185;170;1;weiss;930;19;150;carnivor;nein;1,7;zufrieden;Inf;
+2016;19;185;Mann;53;53;183;160;1;silber;400;7;40;carnivor;nein;2,0;zufrieden;Inf;
+2016;23;179;Mann;51;47;;;2;schwarz;460;5;250;carnivor;ja;2,3;zufrieden;Inf;
+2016;21;185;Mann;52;51;180;165;1;blau;430;22;220;carnivor;nein;2,3;zufrieden;Inf;
+2016;24;176;Mann;55;55;165;164;1;schwarz;90;6;90;carnivor;ja;2,3;sehr zufrieden;Inf;
+2016;36;190;Mann;69;67;180;170;1;weiss;540;6;80;carnivor;ja;2,7;zufrieden;Inf;
+2016;24;185;Mann;59;56;170;170;1;schwarz;4668;17;70;carnivor;ja;2,7;zufrieden;Inf;
+2016;19;198;Mann;59;48;168;175;1;schwarz;310;6;0;pescetarisch;nein;2,7;geht so;Inf;
+2016;19;169;Frau;47;46;180;160;1;silber;400;35;250;pescetarisch;nein;3,0;unzufrieden;Inf;
+2016;23;173;Frau;62;56;190;162;1;schwarz;500;15;100;carnivor;nein;3,0;unzufrieden;Inf;
+2016;30;160;Frau;52;49;;165;2;silber;300;60;100;carnivor;nein;3,3;geht so;Inf;
+2016;21;174;Mann;58;50;165;168;1;weiss;590;4;200;carnivor;nein;3,7;unzufrieden;Inf;
+2016;22;160;Frau;59;55;175;158;1;schwarz;360;20;150;pescetarisch;nein;3,7;unzufrieden;Inf;
+2016;21;180;Mann;52;44;170;165;1;schwarz;300;4;100;vegan;nein;5,0;;Inf;
+2016;22;166;Frau;48;48;178;167;2;schwarz;70;32;90;carnivor;nein;5,0;unzufrieden;Inf;
+2016;20;186;Mann;;44;;170;2;weiss;1500;15;2500;carnivor;nein;;;Inf;
+2016;21;173;Frau;55;47;182;164;2;schwarz;150;26;800;carnivor;nein;;;Inf;
+2016;21;181;Mann;59;41;175;170;2;schwarz;300;7;350;carnivor;nein;;;Inf;
+2016;26;184;Mann;58;55;183;178;2;schwarz;1200;7;240;carnivor;nein;;;Inf;
+2016;26;176;Mann;56;55;170;165;2;schwarz;720;7;220;carnivor;nein;;;Inf;
+2016;30;171;Mann;66;64;180;155;2;schwarz;360;20;200;carnivor;ja;;;Inf;
+2016;28;183;Mann;53;51;178;160;4;blau;770;14;200;carnivor;nein;;;Inf;
+2016;24;186;Mann;54;54;184;167;2;schwarz;360;6;190;carnivor;nein;;;Inf;
+2016;20;187;Mann;51;54;181;164;1;schwarz;325;7;180;carnivor;nein;;;Inf;
+2016;24;180;Mann;56;57;180;170;1;schwarz;1340;15;150;carnivor;nein;;;Inf;
+2016;19;179;Mann;56;53;176;165;1;schwarz;700;6;150;carnivor;ja;;;Inf;
+2016;22;185;Mann;52;51;174;168;2;schwarz;80;8;100;carnivor;ja;;;Inf;
+2016;20;189;Mann;60;60;192;179;2;silber;300;6;100;pescetarisch;nein;;;Inf;
+2016;21;180;Mann;51;47;175;168;1;schwarz;48;2;75;carnivor;nein;;;Inf;
+2016;26;186;Mann;54;53;168;174;1;schwarz;849;5;70;carnivor;nein;;;Inf;
+2016;23;178;Mann;52;50;;;3;schwarz;280;5;70;carnivor;nein;;;Inf;
+2016;27;183;Mann;58;;184;162;1;schwarz;240;5;60;carnivor;nein;;;Inf;
+2016;19;175;Mann;49;45;180;170;2;schwarz;440;2;60;carnivor;nein;;;Inf;
+2016;20;177;Mann;51;50;165;160;1;schwarz;108;2;60;carnivor;nein;;;Inf;
+2016;19;192;Mann;51;52;195;168;1;schwarz;74;3;55;carnivor;nein;;;Inf;
+2016;23;178;Mann;56;49;178;176;3;schwarz;320;3;50;carnivor;nein;;;Inf;
+2016;20;180;Mann;51;50;;;0;schwarz;360;8;40;carnivor;ja;;;Inf;
+2016;21;174;Mann;55;53;;;1;blau;270;3;0;carnivor;nein;;;Inf;
+2016;25;176;Frau;55;49;178;165;3;schwarz;130;33;600;carnivor;ja;1,0;sehr zufrieden;WI;
+2016;27;184;Mann;53;52;190;180;1;schwarz;300;7;400;carnivor;nein;1,0;sehr zufrieden;WI;
+2016;27;170;Mann;54;52;175;162;2;schwarz;1800;10;200;carnivor;nein;1,0;sehr zufrieden;WI;
+2016;18;188;Mann;44;52;183;171;1;schwarz;800;12;150;carnivor;nein;1,0;sehr zufrieden;WI;
+2016;19;179;Mann;48;48;175;170;3;schwarz;700;5;50;carnivor;nein;1,7;sehr zufrieden;WI;
+2016;18;189;Mann;58;49;193;170;1;schwarz;120;15;700;carnivor;ja;2,0;sehr zufrieden;WI;
+2016;21;185;Mann;64;50;182;160;1;silber;200;7;200;carnivor;ja;2,0;sehr zufrieden;WI;
+2016;17;184;Mann;50;46;178;167;1;schwarz;200;8;150;carnivor;nein;2,0;zufrieden;WI;
+2016;20;175;Mann;52;52;172;161;0;schwarz;1200;4;50;carnivor;nein;2,0;sehr zufrieden;WI;
+2016;35;173;Mann;75;70;180;160;6;schwarz;250;25;375;carnivor;nein;2,3;zufrieden;WI;
+2016;20;160;Frau;55;55;185;170;2;weiss;700;30;200;vegetarisch;nein;2,7;geht so;WI;
+2016;30;156;Frau;58;58;165;160;4;rot;500;20;200;carnivor;nein;2,7;zufrieden;WI;
+2016;25;182;Mann;59;54;180;165;1;schwarz;200;5;150;carnivor;ja;2,7;unzufrieden;WI;
+2016;21;180;Mann;48;51;168;160;1;schwarz;400;5;80;carnivor;ja;2,7;geht so;WI;
+2016;25;182;Mann;52;50;190;164;1;schwarz;760;5;30;carnivor;nein;2,7;geht so;WI;
+2016;18;192;Mann;55;51;186;171;1,5;weiss;1000;13;;carnivor;ja;2,7;zufrieden;WI;
+2016;18;173;Frau;49;50;198;170;1;schwarz;1000;45;600;carnivor;nein;3,0;geht so;WI;
+2016;20;180;Mann;57;58;178;165;2;schwarz;1500;10;250;carnivor;ja;3,0;zufrieden;WI;
+2016;21;183;Mann;69;50;175;173;0,5;weiss;300;9;180;carnivor;ja;3,3;unzufrieden;WI;
+2016;23;170;Mann;57;54;170;162;2;weiss;1800;6;160;carnivor;nein;3,3;geht so;WI;
+2016;22;173;Mann;65;63;176;170;3;schwarz;400;10;25;carnivor;ja;3,3;geht so;WI;
+2016;29;164;Frau;55;52;175;155;1;weiss;160;50;500;pescetarisch;ja;3,7;zufrieden;WI;
+2016;23;185;Mann;56;52;185;165;1;schwarz;250;15;200;carnivor;ja;3,7;sehr zufrieden;WI;
+2016;20;172;Frau;58;50;189;170;1;weiss;1500;50;500;carnivor;nein;4,0;unzufrieden;WI;
+2016;19;172;Frau;54;48;184;173;1;weiss;250;25;500;carnivor;ja;4,0;unzufrieden;WI;
+2016;26;196;Mann;60;56;181;173;2;schwarz;2000;15;300;carnivor;nein;4,0;unzufrieden;WI;
+2016;19;175;Frau;58;55;190;165;1;silber;400;35;200;pescetarisch;nein;4,0;geht so;WI;
+2016;22;165;Frau;50;49;177;160;2;schwarz;200;15;200;carnivor;nein;4,0;unzufrieden;WI;
+2016;31;178;Mann;61;58;168;168;4;schwarz;;6;100;carnivor;nein;4,0;unzufrieden;WI;
+2016;21;185;Mann;65;64;193;165;1;weiss;200;2;60;carnivor;nein;4,0;unzufrieden;WI;
+2016;28;175;Mann;56;51;176;180;2;schwarz;180;6;35;carnivor;nein;4,0;unzufrieden;WI;
+2016;27;188;Mann;45;42;183;172;2;schwarz;950;16;700;carnivor;ja;5,0;zufrieden;WI;
+2016;19;180;Mann;59;54;175;170;1;weiss;100;10;250;carnivor;nein;5,0;unzufrieden;WI;
+2016;32;176;Mann;54;56;168;160;1;schwarz;240;8;200;pescetarisch;nein;5,0;zufrieden;WI;
+2016;24;180;Mann;58;57;175;170;1;schwarz;150;8;160;carnivor;nein;5,0;unzufrieden;WI;
+2016;28;166;Frau;51;52;168;174;0;schwarz;460;8;60;pescetarisch;nein;5,0;unzufrieden;WI;
+2016;23;170;Frau;53;48;168;165;1;weiss;1500;30;1000;carnivor;nein;;;WI;
+2016;26;172;Mann;44;49;175;148;1;blau;1850;11;600;carnivor;ja;;;WI;
+2016;19;185;Mann;60;48;183;161;2;silber;950;11;500;carnivor;nein;;;WI;
+2016;20;177;Mann;49;46;175;165;1;schwarz;1000;7;500;carnivor;nein;;;WI;
+2016;23;178;Frau;56;51;185;170;2;silber;800;60;400;carnivor;nein;;;WI;
+2016;27;172;Mann;56;56;164;150;2;schwarz;300;11;250;carnivor;ja;;;WI;
+2016;24;190;Mann;55;52;180;160;2;schwarz;700;8;250;carnivor;ja;;;WI;
+2016;25;186;Mann;62;58;184;172;2;schwarz;440;14;240;carnivor;nein;;;WI;
+2016;26;160;Frau;52;52;178;167;5;weiss;1000;12;220;carnivor;nein;;;WI;
+2016;22;182;Mann;53;52;175;170;1;rot;2500;10;200;carnivor;nein;;;WI;
+2016;23;180;Mann;43;40;175;173;1;schwarz;2000;4;200;carnivor;nein;;;WI;
+2016;25;182;Mann;52;50;;;1;schwarz;230;15;160;carnivor;ja;;;WI;
+2016;20;168;Frau;59;58;173;155;4;silber;400;50;150;carnivor;nein;;;WI;
+2016;20;160;Frau;65;58;175;170;4;schwarz;120;20;150;carnivor;nein;;;WI;
+2016;24;158;Frau;49;49;185;160;3;schwarz;170;12;150;carnivor;nein;;;WI;
+2016;19;162;Frau;48;42;175;163;2;schwarz;30;40;100;carnivor;nein;;;WI;
+2016;21;176;Mann;49;48;175;173;2;weiss;840;8;100;carnivor;nein;;;WI;
+2016;20;169;Frau;55;56;170;168;0;schwarz;560;15;60;carnivor;nein;;;WI;
+2016;19;183;Mann;54;53;177;160;1;schwarz;700;4;60;carnivor;nein;;;WI;
+2016;24;177;Mann;52;48;175;172;1;schwarz;400;4;50;carnivor;ja;;;WI;
+2016;21;184;Mann;44;41;186;175;2;schwarz;300;3;30;carnivor;nein;;;WI;
+2016;28;175;Mann;56;61;;;1;schwarz;300;4;20;carnivor;nein;;;WI;
+2016;19;165;Mann;50;49;180;155;1;silber;240;4;0;carnivor;nein;;;WI;
+2016;24;172;Mann;68;58;;;5;weiss;480;6;250;carnivor;ja;2,0;zufrieden;;
+2016;24;191;Mann;48;50;181;175;0;schwarz;200;12;0;carnivor;nein;3,7;unzufrieden;;
+2016;31;180;Mann;66;58;170;162;1;schwarz;55;7;350;carnivor;ja;;;;
+2016;22;180;Mann;63;50;180;162;2;schwarz;240;3;55;carnivor;nein;;;;
+2017;19;166;Frau;51;50;180;163;0;schwarz;4000;25;300;carnivor;nein;1,0;sehr zufrieden;BW;
+2017;20;164;Frau;62;58;180;170;1,5;weiss;400;15;200;carnivor;nein;1,0;sehr zufrieden;BW;
+2017;20;173;Frau;56;55;;161;3;weiss;20;8;100;carnivor;nein;1,3;sehr zufrieden;BW;
+2017;21;172;Frau;58;56;182;168;3;silber;350;25;100;carnivor;nein;1,7;sehr zufrieden;BW;
+2017;21;172;Frau;58;56;182;168;3;silber;350;25;100;carnivor;nein;1,7;sehr zufrieden;BW;
+2017;20;154;Frau;64;54;170;162;1;weiss;70;15;30;carnivor;nein;1,7;sehr zufrieden;BW;
+2017;20;154;Frau;64;54;170;162;1;weiss;70;15;20;carnivor;nein;1,7;sehr zufrieden;BW;
+2017;26;184;Mann;54;54;186;178;4;schwarz;330;5;0;carnivor;nein;1,7;sehr zufrieden;BW;
+2017;20;173;Frau;50;48;190;180;1;schwarz;500;140;700;carnivor;nein;2,0;sehr zufrieden;BW;
+2017;20;169;Frau;59;50;178;168;1;weiss;84;15;80;vegetarisch;nein;2,0;sehr zufrieden;BW;
+2017;25;171;Frau;63;61;180;170;2;silber;360;5;0;carnivor;ja;2,0;zufrieden;BW;
+2017;22;171;Frau;52;49;175;169;2,5;weiss;320;20;350;carnivor;nein;2,3;geht so;BW;
+2017;20;162;Frau;48;48;186;156;0;weiss;2300;25;300;carnivor;nein;2,3;unzufrieden;BW;
+2017;18;169;Frau;51;53;186;172;2;weiss;120;40;250;carnivor;nein;2,3;zufrieden;BW;
+2017;20;169;Frau;54;52;187;170;2;weiss;360;25;200;carnivor;nein;2,3;zufrieden;BW;
+2017;20;165;Frau;47;49;183;160;1;schwarz;200;16;200;carnivor;nein;2,3;zufrieden;BW;
+2017;22;174;Frau;60;56;180;168;2,5;weiss;300;15;200;carnivor;nein;2,3;geht so;BW;
+2017;18;167;Frau;52;48;180;170;4;schwarz;320;15;150;carnivor;nein;2,7;geht so;BW;
+2017;21;172;Frau;58;53;172;160;1;schwarz;330;35;120;carnivor;nein;2,7;unzufrieden;BW;
+2017;20;165;Frau;63;58;187;170;1;weiss;170;14;120;carnivor;nein;2,7;unzufrieden;BW;
+2017;19;185;Mann;45;45;188;165;2;gelb;500;10;100;carnivor;nein;2,7;unzufrieden;BW;
+2017;25;161;Frau;50;49;;;3;blau;500;7;100;carnivor;nein;2,7;zufrieden;BW;
+2017;22;170;Frau;52;51;180;174;1;weiss;940;30;600;carnivor;nein;3,0;geht so;BW;
+2017;22;178;Mann;56;58;175;165;2;schwarz;500;5;150;carnivor;nein;3,0;zufrieden;BW;
+2017;22;171;Frau;51;49;176;172;3,5;schwarz;200;40;100;carnivor;nein;3,0;unzufrieden;BW;
+2017;19;170;Frau;63;54;186;170;3;schwarz;120;30;300;carnivor;nein;3,3;sehr zufrieden;BW;
+2017;19;180;Frau;58;54;185;170;1;silber;120;30;100;carnivor;nein;3,3;geht so;BW;
+2017;37;185;Frau;63;59;175;164;0;schwarz;0;8;60;carnivor;nein;3,3;zufrieden;BW;
+2017;26;168;Frau;53;49;179;182;3;weiss;400;30;300;carnivor;ja;3,7;sehr zufrieden;BW;
+2017;22;161;Frau;53;53;170;168;1;weiss;180;50;250;carnivor;nein;3,7;zufrieden;BW;
+2017;22;168;Frau;53;51;188;168;1;schwarz;300;20;250;carnivor;nein;3,7;geht so;BW;
+2017;22;174;Frau;52;50;187;168;1;schwarz;116;30;200;carnivor;nein;3,7;geht so;BW;
+2017;23;191;Mann;57;54;200;175;2;schwarz;120;24;550;vegetarisch;nein;4,0;zufrieden;BW;
+2017;20;173;Frau;56;48;194;175;3;weiss;640;30;300;carnivor;ja;4,0;unzufrieden;BW;
+2017;20;185;Frau;46;47;184;174;1;schwarz;106;7;300;carnivor;nein;4,0;zufrieden;BW;
+2017;19;185;Frau;59;48;190;180;1;weiss;240;20;200;carnivor;nein;4,0;unzufrieden;BW;
+2017;19;185;Frau;59;48;190;180;1;weiss;240;20;200;carnivor;nein;4,0;unzufrieden;BW;
+2017;26;176;Frau;55;52;180;172;1;gelb;780;19;200;carnivor;nein;4,0;unzufrieden;BW;
+2017;21;166;Frau;59;56;182;167;1;schwarz;600;19;200;carnivor;ja;4,0;geht so;BW;
+2017;21;177;Frau;59;54;185;168;1;weiss;300;10;120;carnivor;nein;4,0;unzufrieden;BW;
+2017;18;175;Frau;50;45;185;161;1,5;blau;350;16;60;carnivor;nein;4,0;zufrieden;BW;
+2017;22;170;Frau;46;49;185;172;1;weiss;180;15;250;carnivor;nein;4,7;unzufrieden;BW;
+2017;26;170;Frau;43;45;186;170;0,5;weiss;800;80;600;carnivor;nein;5,0;unzufrieden;BW;
+2017;21;176;Frau;52;52;182;165;1;silber;1400;50;600;carnivor;nein;5,0;unzufrieden;BW;
+2017;23;163;Frau;67;63;178;180;0,5;schwarz;1400;45;600;carnivor;nein;5,0;unzufrieden;BW;
+2017;22;170;Frau;64;55;180;171;1;schwarz;110;50;500;carnivor;nein;5,0;unzufrieden;BW;
+2017;21;173;Frau;59;60;185;167;2;schwarz;300;30;250;carnivor;nein;5,0;unzufrieden;BW;
+2017;28;173;Frau;55;58;165;168;1;weiss;160;15;250;carnivor;nein;5,0;unzufrieden;BW;
+2017;23;175;Frau;55;49;186;170;1;weiss;400;50;200;carnivor;nein;5,0;unzufrieden;BW;
+2017;22;160;Frau;44;45;176;162;2;weiss;700;30;200;carnivor;nein;5,0;unzufrieden;BW;
+2017;19;168;Frau;55;50;182;170;0;silber;400;23;200;carnivor;ja;5,0;unzufrieden;BW;
+2017;21;178;Frau;54;50;179;170;1;weiss;84;35;150;carnivor;nein;5,0;unzufrieden;BW;
+2017;19;176;Mann;59;54;180;170;1;rot;8;10;100;carnivor;nein;5,0;unzufrieden;BW;
+2017;21;159;Frau;38;40;181;165;1;schwarz;240;9;100;carnivor;ja;5,0;unzufrieden;BW;
+2017;20;158;Frau;53;50;180;155;2;blau;300;20;50;carnivor;ja;5,0;unzufrieden;BW;
+2017;19;163;Frau;51;42;179;164;1;schwarz;100;13;20;carnivor;nein;5,0;unzufrieden;BW;
+2017;21;176;Frau;48;49;192;164;2;schwarz;840;100;700;carnivor;nein;;;BW;
+2017;23;181;Mann;52;48;180;170;1;gelb;480;75;600;carnivor;nein;;;BW;
+2017;22;167;Frau;45;43;185;172;1;weiss;200;50;500;carnivor;nein;;;BW;
+2017;21;170;Frau;72;62;180;156;0;rot;160;14;300;pescetarisch;nein;;;BW;
+2017;27;168;Frau;50;47;190;166;1;silber;320;55;250;carnivor;nein;;;BW;
+2017;19;165;Frau;42;48;190;164;0,5;schwarz;300;15;250;carnivor;nein;;;BW;
+2017;26;172;Mann;49;45;169;168;1;schwarz;260;5;240;carnivor;nein;;;BW;
+2017;23;183;Mann;52;51;178;174;1;schwarz;720;9;220;carnivor;ja;;;BW;
+2017;21;190;Mann;56;53;189;160;4,5;blau;400;7;200;pescetarisch;nein;;;BW;
+2017;23;195;Mann;68;58;182;176;1;schwarz;80;6;150;carnivor;nein;;;BW;
+2017;18;174;Frau;58;56;170;167;1;schwarz;650;30;120;carnivor;ja;;;BW;
+2017;29;168;Frau;62;46;170;170;1,5;rot;600;10;120;carnivor;ja;;;BW;
+2017;20;167;Frau;52;49;170;153;2;schwarz;200;15;100;carnivor;nein;;;BW;
+2017;21;161;Frau;56;54;;;1;weiss;15;15;100;vegetarisch;nein;;;BW;
+2017;20;175;Mann;49;44;175;165;1;schwarz;100;8;50;carnivor;nein;;;BW;
+2017;22;188;Mann;55;56;188;172;2;schwarz;0;3;50;carnivor;nein;;;BW;
+2017;22;172;Frau;50;50;190;170;1;schwarz;350;20;150;carnivor;nein;;;BW ;
+2017;19;180;Mann;49;46;176;169;1;schwarz;400;6;280;carnivor;nein;1,0;sehr zufrieden;IM;
+2017;19;167;Frau;57;56;175;160;1;schwarz;540;20;400;carnivor;ja;1,3;sehr zufrieden;IM;
+2017;20;175;Mann;50;50;186;170;1;silber;120;3;0;carnivor;nein;1,7;sehr zufrieden;IM;
+2017;19;171;Frau;54;52;178;161;2;silber;480;15;1000;carnivor;nein;2,0;zufrieden;IM;
+2017;19;160;Frau;55;48;180;155;1;silber;450;20;300;carnivor;nein;2,0;sehr zufrieden;IM;
+2017;19;170;Frau;55;51;180;167;3;weiss;60;15;200;vegetarisch;nein;2,0;zufrieden;IM;
+2017;20;177;Mann;49;55;175;171;1;schwarz;360;15;320;carnivor;nein;2,3;sehr zufrieden;IM;
+2017;19;180;Frau;51;49;189;169;1;schwarz;800;50;700;carnivor;nein;2,7;unzufrieden;IM;
+2017;19;165;Frau;50;47;182;166;1;weiss;600;25;300;carnivor;nein;2,7;zufrieden;IM;
+2017;22;175;Frau;49;56;194;175;1;weiss;600;60;150;carnivor;nein;2,7;zufrieden;IM;
+2017;21;171;Frau;55;50;180;168;1;silber;350;20;300;carnivor;nein;3,0;zufrieden;IM;
+2017;19;166;Frau;54;51;175;165;2;schwarz;1000;50;200;carnivor;nein;3,0;geht so;IM;
+2017;21;174;Mann;64;59;160;170;2;schwarz;60;5;200;carnivor;nein;3,0;geht so;IM;
+2017;20;180;Mann;61;51;175;167;1;schwarz;750;5;190;carnivor;nein;3,0;zufrieden;IM;
+2017;18;168;Frau;54;54;178;170;1,5;silber;3,99;12;1910;carnivor;ja;3,3;unzufrieden;IM;
+2017;26;189;Mann;52;49;180;168;1;schwarz;900;12;350;carnivor;ja;3,3;zufrieden;IM;
+2017;21;169;Frau;52;48;180;167;2;weiss;500;50;300;carnivor;nein;3,3;zufrieden;IM;
+2017;24;193;Mann;50;50;188;176;3;schwarz;700;20;300;carnivor;nein;3,3;geht so;IM;
+2017;23;188;Mann;52;49;183;168;1;schwarz;130;15;300;carnivor;nein;3,3;zufrieden;IM;
+2017;22;173;Frau;52;46;191;169;2;weiss;480;20;600;carnivor;nein;3,7;geht so;IM;
+2017;24;162;Frau;55;54;180;156;1;schwarz;108;30;500;carnivor;nein;3,7;unzufrieden;IM;
+2017;19;161;Frau;47;46;184;156;1;silber;90;21;300;carnivor;nein;3,7;zufrieden;IM;
+2017;20;178;Frau;58;55;192;170;0;silber;0;20;200;carnivor;nein;3,7;unzufrieden;IM;
+2017;18;178;Frau;51;51;182;180;1;silber;115;15;100;carnivor;nein;3,7;geht so;IM;
+2017;24;171;Frau;54;53;188;171;0,5;weiss;1520;30;1000;carnivor;ja;4,0;geht so;IM;
+2017;18;170;Frau;55;55;175;162;1;silber;800;20;500;carnivor;nein;4,0;unzufrieden;IM;
+2017;18;170;Frau;55;55;175;162;1;silber;800;20;500;carnivor;nein;4,0;unzufrieden;IM;
+2017;19;168;Frau;59;54;178;170;2;weiss;800;15;500;carnivor;nein;4,0;geht so;IM;
+2017;19;165;Frau;65;51;177;168;1;schwarz;200;40;200;pescetarisch;nein;4,0;geht so;IM;
+2017;18;170;Mann;54;52;170;165;1;schwarz;420;6;150;carnivor;nein;4,0;sehr zufrieden;IM;
+2017;20;170;Mann;54;54;165;160;1;schwarz;150;10;100;carnivor;ja;4,0;zufrieden;IM;
+2017;20;173;Frau;47;47;176;160;1;weiss;840;30;1500;carnivor;ja;5,0;unzufrieden;IM;
+2017;19;159;Frau;47;46;179;164;2;silber;300;50;900;carnivor;nein;5,0;unzufrieden;IM;
+2017;19;164;Frau;50;50;185;157;1;weiss;600;10;350;carnivor;nein;5,0;unzufrieden;IM;
+2017;22;178;Mann;60;58;179;163;1;schwarz;135;10;350;carnivor;nein;5,0;unzufrieden;IM;
+2017;22;175;Frau;58;57;177;165;2;schwarz;500;20;300;carnivor;nein;5,0;unzufrieden;IM;
+2017;22;175;Frau;58;57;177;165;2;schwarz;500;20;300;carnivor;nein;5,0;unzufrieden;IM;
+2017;20;174;Mann;62;54;175;165;1;schwarz;400;8;220;vegetarisch;nein;5,0;unzufrieden;IM;
+2017;24;160;Frau;59;50;180;170;2;schwarz;200;60;200;pescetarisch;nein;5,0;unzufrieden;IM;
+2017;20;174;Frau;50;48;180;173;2;silber;810;25;200;carnivor;nein;5,0;unzufrieden;IM;
+2017;20;167;Frau;49;43;180;170;1;schwarz;240;15;200;carnivor;nein;5,0;unzufrieden;IM;
+2017;19;178;Mann;59;58;177;165;1;schwarz;480;6;150;carnivor;nein;5,0;unzufrieden;IM;
+2017;21;178;Frau;56;56;173;165;1;schwarz;1000;4;80;carnivor;nein;5,0;unzufrieden;IM;
+2017;20;178;Frau;47;48;180;172;0;schwarz;1400;25;700;carnivor;nein;;;IM;
+2017;22;170;Frau;48;46;179;168;2;silber;900;20;500;carnivor;ja;;;IM;
+2017;20;166;Frau;65;54;168;173;2;weiss;700;40;400;pescetarisch;nein;;;IM;
+2017;20;168;Frau;49;44;172;157;1;silber;150;25;400;carnivor;nein;;;IM;
+2017;21;186;Mann;48;48;178;172;1;schwarz;800;5;250;carnivor;ja;;;IM;
+2017;21;158;Frau;52;48;171;170;1;schwarz;240;40;200;carnivor;nein;;;IM;
+2017;19;174;Frau;55;51;182;168;0;schwarz;400;10;200;carnivor;nein;;;IM;
+2017;19;176;Mann;57;54;175;165;1;schwarz;400;5;200;carnivor;ja;;;IM;
+2017;20;162;Frau;52;53;178;157;2;schwarz;160;10;0;carnivor;nein;;;IM;
+2017;21;164;Frau;55;56;180;170;1,5;schwarz;100;10;0;vegetarisch;nein;2,7;zufrieden;IM ;
+2017;20;167;Frau;55;51;182;166;0;silber;550;5;400;carnivor;nein;3,0;zufrieden;IM ;
+2017;18;170;Frau;62;54;184;164;3,5;weiss;650;11;600;carnivor;nein;4,0;zufrieden;IM ;
+2017;25;182;Mann;80;70;183;175;6;blau;500;5;500;carnivor;nein;1,7;zufrieden;Inf;
+2017;25;182;Mann;80;70;183;175;6;blau;500;5;300;carnivor;nein;1,7;zufrieden;Inf;
+2017;22;187;Mann;62;55;174;173;4;blau;150;7;0;carnivor;nein;2,0;zufrieden;Inf;
+2017;22;187;Mann;62;55;174;173;4;blau;150;7;0;carnivor;nein;2,0;zufrieden;Inf;
+2017;23;178;Mann;60;58;174;172;0;schwarz;140;4;0;carnivor;ja;2,3;zufrieden;Inf;
+2017;23;178;Mann;60;58;174;172;0;schwarz;140;4;0;carnivor;ja;2,3;zufrieden;Inf;
+2017;31;160;Frau;52;50;180;165;2;silber;300;50;500;carnivor;nein;3,0;geht so;Inf;
+2017;23;156;Frau;60;54;178;154;1;weiss;274;20;300;pescetarisch;nein;3,7;zufrieden;Inf;
+2017;25;191;Mann;49;51;180;175;0;schwarz;300;10;200;carnivor;nein;3,7;geht so;Inf;
+2017;22;172;Frau;57;48;188;169;1;weiss;350;55;1110;carnivor;nein;1,0;sehr zufrieden;WI;
+2017;26;176;Frau;57;50;182;160;3;schwarz;150;40;500;carnivor;ja;1,0;sehr zufrieden;WI;
+2017;21;186;Mann;49;47;173;168;2;silber;560;8;220;carnivor;nein;1,0;sehr zufrieden;WI;
+2017;21;191;Mann;53;51;181;186;2;weiss;80;9;120;carnivor;ja;1,0;sehr zufrieden;WI;
+2017;21;182;Mann;52;53;175;165;1;schwarz;120;7;200;carnivor;nein;1,3;sehr zufrieden;WI;
+2017;19;160;Frau;48;47;168;175;1;schwarz;540;20;150;carnivor;nein;1,3;sehr zufrieden;WI;
+2017;27;175;Mann;70;64;;;1;schwarz;120;10;40;carnivor;nein;1,3;sehr zufrieden;WI;
+2017;22;172;Frau;60;58;166;168;4;weiss;350;25;250;carnivor;nein;1,7;sehr zufrieden;WI;
+2017;23;178;Mann;49;48;181;162;2;schwarz;180;8;200;carnivor;nein;1,7;sehr zufrieden;WI;
+2017;19;179;Mann;51;46;176;169;1;schwarz;1000;3;120;carnivor;nein;1,7;sehr zufrieden;WI;
+2017;22;169;Frau;49;48;175;163;2;schwarz;162;50;600;carnivor;nein;2,0;sehr zufrieden;WI;
+2017;31;156;Frau;59;59;165;160;5;blau;500;50;2000;carnivor;nein;2,3;zufrieden;WI;
+2017;20;189;Mann;58;59;157;170;1;silber;0;9;180;carnivor;nein;2,3;zufrieden;WI;
+2017;20;188;Mann;54;54;190;164;2;schwarz;260;5;100;carnivor;nein;2,3;zufrieden;WI;
+2017;20;185;Mann;60;48;183;169;2;schwarz;3000;12;300;carnivor;nein;2,7;zufrieden;WI;
+2017;24;178;Frau;65;58;175;165;2;schwarz;700;80;200;carnivor;nein;2,7;geht so;WI;
+2017;23;172;Mann;49;51;182;155;1;schwarz;200;7;150;carnivor;nein;2,7;unzufrieden;WI;
+2017;37;170;Mann;69;64;175;172;3;schwarz;220;9;200;carnivor;ja;3,0;geht so;WI;
+2017;19;183;Mann;58;55;179;173;1;schwarz;520;5;150;carnivor;nein;3,0;geht so;WI;
+2017;21;173;Frau;55;54;178;165;1;schwarz;800;40;500;carnivor;ja;3,3;geht so;WI;
+2017;25;180;Mann;61;59;166;162;1;silber;500;12;500;carnivor;ja;3,3;zufrieden;WI;
+2017;22;164;Frau;51;48;192;165;1;weiss;300;10;150;carnivor;nein;3,3;unzufrieden;WI;
+2017;25;181;Mann;55;53;183;160;0;schwarz;1900;5;120;carnivor;nein;3,3;zufrieden;WI;
+2017;30;183;Mann;57;55;186;163;1,5;schwarz;550;10;80;carnivor;nein;3,3;sehr zufrieden;WI;
+2017;19;172;Mann;43;41;184;167;1;schwarz;130;5;2;carnivor;nein;3,3;geht so;WI;
+2017;19;170;Frau;43;42;180;168;2;weiss;500;30;500;vegetarisch;nein;3,7;unzufrieden;WI;
+2017;30;164;Frau;56;53;170;150;1;weiss;150;40;300;pescetarisch;ja;3,7;unzufrieden;WI;
+2017;19;168;Frau;61;58;178;165;1;weiss;1200;30;250;carnivor;nein;3,7;geht so;WI;
+2017;25;167;Frau;45;48;180;165;1;schwarz;500;30;1000;carnivor;nein;4,0;geht so;WI;
+2017;21;168;Frau;59;58;176;166;4;schwarz;1000;25;590;carnivor;nein;4,0;unzufrieden;WI;
+2017;23;175;Mann;50;47;175;157;2;schwarz;50;50;50;carnivor;ja;4,0;geht so;WI;
+2017;30;183;Mann;60;61;180;165;2;silber;48;4;60;carnivor;ja;5,0;unzufrieden;WI;
+2017;24;165;Frau;70;62;170;167;8;silber;500;35;500;carnivor;nein;;;WI;
+2017;20;168;Frau;56;57;188;155;1;schwarz;200;40;400;carnivor;ja;;;WI;
+2017;20;183;Mann;57;53;179;171;2,5;schwarz;1500;9;300;carnivor;nein;;;WI;
+2017;22;180;Mann;55;45;180;170;1;schwarz;100;5;300;carnivor;nein;;;WI;
+2017;23;190;Mann;60;53;185;165;2;schwarz;2073;10;270;carnivor;nein;;;WI;
+2017;22;160;Frau;49;46;170;150;1;weiss;360;35;250;carnivor;nein;;;WI;
+2017;23;167;Frau;57;53;180;165;1;weiss;500;30;250;carnivor;ja;;;WI;
+2017;21;184;Mann;57;47;180;176;3;schwarz;3500;8;250;fruktarisch;nein;;;WI;
+2017;19;185;Mann;47;45;190;175;0;schwarz;420;3;250;carnivor;nein;;;WI;
+2017;25;182;Mann;60;51;162;167;1;blau;180;10;200;carnivor;ja;;;WI;
+2017;23;188;Mann;51;48;175;168;1;schwarz;400;5;180;carnivor;nein;;;WI;
+2017;18;173;Mann;48;45;183;164;1;weiss;450;7;150;carnivor;ja;;;WI;
+2017;23;185;Mann;53;51;178;170;1;schwarz;360;7;150;carnivor;ja;;;WI;
+2017;25;184;Mann;52;49;190;165;1;weiss;250;5;150;carnivor;nein;;;WI;
+2017;25;166;Mann;55;50;182;160;0;silber;100;3;120;carnivor;nein;;;WI;
+2017;21;186;Mann;52;51;178;173;0,5;schwarz;660;12;95;carnivor;nein;;;WI;
+2017;19;174;Mann;52;52;172;164;1;schwarz;0;5;50;vegetarisch;nein;;;WI;
+2017;23;172;Mann;60;59;169;165;1;schwarz;96;7;0;carnivor;nein;;;WI;
+2017;23;172;Mann;60;59;169;165;1;schwarz;96;7;0;carnivor;nein;;;WI;
+2017;27;160;Frau;53;53;;;5;silber;700;9;120;carnivor;nein;3,3;zufrieden;WI ;
+2017;22;184;Mann;60;52;170;170;1;silber;200;9;40;carnivor;nein;;;;
+2017;21;168;Frau;55;53;172;168;1;schwarz;800;30;350;carnivor;nein;1,0;sehr zufrieden;BW;
+2017;21;173;Frau;57;52;182;170;3;silber;800;15;200;carnivor;nein;1,0;sehr zufrieden;BW;
+2017;21;163;Frau;50;45;178;160;1;gelb;400;15;100;pescetarisch;nein;1,0;sehr zufrieden;BW;
+2017;25;183;Mann;61;58;182;170;2;schwarz;800;10;200;carnivor;nein;1,3;geht so;BW;
+2017;27;185;Mann;52;52;180;175;4;schwarz;1000;20;200;carnivor;ja;2,0;zufrieden;BW;
+2017;19;176;Mann;49;46;181;164;1;schwarz;300;6;120;carnivor;ja;2,0;sehr zufrieden;BW;
+2017;24;175;Mann;65;62;170;174;2;weiss;130;22;700;carnivor;nein;2,3;zufrieden;BW;
+2017;21;174;Mann;55;53;172;160;3;schwarz;150;15;500;carnivor;nein;2,7;zufrieden;BW;
+2017;19;191;Mann;51;53;192;171;1;schwarz;150;15;400;carnivor;nein;2,7;geht so;BW;
+2017;24;160;Frau;58;57;180;165;2;weiss;400;40;200;carnivor;nein;2,7;sehr zufrieden;BW;
+2017;21;152;Frau;55;49;165;163;2,5;weiss;300;20;150;carnivor;ja;2,7;zufrieden;BW;
+2017;24;176;Frau;48;43;184;165;1;schwarz;560;45;540;carnivor;nein;3,0;unzufrieden;BW;
+2017;21;175;Frau;50;49;190;165;0;weiss;600;30;300;carnivor;nein;3,0;sehr zufrieden;BW;
+2017;19;164;Frau;48;50;187;160;1;weiss;120;30;200;carnivor;ja;3,0;geht so;BW;
+2017;22;190;Mann;57;59;180;172;0;schwarz;150;9;80;carnivor;nein;3,3;geht so;BW;
+2017;21;175;Frau;58;54;190;174;1;schwarz;1500;50;1500;carnivor;ja;3,7;geht so;BW;
+2017;21;177;Mann;53;55;175;160;1;schwarz;900;19;600;carnivor;nein;3,7;unzufrieden;BW;
+2017;24;172;Mann;54;52;168;163;1;schwarz;180;8;120;carnivor;nein;3,7;unzufrieden;BW;
+2017;20;180;Frau;56;60;185;168;1,5;weiss;550;4;60;pescetarisch;ja;3,7;sehr zufrieden;BW;
+2017;22;179;Mann;49;45;178;170;2;schwarz;600;4;50;carnivor;nein;3,7;geht so;BW;
+2017;19;186;Mann;50;53;189;165;0,5;schwarz;900;15;500;carnivor;nein;4,0;geht so;BW;
+2017;19;178;Mann;51;46;180;174;1;schwarz;300;11;400;carnivor;ja;4,0;unzufrieden;BW;
+2017;19;170;Frau;55;56;184;160;1;weiss;100;10;70;carnivor;nein;4,0;zufrieden;BW;
+2017;21;180;Frau;52;55;193;175;1;weiss;1100;35;3500;vegetarisch;ja;5,0;unzufrieden;BW;
+2017;25;183;Mann;59;56;180;165;1;weiss;5000;30;1000;carnivor;ja;5,0;unzufrieden;BW;
+2017;21;191;Mann;58;54;184;170;1;schwarz;120;10;719;carnivor;nein;5,0;unzufrieden;BW;
+2017;21;158;Frau;48;47;180;170;2;weiss;240;40;600;carnivor;ja;5,0;unzufrieden;BW;
+2017;19;179;Mann;60;43;181;165;3;schwarz;420;12;400;carnivor;nein;5,0;unzufrieden;BW;
+2017;22;181;Mann;60;50;184;175;1;schwarz;370;11;230;carnivor;ja;5,0;unzufrieden;BW;
+2017;20;157;Frau;50;48;170;160;1;schwarz;350;7;150;carnivor;ja;5,0;unzufrieden;BW;
+2017;20;184;Mann;48;45;184;172;1,5;schwarz;540;8;130;carnivor;nein;5,0;unzufrieden;BW;
+2017;24;185;Mann;63;63;185;170;2;schwarz;360;4;100;carnivor;nein;5,0;geht so;BW;
+2017;21;187;Mann;50;50;184;174;1;schwarz;480;6;50;carnivor;nein;5,0;unzufrieden;BW;
+2017;22;178;Mann;59;57;178;160;0;schwarz;550;9;0;carnivor;nein;5,0;unzufrieden;BW;
+2017;23;185;Mann;56;55;185;165;1;schwarz;400;5;400;carnivor;ja;;;BW;
+2017;22;181;Mann;54;52;180;164;1;schwarz;300;10;370;carnivor;nein;;;BW;
+2017;24;195;Mann;60;56;173;178;2;schwarz;100;5;300;carnivor;nein;;;BW;
+2017;21;164;Frau;55;51;185;170;0,5;weiss;660;30;100;carnivor;nein;;;BW;
+2017;32;172;Mann;55;55;;;0;schwarz;350;10;0;carnivor;nein;;;BW;
+2017;19;176;Frau;54;49;192;160;1;weiﬂ;90;17;310;carnivor;nein;1,0;sehr zufrieden;IM;
+2017;18;173;Frau;48;47;182;168;1;weiﬂ;80;12;150;vegetarisch;ja;1,0;sehr zufrieden;IM;
+2017;20;173;Frau;51;52;184;171;0;schwarz;20;20;50;carnivor;nein;1,0;sehr zufrieden;IM;
+2017;22;165;Frau;52;50;175;166;1;weiﬂ;800;15;200;carnivor;nein;1,7;sehr zufrieden;IM;
+2017;20;175;Mann;57;55;183;170;1;schwarz;60;5;120;carnivor;nein;2,7;zufrieden;IM;
+2017;22;187;Mann;48;45;186;172;2;schwarz;500;17;600;carnivor;nein;3,0;geht so;IM;
+2017;20;171;Frau;47;42;185;180;3,5;schwarz;550;50;120;carnivor;nein;3,0;sehr zufrieden;IM;
+2017;19;183;Frau;49;48;191;168;1;schwarz;700;17;250;carnivor;ja;3,3;geht so;IM;
+2017;19;173;Frau;52;50;178;170;2;schwarz;120;15;500;carnivor;ja;3,7;unzufrieden;IM;
+2017;23;183;Mann;62;52;184;172;1;schwarz;120;15;310;vegan;ja;4,0;geht so;IM;
+2017;19;174;Frau;42;44;189;172;1;silber;300;90;200;carnivor;nein;4,0;unzufrieden;IM;
+2017;24;191;Mann;56;51;185;178;1;schwarz;550;28;550;carnivor;ja;5,0;unzufrieden;IM;
+2017;24;184;Mann;52;50;180;166;1;schwarz;400;4;300;fruktarisch;ja;5,0;unzufrieden;IM;
+2017;20;173;Frau;51;51;185;175;1;weiss;300;12;200;carnivor;nein;5,0;unzufrieden;IM;
+2017;23;176;Mann;54;56;185;158;3,5;blau;300;10;150;carnivor;nein;5,0;unzufrieden;IM;
+2017;23;184;Frau;59;56;188;180;2;schwarz;336;30;90;carnivor;ja;5,0;unzufrieden;IM;
+2017;19;179;Frau;52;46;180;162;1;schwarz;300;9;20;carnivor;nein;5,0;geht so;IM;
+2017;26;178;Frau;58;57;185;168;1;silber;780;27;300;carnivor;nein;;;IM;
+2017;19;175;Mann;55;48;170;165;1;schwarz;940;11;300;carnivor;ja;;;IM;
+2017;22;172;Mann;52;51;171;164;1;schwarz;500;10;250;carnivor;ja;;;IM;
+2017;24;174;Frau;52;54;172;169;2;silber;740;12;150;carnivor;ja;;;IM;
+2017;29;183;Mann;61;60;179;166;1;schwarz;140;15;130;carnivor;nein;;;IM;
+2017;20;162;Frau;50;48;181;158;2;schwarz;420;70;80;vegetarisch;nein;;;IM;
+2017;20;180;Mann;46;44;182;170;5;rot;15;3;100;carnivor;nein;2,0;geht so;WI;
+2017;24;179;Mann;68;49;176;158;0,5;schwarz;195;10;300;carnivor;nein;3,0;sehr zufrieden;WI;
+2017;28;195;Mann;54;52;182;175;2;schwarz;0;1;0;pescetarisch;nein;3,0;geht so;WI;
+2017;19;181;Frau;58;55;181;162;1;silber;200;70;600;carnivor;nein;4,0;sehr zufrieden;WI;
+2017;23;178;Mann;46;47;176;170;0;schwarz;1200;11;200;carnivor;nein;4,0;geht so;WI;
+2017;23;188;Mann;53;52;184;170;4;schwarz;165;4;40;carnivor;ja;4,0;geht so;WI;
+2017;21;175;Mann;54;50;178;169;1;weiss;150;6;350;carnivor;nein;5,0;unzufrieden;WI;
+2017;20;181;Mann;55;50;175;171;1;rot;360;10;200;carnivor;ja;5,0;unzufrieden;WI;
+2017;18;186;Mann;50;49;189;172;1;schwarz;150;11;90;carnivor;nein;5,0;unzufrieden;WI;
+2017;21;174;Frau;51;46;181;164;1;weiss;800;30;1800;carnivor;ja;;;WI;
+2017;23;181;Mann;55;56;180;176;2;silber;200;120;600;carnivor;ja;;;WI;
+2017;25;173;Frau;52;46;189;168;0;weiss;800;30;300;carnivor;ja;;;WI;
+2017;26;176;Mann;70;59;172;165;1;schwarz;816;8;300;carnivor;ja;;;WI;
+2017;19;192;Mann;54;51;190;172;1;weiss;300;4;300;carnivor;nein;;;WI;
+2017;25;186;Mann;64;60;182;172;2;weiss;500;20;200;carnivor;nein;;;WI;
+2017;21;189;Mann;49;47;180;175;3;schwarz;2000;4;100;carnivor;ja;;;WI;
+2017;19;174;Mann;54;52;175;170;4;gelb;40;4;80;carnivor;nein;;;WI;
+2018;21;191;Mann;49;41;188;179;2,5;schwarz;240;10;150;carnivor;nein;2,3;zufrieden;IM;1
+2018;20;172;Frau;52;48;189;155;1;schwarz;180;10;100;carnivor;ja;3;geht so;IM;1
+2018;20;164;Frau;58;54;175;175;1,5;schwarz;150;10;120;carnivor;ja;1,3;sehr zufrieden;BW;1
+2018;21;180;Mann;63;59;174;168;1;schwarz;408;7;150;carnivor;ja;3,7;geht so;IM;1
+2018;20;167;Frau;48;50;182;175;3;weiss;1260;20;500;vegetarisch;nein;3,3;zufrieden;IM;1
+2018;21;167;Frau;60;55;181;170;1;schwarz;1850;20;500;pescetarisch;nein;;;IM;1
+2018;20;193;Mann;57;54;185;174;1;schwarz;1750;9;200;carnivor;nein;5;unzufrieden;IM;1
+2018;24;180;Mann;52;50;185;171;1;schwarz;420;2;100;carnivor;ja;5;sehr zufrieden;IM;2
+2018;19;180;Frau;48;53;190;169;1;schwarz;100;5;50;vegan;nein;3;zufrieden;IM;2
+2018;18;172;Frau;43;39;175;168;1;weiss;1300;50;600;carnivor;ja;4;geht so;BW;2
+2018;24;169;Frau;53;55;188;169;4;weiss;800;35;450;carnivor;ja;5;unzufrieden;BW;2
+2018;20;182;Mann;48;47;184;169;2;schwarz;2000;5;65;carnivor;nein;;;IM;2
+2018;23;151;Frau;60;49;165;155;1;blau;150;10;100;carnivor;nein;2,7;unzufrieden;IM;3
+2018;19;171;Frau;52;52;183;165;0,5;schwarz;1200;15;350;vegetarisch;ja;2;unzufrieden;IM;3
+2018;19;180;Mann;50;48;185;165;1;silber;500;7;200;carnivor;nein;4;zufrieden;IM;4
+2018;24;175;Mann;52;49;178;165;1;blau;95,88;12;59,99;carnivor;nein;5;unzufrieden;BW;4
+2018;24;172;Frau;55;52;185;172;1;schwarz;300;40;500;carnivor;ja;2;sehr zufrieden;BW;4
+2018;29;161;Frau;57;54;175;165;2;weiss;300;50;300;carnivor;ja;;;BW;4
+2018;21;173;Frau;49;48;187;168;1;schwarz;350;15;200;carnivor;ja;;;BW;4
+2018;20;172;Frau;54;51;185;182;3;weiss;200;20;200;carnivor;nein;3,3;geht so;BW;4
+2018;19;165;Frau;65;55;172;177;2;schwarz;800;30;400;carnivor;nein;5;geht so;IM;5
+2018;22;173;Frau;65;63;193;172;0;schwarz;600;20;500;carnivor;nein;5;unzufrieden;BW;5
+2018;19;164;Frau;60;56;175;168;0,5;silber;900;50;600;carnivor;nein;2,7;zufrieden;BW;5
+2018;21;164;Frau;50;49;185;160;1;silber;1200;50;600;carnivor;nein;3,7;geht so;BW;5
+2018;19;168;Frau;54;51;178;168;1,5;silber;700;50;500;carnivor;nein;3,7;geht so;BW;5
+2018;20;185;Frau;53;53;190;183;0;silber;150;25;100;vegan;nein;3,7;geht so;IM;5
+2018;20;162;Frau;52;45;183;163;1;blau;96;8;0;vegetarisch;nein;3;unzufrieden;IM;5
+2018;19;163;Frau;54;58;190;155;2;weiss;130;15;160;carnivor;nein;4;unzufrieden;IM;5
+2018;25;158;Frau;64;56;180;160;1;schwarz;900;30;150;carnivor;nein;1,3;sehr zufrieden;IM;5
+2018;19;168;Frau;57;52;181;168;1;schwarz;120;15;80;pescetarisch;nein;4;geht so;BW;5
+2018;26;168;Frau;56;54;185;168;2;schwarz;200;20;300;vegetarisch;nein;5;unzufrieden;IM;6
+2018;21;171;Frau;72;50;175;160;1,5;weiss;1000;20;100;vegetarisch;nein;4;zufrieden;IM;6
+2018;21;164;Frau;58;55;174;160;2;schwarz;240;17;150;carnivor;nein;3;geht so;IM;6
+2018;20;175;Frau;46;47;178;158;1;silber;500;20;150;carnivor;nein;1,3;sehr zufrieden;IM;6
+2018;23;165;Frau;55;50;177;175;1;schwarz;700;46;370;carnivor;nein;;;BW;6
+2018;18;166;Frau;58;54;177;160;1,5;silber;300;25;300;vegan;nein;2,3;geht so;IM;6
+2018;18;164;Frau;57;49;180;164;2;weiss;200;22;100;carnivor;nein;3,3;geht so;IM;6
+2018;22;165;Frau;59;55;180;165;0;weiss;750;20;120;carnivor;nein;5;unzufrieden;IM;6
+2018;19;160;Frau;50;49;175;165;1;schwarz;1200;19;150;carnivor;nein;3,3;zufrieden;IM;6
+2018;21;165;Frau;55;51;187;161;1;schwarz;100;25;80;carnivor;nein;2,3;zufrieden;BW;6
+2018;20;193;Mann;56;49;186;178;1;schwarz;2300;5;350;carnivor;ja;;;BW;7
+2018;22;178;Mann;51;48;180;160;1;schwarz;550;8;200;carnivor;nein;2;sehr zufrieden;BW;7
+2018;18;182;Mann;54;52;178;169;2;schwarz;1500;9;400;carnivor;ja;;;BW;7
+2018;22;172;Mann;60;56;175;165;1;schwarz;200;8;120;carnivor;ja;3,7;geht so;BW;7
+2018;20;178;Frau;55;45;190;170;0;silber;100;22;400;carnivor;nein;;;BW;7
+2018;20;175;Mann;58;61;175;165;0;weiss;10;8;50;carnivor;nein;5;unzufrieden;BW;7
+2018;22;188;Mann;49;54;191;163;0;schwarz;250;9;170;carnivor;nein;5;unzufrieden;BW;7
+2018;25;168;Frau;60;57;182;168;2;schwarz;200;20;400;carnivor;ja;;;BW;7
+2018;18;175;Mann;52;52;180;165;1;schwarz;250;9;150;carnivor;nein;2,7;zufrieden;BW;7
+2018;19;167;Frau;73;60;170;160;1;weiss;1200;21;400;carnivor;ja;5;unzufrieden;IM;7
+2018;24;183;Mann;58;55;176;162;2;weiss;100;5;200;carnivor;nein;;;IM;8
+2018;21;185;Mann;56;54;180;160;2;schwarz;800;5;100;carnivor;nein;5;unzufrieden;IM;8
+2018;24;183;Mann;57;54;180;165;2;silber;400;7;250;carnivor;ja;4;zufrieden;IM;8
+2018;19;163;Frau;45;42;183;165;0;silber;300;20;100;carnivor;ja;5;unzufrieden;BW;8
+2018;19;164;Frau;50;49;185;173;0;silber;300;11;150;carnivor;nein;5;unzufrieden;BW;8
+2018;16;178;Mann;48;48;180;170;2;schwarz;500;15;300;carnivor;ja;3;zufrieden;IM;8
+2018;24;161;Frau;69;58;180;165;1;weiss;600;30;200;carnivor;ja;5;unzufrieden;BW;8
+2018;19;169;Frau;53;55;184;171;1;schwarz;1000;17;800;carnivor;nein;3,7;geht so;BW;8
+2018;20;179;Mann;52;51;182;166;2;schwarz;900;5;80;carnivor;nein;5;unzufrieden;BW;8
+2018;23;183;Mann;56;52;181;172;2;schwarz;250;25;400;carnivor;ja;5;geht so;BW;15
+2018;28;165;Mann;59;60;170;160;1;blau;84;12;0;carnivor;ja;4;sehr zufrieden;BW;15
+2018;23;180;Frau;59;53;189;171;1;schwarz;240;17;0;carnivor;ja;5;geht so;BW;15
+2018;21;190;Mann;56;49;176;170;0;schwarz;1500;20;500;carnivor;nein;;;BW;15
+2018;22;177;Mann;50;44;177;165;0;silber;2000;20;400;carnivor;nein;4;geht so;BW;15
+2018;18;162;Frau;48;47;179;163;2;schwarz;460;10;560;carnivor;nein;4;geht so;BW;15
+2018;20;169;Frau;45;44;182;164;1;schwarz;400;11;250;carnivor;nein;3,3;zufrieden;BW;15
+2018;20;185;Mann;54;49;182;170;1;schwarz;150;12;150;carnivor;nein;2,7;geht so;BW;15
+2018;23;188;Mann;45;44;183;173;1;silber;210;11;270;carnivor;nein;1,7;sehr zufrieden;BW;15
+2018;21;174;Mann;50;53;168;168;1,5;schwarz;140;11;60;vegetarisch;nein;;;IM;15
+2018;20;169;Frau;51;51;180;155;1;weiss;120;15;150;carnivor;nein;2;sehr zufrieden;IM;16
+2018;27;178;Frau;59;58;182;168;1;weiss;600;16;250;carnivor;nein;;;IM;16
+2018;21;174;Frau;52;53;183;171;0;schwarz;200;20;200;carnivor;nein;3,3;sehr zufrieden;IM;16
+2018;23;164;Frau;70;65;182;168;6;schwarz;100;18;100;carnivor;nein;4;geht so;IM;16
+2018;20;182;Mann;55;53;188;164;2,5;weiss;137;6;50;carnivor;nein;2,3;sehr zufrieden;IM;16
+2018;19;177;Mann;59;54;172;174;2;schwarz;250;2;100;carnivor;ja;4;geht so;IM;16
+2018;21;157;Frau;54;55;180;163;1;weiss;420;20;100;carnivor;ja;4;zufrieden;IM;16
+2018;21;164;Frau;47;50;178;170;0;schwarz;825;10;60;carnivor;nein;;;IM;16
+2018;33;170;Mann;60;52;170;155;3;schwarz;150;5;50;carnivor;nein;;;IM;16
+2018;23;167;Frau;55;58;185;157;1;schwarz;360;22;225;carnivor;nein;3,7;zufrieden;BW;17
+2018;25;179;Mann;63;55;170;172;1;schwarz;840;11;80;carnivor;nein;3,7;sehr zufrieden;BW;17
+2018;20;176;Mann;59;49;179;165;2;schwarz;900;9;140;carnivor;nein;2;sehr zufrieden;BW;17
+2018;18;178;Mann;51;48;185;162;1;schwarz;170;7;120;carnivor;nein;2;sehr zufrieden;BW;17
+2018;22;180;Mann;58;56;181;160;1;schwarz;120;8;110;carnivor;nein;5;unzufrieden;BW;17
+2018;19;182;Mann;59;57;181;160;1;silber;650;7;150;carnivor;nein;5;unzufrieden;BW;17
+2018;20;177;Mann;54;53;175;167;1;schwarz;2500;4;100;carnivor;ja;5;unzufrieden;BW;17
+2018;22;179;Mann;50;45;182;168;2,5;schwarz;450;17;700;carnivor;ja;;;BW;17
+2018;21;179;Mann;53;51;183;178;1,5;schwarz;1000;9;1000;carnivor;nein;;;BW;17
+2018;20;195;Mann;48;49;194;173;2;schwarz;75;6;140;carnivor;nein;1;sehr zufrieden;BW;17
+2018;20;168;Frau;58;54;188;178;3;schwarz;120;40;180;carnivor;nein;1,7;sehr zufrieden;IM;18
+2018;21;163;Frau;50;50;185;160;2;rot;340;12;200;carnivor;nein;1;sehr zufrieden;BW;18
+2018;20;169;Frau;53;52;175;174;1;weiss;150;30;200;carnivor;nein;;;BW;18
+2018;23;167;Frau;52;50;190;160;1;schwarz;120;20;250;carnivor;nein;5;unzufrieden;IM;18
+2018;27;179;Mann;49;47;171;167;1;rot;300;10;250;carnivor;ja;4;unzufrieden;BW;18
+2018;21;167;Frau;55;59;190;155;1;rot;1550;30;100;carnivor;nein;4;unzufrieden;BW;18
+2018;22;162;Frau;49;42;174;178;2;silber;800;30;200;carnivor;nein;5;unzufrieden;IM;18
+2018;24;164;Frau;58;56;176;165;2;weiss;480;40;200;carnivor;nein;5;unzufrieden;IM;18
+2018;24;182;Mann;59;50;180;180;1;schwarz;500;9;300;carnivor;nein;;;IM;19
+2018;19;178;Mann;52;50;198;172;1;schwarz;500;5;200;carnivor;nein;3,3;sehr zufrieden;IM;19
+2018;20;180;Mann;50;49;180;170;1;schwarz;350;4;180;carnivor;ja;1;sehr zufrieden;IM;19
+2018;21;176;Mann;53;52;180;158;2;silber;250;8;200;carnivor;ja;3,3;geht so;IM;19
+2018;22;187;Mann;62;55;188;160;2;schwarz;140;7;200;carnivor;nein;;;IM;19
+2018;20;182;Mann;57;54;179;162;2;schwarz;50;5;120;carnivor;nein;2;zufrieden;IM;19
+2018;21;163;Frau;67;53;170;160;1;weiss;300;13;120;pescetarisch;nein;3,7;geht so;IM;19
+2018;21;175;Frau;49;50;171;160;1;weiss;310;15;230;carnivor;nein;5;unzufrieden;IM;19
+2018;24;163;Frau;59;56;184;162;4;schwarz;0;30;120;carnivor;nein;5;geht so;BW;20
+2018;21;185;Mann;58;57;181;163;1,5;schwarz;900;9;150;carnivor;nein;5;unzufrieden;BW;20
+2018;23;180;Mann;49;43;182;174;1;gelb;800;5;80;carnivor;ja;3,3;geht so;BW;20
+2018;24;170;Mann;58;54;170;155;1;schwarz;200;7;70;carnivor;nein;5;unzufrieden;BW;20
+2018;21;167;Frau;56;55;172;162;1;silber;850;30;450;carnivor;nein;3,3;unzufrieden;BW;20
+2018;26;185;Mann;61;56;180;165;3;blau;300;15;150;carnivor;nein;4;unzufrieden;BW;20
+2018;24;164;Frau;60;47;170;175;0,5;blau;1000;30;200;carnivor;nein;5;unzufrieden;IM;20
+2018;25;175;Mann;63;58;186;167;3;gelb;100;8;80;carnivor;nein;;;IM;20
+2018;19;179;Mann;51;42;187;168;4;schwarz;750;8;0;carnivor;nein;2,7;geht so;IM;20
+2018;20;163;Frau;49;51;185;160;2;schwarz;58;20;0;carnivor;nein;;;BW;9
+2018;20;164;Frau;64;54;180;168;1;schwarz;200;20;200;vegetarisch;nein;3;zufrieden;BW;9
+2018;22;173;Frau;48;45;185;175;0;weiss;300;15;100;carnivor;nein;4;zufrieden;BW;9
+2018;20;163;Frau;45;55;188;163;0;silber;800;10;200;carnivor;nein;;;BW;9
+2018;20;188;Mann;53;49;182;180;1;schwarz;1200;20;300;carnivor;ja;;;BW;9
+2018;20;199;Mann;53;51;194;173;3;blau;120;6;200;carnivor;nein;5;geht so;BW;9
+2018;21;190;Mann;49;53;186;170;1;weiss;180;20;500;carnivor;nein;5;unzufrieden;BW;9
+2018;19;186;Mann;53;52;186;167;2;schwarz;130;7;100;carnivor;nein;3,3;geht so;BW;9
+2018;21;174;Frau;49;41;197;165;2;gelb;300;15;1000;carnivor;nein;n;unzufrieden;IM;10
+2018;18;174;Frau;56;50;182;168;1;schwarz;550;20;200;carnivor;nein;3;geht so;IM;10
+2018;19;160;Frau;52;47;182;165;1;weiss;800;45;250;carnivor;nein;1,7;sehr zufrieden;IM;10
+2018;20;161;Frau;51;43;175;172;1;schwarz;240;90;400;carnivor;ja;4;geht so;BW;10
+2018;19;165;Frau;54;50;198;165;2;gelb;100;22;200;carnivor;nein;4;geht so;IM;10
+2018;23;169;Frau;53;52;176;174;2;schwarz;120;24;280;carnivor;nein;4;zufrieden;IM;10
+2018;19;175;Mann;58;50;185;160;2;schwarz;560;19;2620;carnivor;ja;;;BW;10
+2018;19;179;Frau;50;52;199;163;1;schwarz;270;82;320;vegetarisch;nein;4;zufrieden;BW;10
+2018;22;163;Frau;50;50;169;156;1;schwarz;240;18;110;carnivor;nein;1,7;sehr zufrieden;BW;10
+2018;21;178;Frau;64;59;185;168;2;schwarz;396;30;500;carnivor;nein;2;geht so;BW;10
+2018;30;183;Mann;57;56;179;160;1;schwarz;320;12;80;carnivor;nein;3,3;zufrieden;IM;11
+2018;21;173;Frau;45;49;183;165;1,5;schwarz;1900;10;1500;pescetarisch;nein;;;BW;11
+2018;22;171;Frau;51;47;190;168;2;schwarz;500;10;90;carnivor;ja;2,3;zufrieden;BW;11
+2018;19;170;Frau;53;52;178;158;2;schwarz;1300;10;500;carnivor;nein;5;unzufrieden;BW;11
+2018;18;170;Frau;53;51;185;160;1;schwarz;450;15;500;carnivor;nein;4;zufrieden;BW;11
+2018;20;165;Frau;54;53;185;169;3;silber;300;50;500;carnivor;nein;4;zufrieden;BW;11
+2018;23;175;Frau;67;59;180;160;1;silber;850;30;300;carnivor;nein;5;unzufrieden;BW;11
+2018;20;170;Frau;51;52;185;166;1;schwarz;1000;20;300;carnivor;ja;2,3;zufrieden;BW;11
+2018;19;169;Frau;49;47;180;168;1;silber;400;25;700;;;;;IM;11
+2018;20;178;Frau;64;60;186;170;1;weiss;240;8;260;carnivor;nein;5;unzufrieden;BW;12
+2018;19;166;Frau;50;47;181;162;1;weiss;120;15;120;vegetarisch;nein;3,7;zufrieden;BW;12
+2018;26;183;Frau;61;59;189;173;3;schwarz;130;15;300;carnivor;ja;;;BW;12
+2018;20;174;Frau;57;54;195;170;1;weiss;180;7;150;vegetarisch;nein;;;BW;12
+2018;21;185;Mann;67;56;170;163;1,5;schwarz;1160;10;400;carnivor;nein;5;unzufrieden;IM;12
+2018;19;175;Mann;53;49;171;153;1;schwarz;250;7;150;carnivor;nein;1,3;sehr zufrieden;BW;12
+2018;18;160;Frau;55;50;180;168;1;weiss;380;10;200;carnivor;nein;1;sehr zufrieden;BW;12
+2018;19;157;Frau;52;49;165;162;1;schwarz;280;10;100;carnivor;nein;4;zufrieden;IM;12
+2018;19;165;Frau;51;51;185;163;1;weiss;850;18;400;carnivor;nein;1;sehr zufrieden;BW;12
+2018;21;164;Frau;56;50;180;160;0;schwarz;980;18;200;carnivor;nein;;;BW;12
+2018;19;167;Frau;48;46;185;170;0;silber;375;16;230;carnivor;nein;3,7;unzufrieden;BW;12
+2018;20;164;Frau;49;53;182;161;1;weiss;1500;10;600;pescetarisch;nein;3,7;geht so;IM;13
+2018;19;175;Mann;54;52;178;163;2;schwarz;140;5;100;carnivor;nein;2,3;geht so;IM;13
+2018;23;179;Frau;58;63;179;169;1;schwarz;1000;25;300;carnivor;nein;;;BW;13
+2018;21;169;Frau;52;49;188;170;1;silber;1000;20;200;carnivor;nein;3;zufrieden;BW;13
+2018;23;168;Frau;54;53;187;164;1;silber;1000;30;600;carnivor;nein;;;BW;13
+2018;20;163;Frau;56;54;185;164;2;schwarz;1500;20;600;carnivor;nein;3;geht so;BW;13
+2018;20;165;Frau;47;48;169;157;1;schwarz;130;13;175;carnivor;nein;5;geht so;BW;13
+2018;20;170;Frau;47;47;182;165;1;weiss;265;23;80;carnivor;nein;2;zufrieden;BW;13
+2018;19;167;Frau;56;48;178;160;0,5;silber;200;15;200;carnivor;nein;3;geht so;IM;13
+2018;20;172;Frau;46;44;180;165;2;schwarz;1100;9;250;carnivor;nein;3;sehr zufrieden;BW;14
+2018;19;174;Frau;51;46;179;166;2,5;weiss;600;20;190;vegetarisch;nein;1,3;sehr zufrieden;BW;14
+2018;20;160;Frau;48;46;180;163;3;weiss;300;20;200;carnivor;nein;4;zufrieden;BW;14
+2018;19;173;Frau;50;54;182;166;1;silber;150;15;100;carnivor;nein;3;geht so;BW;14
+2018;20;180;Mann;60;55;179;163;2;schwarz;120;13;150;carnivor;nein;1;sehr zufrieden;BW;14
+2018;23;184;Mann;63;56;175;172;2;weiss;420;17;150;carnivor;nein;3,7;geht so;BW;14
+2018;19;160;Frau;48;48;175;164;1;weiss;420;30;200;carnivor;nein;4;geht so;BW;14
+2018;20;165;Frau;50;49;175;170;1;schwarz;650;35;200;carnivor;nein;3,3;sehr zufrieden;IM;14
+2018;19;163;Frau;58;55;178;162;2;weiss;100;15;150;carnivor;nein;3,7;geht so;IM;14
+2018;18;162;Frau;43;43;182;165;0,5;;500;4;100;carnivor;nein;;;BW;21
+2018;21;156;Frau;57;54;175;160;1;rot;100;40;200;carnivor;nein;3,3;sehr zufrieden;IM;21
+2018;19;165;Frau;51;50;190;165;1;silber;250;40;350;carnivor;nein;3,7;zufrieden;IM;21
+2018;19;167;Frau;41;41;175;168;6,5;weiss;200;3;70;carnivor;nein;;;BW;21
+2018;21;168;Frau;55;50;183;167;2;silber;850;35;300;carnivor;nein;1,7;sehr zufrieden;IM;21
+2018;19;178;Frau;54;46;182;163;0;schwarz;900;25;200;carnivor;nein;;;IM;21
+2018;20;167;Frau;69;56;189;163;0;schwarz;940;8;40;carnivor;nein;;;IM;21
+2018;19;168;Frau;55;57;196;160;3;schwarz;400;15;100;carnivor;nein;;;IM;21
+2018;20;174;Mann;76;63;168;165;1;schwarz;150;3;70;carnivor;ja;5;unzufrieden;BW;22
+2018;25;158;Frau;49;50;186;158;1;gelb;240;20;100;carnivor;nein;;;BW;22
+2018;28;171;Frau;58;51;174;169;1;schwarz;400;3;100;carnivor;nein;5;unzufrieden;BW;22
+2018;26;180;Mann;64;56;172;165;1;silber;350;20;700;carnivor;nein;5;unzufrieden;BW;22
+2018;20;176;Mann;52;49;174;172;1;schwarz;500;10;80;carnivor;nein;3,3;unzufrieden;BW;22
+2018;24;177;Mann;55;52;170;170;1;gelb;400;12;250;carnivor;nein;5;unzufrieden;BW;23
+2018;21;178;Mann;57;53;179;170;1,5;schwarz;1400;3;80;carnivor;ja;5;unzufrieden;BW;23
+2018;23;187;Mann;58;53;180;170;1;schwarz;640;6;150;carnivor;nein;;;BW;23
+2018;21;168;Mann;65;60;180;170;1;blau;0;5;100;carnivor;;5;sehr zufrieden;BW;23
+2018;21;180;Mann;57;50;185;167;1;schwarz;330;8;70;carnivor;nein;3,7;zufrieden;IM;23
+2018;21;170;Mann;62;41;165;160;1;rot;750;6;30;carnivor;nein;5;unzufrieden;IM;23
+2018;22;165;Mann;63;59;172;162;3;schwarz;420;5;130;carnivor;nein;;;BW;23
+2018;20;166;Frau;51;51;182;165;2;schwarz;500;10;350;carnivor;nein;2;zufrieden;IM;24
+2018;21;171;Frau;49;44;182;180;3,5;schwarz;700;40;300;carnivor;nein;3;sehr zufrieden;IM;24
+2018;19;164;Frau;52;50;187;165;2;schwarz;500;25;500;carnivor;nein;1;sehr zufrieden;IM;24
+2018;21;172;Frau;54;47;183;173;1,5;schwarz;510;25;400;carnivor;nein;3;sehr zufrieden;IM;24
+2018;21;169;Frau;54;50;175;170;2;schwarz;400;22;300;carnivor;nein;;;IM;24
+2018;21;178;Frau;55;54;190;180;1;silber;450;15;250;carnivor;nein;1,7;sehr zufrieden;IM;24
+2018;21;175;Mann;50;52;185;165;1;schwarz;400;10;400;carnivor;nein;2,7;unzufrieden;IM;24
+2018;20;177;Mann;55;52;176;160;1;schwarz;750;11;260;carnivor;nein;3;zufrieden;IM;24
+2018;20;175;Frau;50;51;191;174;0;schwarz;1200;23;475;pescetarisch;nein;4;zufrieden;IM;24
+2018;19;159;Frau;52;50;178;154;1;weiss;200;8;300;vegetarisch;nein;2,3;zufrieden;IM;24
+2018;21;181;Mann;49;47;178;164;2;rot;15;6;50;carnivor;nein;;;BW;25
+2018;20;163;Frau;52;43;175;165;0,5;schwarz;20;10;40;carnivor;nein;3;sehr zufrieden;BW;25
+2018;29;173;Frau;53;55;167;189;1;weiss;50;12;50;carnivor;nein;5;unzufrieden;BW;25
+2018;21;170;Frau;57;53;178;167;2;schwarz;100;9;45;carnivor;nein;3,7;geht so;IM;25
+2018;23;170;Frau;55;40;178;160;2;gelb;120;15;50;pescetarisch;nein;3;zufrieden;IM;25
+2018;23;184;Mann;48;45;175;171;2;silber;185;6;225;carnivor;nein;3;geht so;BW;25
+2018;28;170;Frau;55;55;172;165;2;weiss;120;2;50;carnivor;nein;;;BW;25
+2018;22;180;Frau;50;49;186;176;1;schwarz;370;25;100;carnivor;nein;3;sehr zufrieden;IM;25
+2018;21;183;Mann;54;54;182;165;3;schwarz;300;6;60;carnivor;nein;2,7;zufrieden;BW;26
+2018;21;183;Mann;59;57;178;162;1;weiss;500;15;200;carnivor;ja;3,3;sehr zufrieden;BW;26
+2018;21;183;Mann;51;50;185;165;1;schwarz;130;16;180;carnivor;ja;2,7;zufrieden;BW;26
+2018;20;195;Mann;56;55;179;168;1;schwarz;350;14;250;carnivor;nein;2,7;zufrieden;BW;26
+2018;21;177;Frau;60;54;182;165;2;weiss;500;12;120;carnivor;nein;2,7;zufrieden;BW;26
+2018;19;160;Frau;49;51;180;160;1;blau;400;8;150;carnivor;nein;3;geht so;IM;26
+2018;20;165;Frau;51;46;183;160;1;schwarz;280;14;20;vegetarisch;nein;;;IM;26
+2018;20;175;Frau;53;53;185;176;2;silber;200;9;200;carnivor;nein;5;unzufrieden;IM;26
+2018;18;163;Frau;46;48;190;175;1;silber;500;23;300;carnivor;nein;5;unzufrieden;IM;26
+2018;19;170;Frau;60;56;186;168;8;schwarz;160;6;260;vegetarisch;nein;5;unzufrieden;IM;27
+2018;28;180;Mann;61;61;176;173;11;schwarz;400;4;180;carnivor;nein;;;IM;27
+2018;33;176;Frau;68;60;185;160;2,5;silber;340;10;150;carnivor;ja;;;IM;27
+2018;22;160;Frau;48;46;185;160;0,5;silber;660;20;500;carnivor;ja;5;unzufrieden;IM;27
+2018;20;165;Frau;41;41;177;157;0;silber;144;7;150;carnivor;nein;5;unzufrieden;BW;27
+2018;27;173;Frau;70;58;175;170;3;silber;250;10;300;carnivor;nein;5;unzufrieden;BW;27
+2018;20;155;Frau;45;45;185;150;1;schwarz;131;22;300;carnivor;nein;5;unzufrieden;BW;27
+2018;19;168;Frau;45;42;175;165;1;weiss;68;6;50;carnivor;nein;3,7;sehr zufrieden;BW;27
+2018;18;185;Mann;50;50;180;165;4;weiss;280;4;200;carnivor;nein;;;BW;27
