@@ -1,0 +1,984 @@
+[
+  {
+    "objectID": "wahrscheinlichkeit/theorie.html",
+    "href": "wahrscheinlichkeit/theorie.html",
+    "title": "Theoretische Modelle und Verteilungen",
+    "section": "",
+    "text": "HinweisQuelle\n\n\n\n\n\n\nS.219-222 von Folie-04.11.2025\n\n\n\n\n\n\n\n\nStell dir vor, du hast eine Münze bereits 100 Mal geworfen. Das Ergebnis war absolut unglaublich: Es kam 100 Mal “Kopf”.\n\n\n\nNun wirfst du die Münze ein einziges weiteres Mal (das 101. Mal). Unser Bauchgefühl sagt oft: “Jetzt muss doch endlich mal ‘Zahl’ kommen, um das auszugleichen!”\n\n\n\nDie Wahrscheinlichkeit für “Zahl” ist immer noch exakt 50 % (genauso wie beim allerersten Wurf).\n\nDer Grund: Zufallsereignisse wie Münzwürfe sind voneinander unabhängig.\nDie anschauliche Erklärung: Die Münze hat kein Gehirn und kein Gedächtnis. Sie “weiß” nicht, dass sie gerade 100 Mal auf Kopf gelandet ist. Für die Münze ist jeder Wurf ein kompletter Neustart.\n\n\n\n\n\n\n\n\n\nDas Galtonbrett (oder “Galtonsche Nagelbrett”) ist ein berühmtes mechanisches Modell.\n\nFunktion: Man lässt Kugeln durch ein Raster von Nägeln fallen. Bei jedem Nagel entscheidet der Zufall, ob die Kugel nach links oder rechts fällt.\nDas Ergebnis: Unten sammeln sich die Kugeln und bilden erstaunlicherweise fast immer eine perfekte Glockenkurve (Normalverteilung). Es macht abstrakte Statistik sichtbar.\n\n\n\n\nGalton war ein extrem vielseitiger, aber auch kontroverser Wissenschaftler (und übrigens der Cousin von Charles Darwin).\nSeine wissenschaftlichen Leistungen:\n\nFingerabdrücke: Er gilt als “Vater der Daktyloskopie” (Fingerabdruckverfahren), das wir heute noch nutzen.\nPsychologie: Er begründete die Differenzial- und Experimentalpsychologie mit.\nDie Weisheit der Vielen: Er wollte eigentlich beweisen, dass die “Masse” dumm ist. Sein Experiment (das Gewicht eines Ochsen schätzen lassen) zeigte aber das Gegenteil: Der Durchschnitt aller Schätzungen war extrem präzise. Er nannte dies Vox populi (“Stimme des Volkes”).\n\nDie Schattenseite:\n\nEr ist einer der Väter der Eugenik. Sein Ziel war die “Verbesserung der menschlichen Rasse” durch gezielte Auslese, eine Ideologie, die später missbraucht wurde.",
+    "crumbs": [
+      "Home",
+      "II. Wahrscheinlichkeit",
+      "Theoretische Modelle und Verteilungen"
+    ]
+  },
+  {
+    "objectID": "wahrscheinlichkeit/theorie.html#gendankesexperiment-münzwurf",
+    "href": "wahrscheinlichkeit/theorie.html#gendankesexperiment-münzwurf",
+    "title": "Theoretische Modelle und Verteilungen",
+    "section": "",
+    "text": "Stell dir vor, du hast eine Münze bereits 100 Mal geworfen. Das Ergebnis war absolut unglaublich: Es kam 100 Mal “Kopf”.\n\n\n\nNun wirfst du die Münze ein einziges weiteres Mal (das 101. Mal). Unser Bauchgefühl sagt oft: “Jetzt muss doch endlich mal ‘Zahl’ kommen, um das auszugleichen!”\n\n\n\nDie Wahrscheinlichkeit für “Zahl” ist immer noch exakt 50 % (genauso wie beim allerersten Wurf).\n\nDer Grund: Zufallsereignisse wie Münzwürfe sind voneinander unabhängig.\nDie anschauliche Erklärung: Die Münze hat kein Gehirn und kein Gedächtnis. Sie “weiß” nicht, dass sie gerade 100 Mal auf Kopf gelandet ist. Für die Münze ist jeder Wurf ein kompletter Neustart.",
+    "crumbs": [
+      "Home",
+      "II. Wahrscheinlichkeit",
+      "Theoretische Modelle und Verteilungen"
+    ]
+  },
+  {
+    "objectID": "wahrscheinlichkeit/theorie.html#galtonbrett",
+    "href": "wahrscheinlichkeit/theorie.html#galtonbrett",
+    "title": "Theoretische Modelle und Verteilungen",
+    "section": "",
+    "text": "Das Galtonbrett (oder “Galtonsche Nagelbrett”) ist ein berühmtes mechanisches Modell.\n\nFunktion: Man lässt Kugeln durch ein Raster von Nägeln fallen. Bei jedem Nagel entscheidet der Zufall, ob die Kugel nach links oder rechts fällt.\nDas Ergebnis: Unten sammeln sich die Kugeln und bilden erstaunlicherweise fast immer eine perfekte Glockenkurve (Normalverteilung). Es macht abstrakte Statistik sichtbar.\n\n\n\n\nGalton war ein extrem vielseitiger, aber auch kontroverser Wissenschaftler (und übrigens der Cousin von Charles Darwin).\nSeine wissenschaftlichen Leistungen:\n\nFingerabdrücke: Er gilt als “Vater der Daktyloskopie” (Fingerabdruckverfahren), das wir heute noch nutzen.\nPsychologie: Er begründete die Differenzial- und Experimentalpsychologie mit.\nDie Weisheit der Vielen: Er wollte eigentlich beweisen, dass die “Masse” dumm ist. Sein Experiment (das Gewicht eines Ochsen schätzen lassen) zeigte aber das Gegenteil: Der Durchschnitt aller Schätzungen war extrem präzise. Er nannte dies Vox populi (“Stimme des Volkes”).\n\nDie Schattenseite:\n\nEr ist einer der Väter der Eugenik. Sein Ziel war die “Verbesserung der menschlichen Rasse” durch gezielte Auslese, eine Ideologie, die später missbraucht wurde.",
+    "crumbs": [
+      "Home",
+      "II. Wahrscheinlichkeit",
+      "Theoretische Modelle und Verteilungen"
+    ]
+  },
+  {
+    "objectID": "wahrscheinlichkeit/theorie.html#die-definition-was-ist-ein-laplace-experiment",
+    "href": "wahrscheinlichkeit/theorie.html#die-definition-was-ist-ein-laplace-experiment",
+    "title": "Theoretische Modelle und Verteilungen",
+    "section": "2.1 Die Definition: Was ist ein Laplace-Experiment?",
+    "text": "2.1 Die Definition: Was ist ein Laplace-Experiment?\nEin Zufallsexperiment darf sich nur dann “Laplace-Experiment” nennen, wenn zwei harte Bedingungen erfüllt sind:\n\nEndliche Ergebnisse: Es gibt eine begrenzte Anzahl an Möglichkeiten (z. B. 6 Seiten beim Würfel, nicht unendlich viele wie bei der Dartscheibe).\nGleichwahrscheinlichkeit: Jedes einzelne Ergebnis ist exakt gleich wahrscheinlich (z. B. ein “fairer” Würfel oder eine “faire” Münze).",
+    "crumbs": [
+      "Home",
+      "II. Wahrscheinlichkeit",
+      "Theoretische Modelle und Verteilungen"
+    ]
+  },
+  {
+    "objectID": "wahrscheinlichkeit/theorie.html#die-laplace-formel",
+    "href": "wahrscheinlichkeit/theorie.html#die-laplace-formel",
+    "title": "Theoretische Modelle und Verteilungen",
+    "section": "2.2 Die Laplace-Formel",
+    "text": "2.2 Die Laplace-Formel\nWenn diese Bedingungen erfüllt sind, darf man die einfachste aller Wahrscheinlichkeitsformeln benutzen:\n\nP(A) = \\frac{\\text{Anzahl der günstigen Ereignisse}}{\\text{Anzahl aller möglichen Ereignisse}} = \\frac{|A|}{|\\Omega|}\n\n\nBeispiel: Wie hoch ist die Wahrscheinlichkeit, eine gerade Zahl zu würfeln?\n\nMögliche Ereignisse (\\Omega): \\{1, 2, 3, 4, 5, 6\\} \\rightarrow 6 Möglichkeiten.\nGünstige Ereignisse (A): \\{2, 4, 6\\} \\rightarrow 3 Möglichkeiten.\nRechnung: 3 / 6 = 0,5 (50 \\%).",
+    "crumbs": [
+      "Home",
+      "II. Wahrscheinlichkeit",
+      "Theoretische Modelle und Verteilungen"
+    ]
+  },
+  {
+    "objectID": "wahrscheinlichkeit/theorie.html#der-namensgeber",
+    "href": "wahrscheinlichkeit/theorie.html#der-namensgeber",
+    "title": "Theoretische Modelle und Verteilungen",
+    "section": "2.3 Der Namensgeber",
+    "text": "2.3 Der Namensgeber\nPierre-Simon Laplace (1749–1827) war ein französischer Mathematiker und Astronom, der maßgeblich dazu beitrug, Wahrscheinlichkeiten berechenbar zu machen.",
+    "crumbs": [
+      "Home",
+      "II. Wahrscheinlichkeit",
+      "Theoretische Modelle und Verteilungen"
+    ]
+  },
+  {
+    "objectID": "wahrscheinlichkeit/theorie.html#definition",
+    "href": "wahrscheinlichkeit/theorie.html#definition",
+    "title": "Theoretische Modelle und Verteilungen",
+    "section": "3.1 Definition",
+    "text": "3.1 Definition\nDies ist die einfachste Form einer Wahrscheinlichkeitsverteilung. Sie liegt vor, wenn jedes mögliche Ergebnis genau die gleiche Wahrscheinlichkeit hat.\n\nParameter: Das wichtigste Maß ist n (die Anzahl der möglichen Ergebnisse).\nWahrscheinlichkeitsfunktion: Die Wahrscheinlichkeit für jeden einzelnen Wert x_i ist einfach der Kehrwert der Anzahl:\n\n  P(X = x) = f(x) = \\left\\{\\begin{array}{l}\n  \\frac{1}{n} & , \\text{wenn } x = x_i u. x_i \\in \\{1,...,n\\} \\\\\n  0 & , \\text{sonst}\n  \\end{array} \\right.",
+    "crumbs": [
+      "Home",
+      "II. Wahrscheinlichkeit",
+      "Theoretische Modelle und Verteilungen"
+    ]
+  },
+  {
+    "objectID": "wahrscheinlichkeit/theorie.html#dazu-benötigte-formeln",
+    "href": "wahrscheinlichkeit/theorie.html#dazu-benötigte-formeln",
+    "title": "Theoretische Modelle und Verteilungen",
+    "section": "3.2 Dazu benötigte Formeln",
+    "text": "3.2 Dazu benötigte Formeln\n\nVerteilungsfunktion (F(x)):\n\n  P(X \\le x) = F(x) = \\left\\{\\begin{array}{l}\n  0 & , \\text{wenn } x &lt; 1 \\\\\n  \\frac{\\left\\lfloor x \\right\\rfloor}{n} & , \\text{wenn } 1 \\le x &lt; n \\\\\n  1 & , \\text{wenn } x \\ge n\n  \\end{array} \\right.\n\nAlternative: Summiert die Wahrscheinlichkeiten auf. Z. B. bei der Frage: “Wie wahrscheinlich ist eine Zahl \\le 3?”, \\Rightarrow \\frac{1}{n} + \\frac{1}{n} + \\frac{1}{n}.\nErwartungswert (E(x)): Der Durchschnittswert, den man auf lange Sicht erhältst.\n\nE(x) = \\frac{1}{n} \\sum_{i=1}^{n} x_i\n\n\nAbgrenzung zum Mittelwert:\nDas arithmetische Mittel besteht aus konkret gemessenen Zahlen. Während der Erwartungswert ein vorhergesagter Wert ist, den man “auf lange Sicht” erwartet, wenn man ein Zufallsexperiment unendlich oft wiederholen würde.\n\nStreuung: Auch Varianz (Var) und Standardabweichung (\\sigma) lassen sich berechnen, um zu sehen, wie weit die Ergebnisse vom Durchschnitt weg liegen.",
+    "crumbs": [
+      "Home",
+      "II. Wahrscheinlichkeit",
+      "Theoretische Modelle und Verteilungen"
+    ]
+  },
+  {
+    "objectID": "wahrscheinlichkeit/theorie.html#praxis-beispiel-mit-würfel",
+    "href": "wahrscheinlichkeit/theorie.html#praxis-beispiel-mit-würfel",
+    "title": "Theoretische Modelle und Verteilungen",
+    "section": "3.3 Praxis-Beispiel mit Würfel",
+    "text": "3.3 Praxis-Beispiel mit Würfel\n\nDie Situation: Wir haben n = 6 Seiten.\nDie Wahrscheinlichkeit: Jede Zahl (1 bis 6) fällt mit der Wahrscheinlichkeit f(x) = \\frac{1}{6}.\nDas Diagramm: Das Histogramm (die grünen Balken) zeigen dass alle Balken fast gleich hoch sind. Man spricht von einer Gleichverteiltverteilung.\n\n\nDer Erwartungswert Die Rechnung zeigt:\n\nE(x) = \\frac{1}{6} \\sum_{i=1}^{6} x_i = 3.5\n\nDas bedeutet: Wenn man tausendmal würfelt und den Durchschnitt bildet, wird das Ergebnis sehr nahe bei 3,5 liegen – obwohl es die Zahl 3,5 auf dem Würfel gar nicht gibt.",
+    "crumbs": [
+      "Home",
+      "II. Wahrscheinlichkeit",
+      "Theoretische Modelle und Verteilungen"
+    ]
+  },
+  {
+    "objectID": "wahrscheinlichkeit/theorie.html#wahrscheinlichkeitsfunktion-fx",
+    "href": "wahrscheinlichkeit/theorie.html#wahrscheinlichkeitsfunktion-fx",
+    "title": "Theoretische Modelle und Verteilungen",
+    "section": "5.1 Wahrscheinlichkeitsfunktion f(x)",
+    "text": "5.1 Wahrscheinlichkeitsfunktion f(x)\nGibt die Wahrscheinlichkeit für den Erfolg x=1 oder Misserfolg x=0 zurück:\n\nf(x) = P(X=x) = \\left\\{\\begin{array}{lc}\np & , & x=1 & \\text{(Erfolg)} \\\\\n1-p & , & x=0 & \\text{(Misserfolg)} \\\\\n0 & , & \\text{sonst}  & \\text{(Unmöglich)}\n\\end{array}\\right.",
+    "crumbs": [
+      "Home",
+      "II. Wahrscheinlichkeit",
+      "Theoretische Modelle und Verteilungen"
+    ]
+  },
+  {
+    "objectID": "wahrscheinlichkeit/theorie.html#verteilungsfunktion-fx",
+    "href": "wahrscheinlichkeit/theorie.html#verteilungsfunktion-fx",
+    "title": "Theoretische Modelle und Verteilungen",
+    "section": "5.2 Verteilungsfunktion F(x)",
+    "text": "5.2 Verteilungsfunktion F(x)\nGibt die Summe aller Wahrscheinlichkeiten zurück für X \\le x:\n\nF(x) = P(X \\le x) = \\left\\{\\begin{array}{lc}\n1 & , & x \\ge 1 & \\text{(Erfolg)} \\\\\n1-p & , & 0 \\le x &lt; 1 & \\text{(Misserfolg)} \\\\\n0 & , & x &lt; 0 & \\text{(Unmöglich)}\n\\end{array}\\right.",
+    "crumbs": [
+      "Home",
+      "II. Wahrscheinlichkeit",
+      "Theoretische Modelle und Verteilungen"
+    ]
+  },
+  {
+    "objectID": "wahrscheinlichkeit/theorie.html#weitere-werte",
+    "href": "wahrscheinlichkeit/theorie.html#weitere-werte",
+    "title": "Theoretische Modelle und Verteilungen",
+    "section": "5.3 Weitere Werte",
+    "text": "5.3 Weitere Werte\n\n5.3.1 Erwartungswert\n\nE(x) = p\n\n\n\n5.3.2 Varianz\n\nVar(x) = p \\cdot (1-p) = pq\n\n\n\n5.3.3 Standardabweichung\n\n\\sigma_x = \\sqrt{pq}",
+    "crumbs": [
+      "Home",
+      "II. Wahrscheinlichkeit",
+      "Theoretische Modelle und Verteilungen"
+    ]
+  },
+  {
+    "objectID": "wahrscheinlichkeit/theorie.html#anwendung-bestimmung-von-pi-π",
+    "href": "wahrscheinlichkeit/theorie.html#anwendung-bestimmung-von-pi-π",
+    "title": "Theoretische Modelle und Verteilungen",
+    "section": "5.4 Anwendung: Bestimmung von Pi (π)",
+    "text": "5.4 Anwendung: Bestimmung von Pi (π)\n\nDas Setup: Ein Kreis liegt in einem Quadrat.\nDas Experiment: Man lässt zufällige Punkte auf das Quadrat “regnen”.\nDie Bernoulli-Logik:\n\nPunkt im Kreis = Erfolg (Treffer).\nPunkt außerhalb = Misserfolg.\n\nDas Ergebnis: Das Verhältnis der Treffer zur Gesamtzahl nähert sich dem Verhältnis der Flächen an (π/4). So kann man durch bloßes Zählen von Zufallstreffern den Wert von π annähern.",
+    "crumbs": [
+      "Home",
+      "II. Wahrscheinlichkeit",
+      "Theoretische Modelle und Verteilungen"
+    ]
+  },
+  {
+    "objectID": "wahrscheinlichkeit/theorie.html#beispiele",
+    "href": "wahrscheinlichkeit/theorie.html#beispiele",
+    "title": "Theoretische Modelle und Verteilungen",
+    "section": "5.5 Beispiele",
+    "text": "5.5 Beispiele\n\nMünzwurf: Kopf oder Zahl p=0,51, q=49\nAnschaulich anhand von Galtonbrett:\n \nWürfeln: Eine bestimmte Zahl würfeln p=\\frac{1}{6}, q=\\frac{5}{6}",
+    "crumbs": [
+      "Home",
+      "II. Wahrscheinlichkeit",
+      "Theoretische Modelle und Verteilungen"
+    ]
+  },
+  {
+    "objectID": "wahrscheinlichkeit/theorie.html#einschub",
+    "href": "wahrscheinlichkeit/theorie.html#einschub",
+    "title": "Theoretische Modelle und Verteilungen",
+    "section": "6.1 Einschub",
+    "text": "6.1 Einschub\nUm die Formel für die Binomialverteilung besser zu verstehen können, müssen zuerst die Konzepte Pfadregel und Binomialkoeffizient verstanden werden.\n\n6.1.1 Pfadregeln\nBeispiel zweimal Würfeln \\Rightarrow Wahrscheinlichkeit auf eine 6:\n\n\nDurch die 1. Pfadregel (Produktregel) lassen sich mehrere hintereinander ausgeführte Wahrscheinlichkeiten verketten:\n\nP((6,\\bar{6})) = \\frac{1}{6} \\cdot \\frac{5}{6} = \\frac{5}{36}\n\nDurch die 2. Pfadregel (Summenregel) lassen sich mehere voneinander unabhängige Wahrscheinlichkeiten verketten:\n\nP(\\{(6,6),(6,\\bar{6}),(\\bar{6},6)\\})=\\frac{1}{36} + \\frac{5}{36} + \\frac{5}{36} = \\frac{11}{36}\n\n\n\n\n6.1.2 Binomialkoeffizient\n\nWie viele Möglichkeiten gibt es, k Dinge aus einer Gesamtmenge von n Dingen auszuwählen?\n\nOhne zurücklegen\nReihenfolge ist egal\n\n\n\n\\binom{n}{k} = \\frac{n!}{k! \\cdot (n-k)!}\n\n\nHerleitung\nVon n Kugeln sollen k Kugeln ausgewählt werden:\n\nBei der ersten Kugel gibt es n Optionen\nBei der zweiten Kugel gibt es n-1 Optionen\n\\vdots\nBei der k-ten Kugel gibt es n-k+1 Optionen\n\nDies macht eine Anzahl an Möglichkeiten von:\n\n\\begin{array}{l}\nn \\cdot (n-1) \\cdot ... \\cdot (n-k+1) & = & n \\cdot (n-1) \\cdot ... \\cdot (n-k+1) \\cdot \\frac{n!}{n!} \\\\\n& = & \\frac{ n \\cdot (n-1) \\cdot ... \\cdot (n-k+1) \\cdot n!}{n \\cdot (n-1) \\cdot ... \\cdot (n-k+1) \\cdot (n-k)!} \\\\\n& = & \\frac{n!}{(n-k)!}\n\\end{array}\n\nUm die Reihenfolge zu vernachlässigen, wird durch k!, die Anzahl der Möglichkeiten k Element Anzuordnen, geteilt.\n\n\\frac{n!}{k! \\cdot (n-k)!} = \\binom{n}{k}\n\nAnschauliches Beispiel:",
+    "crumbs": [
+      "Home",
+      "II. Wahrscheinlichkeit",
+      "Theoretische Modelle und Verteilungen"
+    ]
+  },
+  {
+    "objectID": "wahrscheinlichkeit/theorie.html#erklärung-der-formel",
+    "href": "wahrscheinlichkeit/theorie.html#erklärung-der-formel",
+    "title": "Theoretische Modelle und Verteilungen",
+    "section": "6.2 Erklärung der Formel",
+    "text": "6.2 Erklärung der Formel\nDie Binomialverteilung setzt sich aus folgenden 2 Faktoren zusammen:\n\nDer Verkettung (1. Pfadregel) von all den Wahrscheinlichkeiten einen Treffer zu landen sowie auch die um keine Treffer zu landen:\n\n\\begin{array}{lll}\n\\overbrace{p\\cdot...\\cdot p}^{k\\text{ mal Treffer}}\\cdot\n\\overbrace{q\\cdot...\\cdot q}^{\\begin{array}{} n-k\\text{ mal} \\\\ \\text{keine Treffer}\\end{array}}\n& = & p^k \\cdot q^{n-k} \\\\\n& = & p^k \\cdot (1-p)^{n-k}\n\\end{array}\n\nDer Verkettung (2. Pfadregel) von all den Wahrscheinlichkeiten die in 1. definiert sind:\n\n\\overbrace{p^k q^{n-k}+...+p^k q^{n-k}}^{\\binom{n}{k} \\text{ mal}} = \\binom{n}{k}\\cdot p^k q^{n-k}\n\n\nAnschauliches Beispiel:",
+    "crumbs": [
+      "Home",
+      "II. Wahrscheinlichkeit",
+      "Theoretische Modelle und Verteilungen"
+    ]
+  },
+  {
+    "objectID": "wahrscheinlichkeit/theorie.html#form-und-symmetrien",
+    "href": "wahrscheinlichkeit/theorie.html#form-und-symmetrien",
+    "title": "Theoretische Modelle und Verteilungen",
+    "section": "6.3 Form und Symmetrien",
+    "text": "6.3 Form und Symmetrien",
+    "crumbs": [
+      "Home",
+      "II. Wahrscheinlichkeit",
+      "Theoretische Modelle und Verteilungen"
+    ]
+  },
+  {
+    "objectID": "wahrscheinlichkeit/theorie.html#kenngrößen",
+    "href": "wahrscheinlichkeit/theorie.html#kenngrößen",
+    "title": "Theoretische Modelle und Verteilungen",
+    "section": "6.4 Kenngrößen",
+    "text": "6.4 Kenngrößen",
+    "crumbs": [
+      "Home",
+      "II. Wahrscheinlichkeit",
+      "Theoretische Modelle und Verteilungen"
+    ]
+  },
+  {
+    "objectID": "wahrscheinlichkeit/theorie.html#anwendungsbeispiele",
+    "href": "wahrscheinlichkeit/theorie.html#anwendungsbeispiele",
+    "title": "Theoretische Modelle und Verteilungen",
+    "section": "6.5 Anwendungsbeispiele",
+    "text": "6.5 Anwendungsbeispiele\n\n6.5.1 Roulette\n\n\n6.5.2 Anzahl Benötigter Server",
+    "crumbs": [
+      "Home",
+      "II. Wahrscheinlichkeit",
+      "Theoretische Modelle und Verteilungen"
+    ]
+  },
+  {
+    "objectID": "wahrscheinlichkeit/theorie.html#beispiel-mit-gummibärchen",
+    "href": "wahrscheinlichkeit/theorie.html#beispiel-mit-gummibärchen",
+    "title": "Theoretische Modelle und Verteilungen",
+    "section": "7.1 Beispiel mit Gummibärchen",
+    "text": "7.1 Beispiel mit Gummibärchen\nIn einer Packung Gummibärchen (GB) sind 11 rote und 27 grüne drin. Wie hoch liegt die Wahrscheinlichkeit 5-mal ein rotes Gummibärchen ohne Zurücklegen zu ziehen bei 8 Versuchen?\nGegeben:\n\n\\begin{array}{l}\n\\text{Grundgesamtheit:} & N & = 11GB + 27GB = 38GB \\\\\n\\text{Anzahl möglicher Erfolge:} & M & = 11GB \\\\\n\\text{Versuche/Stichprobe:} & n & = 8GB \\\\\n\\text{Angestrebter Treffer:} & k & = 5GB\n\\end{array}\n\nGesucht: Wahrscheinlichkeit für k=5 rote Gummibärchen als Treffer.\nEinsetzen:\n\n\\begin{array}{l}\nP(k = 5GB) & = & h(k|N,M,n)\n& = & \\frac{\\binom{M}{k} \\cdot \\binom{N-M}{n-k}}{\\binom{N}{n}} \\\\\n& = & \\frac{\\binom{11GB}{5GB} \\cdot \\binom{38GB-11GB}{8GB-5GB}}{\\binom{38GB}{8GB}}\n& = & \\frac{\\binom{11GB}{5GB} \\cdot \\binom{27GB}{3GB}}{\\binom{38GB}{8GB}} \\\\\n& = & \\frac{462 \\cdot 2,925}{48,903,492} & \\approx & 0.028 \\\\\n\\end{array}",
+    "crumbs": [
+      "Home",
+      "II. Wahrscheinlichkeit",
+      "Theoretische Modelle und Verteilungen"
+    ]
+  },
+  {
+    "objectID": "wahrscheinlichkeit/index.html",
+    "href": "wahrscheinlichkeit/index.html",
+    "title": "II. Wahrscheinlichkeit",
+    "section": "",
+    "text": "0.1 I. Missverständnisse\nDieser Abschnitt klärt wichtige begriffliche Missverständnisse.\n\nHohe Wahrscheinlichkeit garantiert keinen Erfolg\nUnwahrscheinlich heißt nicht unmöglich\nEine Wahrscheinlichkeit von Null heißt nicht unmöglich\n\n\n\n0.2 II. Theoretische Modelle und Verteilungen\nHier werden die klassischen Zufallsexperimente und die wichtigsten diskreten Verteilungsmodelle eingeführt.\n\nEinführung\n\nMünzwurf\nGalton-Brett\n\nLaplace-Experiment\n\nLaplace-Formel\n\nTheoretische Wahrscheinlichkeitsverteilungen\n\nGleichverteilung\nBernoulli-Versuch\n\nErfolg und Misserfolg\n\nBernoulli-Verteilung\nBinomialverteilung\n\nForm und Symmetrien der Binomialverteilung\nEinfluss der Erfolgswahrscheinlichkeit p\nSymmetrie um n/2\nEinfluss von n\n\nSatz von Moivre-Laplace, Laplace-Bedingung\n\n\nHypergeometrische Verteilung\nPoisson-Verteilung\n\nPoisson-Approximation\n\nÜbersicht diskrete Wahrscheinlichkeitsverteilungen\n\nAnwendungsbeispiele Wahrscheinlichkeitsverteilungen\n\nGleichverteilung\nBenfordsches Gesetz\n\n\n\n\n0.3 III. Zählmethoden und zusammengesetzte Versuche\nDer Übergang zu komplexeren Szenarien, die kombinatorische Überlegungen erfordern.\n\nMehrstufige Zufallsversuche\nKombinatorik\n\nUrnenmodell\n\n\n\n\n0.4 IV. Das formale Fundament (Axiomatik)\nDie mathematische Basis der Wahrscheinlichkeitstheorie und grundlegende Definitionen.\n\nWahrscheinlichkeitstheorie\n\nAxiome der Wahrscheinlichkeitsrechnung\n\nNichtnegativität\nNormiertheit\nAdditivität\n\nAbgeleitete Regeln der Wahrscheinlichkeitsrechnung\nBedingte Wahrscheinlichkeit\nUnabhängigkeit von Ereignissen\nGeburtstagsproblem\n\n\n\n\n0.5 V. Erweiterte Rechenregeln und Sätze\nKomplexere Werkzeuge zur Berechnung von Wahrscheinlichkeiten in vernetzten Systemen.\n\nRechenregeln für Wahrscheinlichkeiten\n\nUnabhängigkeit von Ereignissen\nSatz der totalen Wahrscheinlichkeit\nBaumdiagramm\n\nMonty Hall Problem (Ziegenproblem)\n\nMarkov-Kette\nSatz von Bayes\n\nKrankheitsscreening\nMonty Hall Problem (Ziegenproblem)\n\n\n\n\n\n0.6 VI. Analyse mittels Tafeln\nMethoden zur Visualisierung und Überprüfung von Zusammenhängen zweier Merkmale.\n\nKontingenztafel\n\nVierfeldertafel\nWahrscheinlichkeit bedingter Ereignisse\nÜberprüfung Unabhängigkeit von Ereignissen\nKonfusionsmatrix\n\n\n# Grundlagen der Wahrscheinlichkeit\n\n-   Definitionen: Relative Häufigkeit vs. Wahrscheinlichkeit\n\n-   Axiome der Wahrscheinlichkeitsrechnung (Nichtnegativität, Normiertheit, Additivität)\n\n-   Laplace-Experimente & Gleichverteilung\n\n-   Kombinatorik (Urnenmodelle)\n\n# Bedingte Wahrscheinlichkeit & Zusammenhänge\n\n-   Unabhängigkeit von Ereignissen\n\n-   Satz der totalen Wahrscheinlichkeit\n\n-   Satz von Bayes\n\n-   Baumdiagramme & Kontingenztafeln (Vierfeldertafel)\n\n-   Beispiele: Ziegenproblem (Monty Hall), Geburtstagsproblem\n\n# Theoretische Verteilungsmodelle\n\n-   Diskrete Verteilungen:\n\n    -   Bernoulli-Verteilung (Erfolg/Misserfolg)\n\n    -   Binomialverteilung (Form, Symmetrie, Einfluss von n und p)\n\n    -   Hypergeometrische Verteilung\n\n    -   Poisson-Verteilung\n\n-   Stetige Verteilungen:\n\n    -   Gleichverteilung\n\n    -   Normalverteilung (Gauß): Eigenschaften, σ-Regeln\n\n    -   Standardnormalverteilung (z-Verteilung) & z-Transformation\n\n    -   Log-Normalverteilung\n\n# Grenzwertsätze\n\n-   Gesetz der großen Zahlen\n\n-   Zentraler Grenzwertsatz (CLT)\n\n-   Bienaymé-Tschebyscheff-Ungleichung\n\n-   Satz von Moivre-Laplace\n\n\n\n\n Zurück nach oben",
+    "crumbs": [
+      "Home",
+      "II. Wahrscheinlichkeit"
+    ]
+  },
+  {
+    "objectID": "jmp/index.html",
+    "href": "jmp/index.html",
+    "title": "JMP",
+    "section": "",
+    "text": "HinweisQuelle\n\n\n\n\n\nS.47-48 von Folie-06.10.25\n\n\n\n\nSAS JMP: Eine der primär in der Vorlesung genutzten Softwarelösungen.\nR: Eine freie, objektorientierte Statistik-Programmiersprache (Open Source), die oft mit der Entwicklungsumgebung RStudio genutzt wird.",
+    "crumbs": [
+      "Home",
+      "JMP"
+    ]
+  },
+  {
+    "objectID": "jmp/index.html#gui",
+    "href": "jmp/index.html#gui",
+    "title": "JMP",
+    "section": "2.1 GUI",
+    "text": "2.1 GUI\n\n\n\n\n\n\nHinweisQuelle\n\n\n\n\n\nS.53-54 von Folie-06.10.25\n\n\n\nDie Benutzeroberfläche bietet Menüs für Tabellen, Analysen und Grafiken sowie einen Bereich für offene Fenster.",
+    "crumbs": [
+      "Home",
+      "JMP"
+    ]
+  },
+  {
+    "objectID": "jmp/index.html#tabellen",
+    "href": "jmp/index.html#tabellen",
+    "title": "JMP",
+    "section": "2.2 Tabellen",
+    "text": "2.2 Tabellen\n\n\n\n\n\n\nHinweisQuelle\n\n\n\n\n\nS.54 von Folie-06.10.2025\n\n\n\nDaten werden in Tabellenform organisiert, mit einem Bereich für Spalteninformationen und Zeilenstatus.",
+    "crumbs": [
+      "Home",
+      "JMP"
+    ]
+  },
+  {
+    "objectID": "jmp/index.html#arbeiten-mit-daten",
+    "href": "jmp/index.html#arbeiten-mit-daten",
+    "title": "JMP",
+    "section": "2.3 Arbeiten mit Daten",
+    "text": "2.3 Arbeiten mit Daten\n\n2.3.1 Bereinigen / Neu kodieren\n\n\n\n\n\n\nHinweisQuelle\n\n\n\n\n\nS.55 von Folie-06.10.2025\n\n\n\nImportierte Daten (z. B. aus CSV) können bereinigt werden, um Inkonsistenzen zu beheben (z. B. Zusammenführen von “1.72” und “1,72”).\n\n\n\n2.3.2 Merkmalseigenschaften\n\n\n\n\n\n\nHinweisQuelle\n\n\n\n\n\nS.56 von Folie-06.10.2025\n\n\n\nTyp, Skalenniveau, Einheit: Spalten können als numerisch oder Zeichen definiert werden; das Skalenniveau (Modellierungstyp) wird festgelegt (z. B. stetig, nominal) und Einheiten (z.B. “cm”) können vergeben werden.\n\n\n\n2.3.3 Wertebeschriftungen\n\n\n\n\n\n\nHinweisQuelle\n\n\n\n\n\nS.57 von Folie-06.10.2025\n\n\n\nNumerischen Codes oder Kürzeln können lesbare Labels zugewiesen werden (z. B. “m” = “männlich”).\n\n\n\n2.3.4 Spalten hinzufügen / initialisieren\n\n\n\n\n\n\nHinweisQuelle\n\n\n\n\n\nS.58 von Folie-06.10.2025\n\n\n\nNeue Spalten (z. B. eine ID) können erstellt und mit Sequenzdaten automatisch befüllt werden.\n\n\n\n2.3.5 Bereinigen / Fehleingaben ausschließen\n\n\n\n\n\n\nHinweisQuelle\n\n\n\n\n\nS.58 von Folie-06.10.2025\n\n\n\nÜber Verteilungsdiagramme (Histogramme) lassen sich Ausreißer identifizieren und für weitere Analysen ausschließen oder ausblenden.",
+    "crumbs": [
+      "Home",
+      "JMP"
+    ]
+  },
+  {
+    "objectID": "jmp/index.html#verteilung",
+    "href": "jmp/index.html#verteilung",
+    "title": "JMP",
+    "section": "3.1 Verteilung",
+    "text": "3.1 Verteilung",
+    "crumbs": [
+      "Home",
+      "JMP"
+    ]
+  },
+  {
+    "objectID": "jmp/index.html#dienstprogramme---formel",
+    "href": "jmp/index.html#dienstprogramme---formel",
+    "title": "JMP",
+    "section": "3.2 Dienstprogramme - Formel",
+    "text": "3.2 Dienstprogramme - Formel",
+    "crumbs": [
+      "Home",
+      "JMP"
+    ]
+  },
+  {
+    "objectID": "jmp/index.html#darstellung-histogram",
+    "href": "jmp/index.html#darstellung-histogram",
+    "title": "JMP",
+    "section": "3.3 Darstellung Histogram",
+    "text": "3.3 Darstellung Histogram",
+    "crumbs": [
+      "Home",
+      "JMP"
+    ]
+  },
+  {
+    "objectID": "jmp/index.html#darstellung-tabelle",
+    "href": "jmp/index.html#darstellung-tabelle",
+    "title": "JMP",
+    "section": "3.4 Darstellung Tabelle",
+    "text": "3.4 Darstellung Tabelle",
+    "crumbs": [
+      "Home",
+      "JMP"
+    ]
+  },
+  {
+    "objectID": "jmp/index.html#qq-plot",
+    "href": "jmp/index.html#qq-plot",
+    "title": "JMP",
+    "section": "4.1 QQ-Plot",
+    "text": "4.1 QQ-Plot\nHier bitte die Spalten Beobachtete Quantilen und Vorhergesagte Quantile auf die eigene Tabelle anpassen:\nGraph Builder(\n    Size( 480, 480 ),\n    // Disables the Control Panel for editing the graph\n    Show Control Panel( 0 ),\n    // Disables the Legend\n    Show Legend( 0 ),\n    Variables( X( :Beobachtete Quantilen ), Y( :Vorhergesagte Quantilen ) ),\n    Elements( Points( X, Y, Legend( 3 ) ) ),\n    SendToReport(\n        // Scaling from X-Axis\n        Dispatch( {}, \"Beobachtete Quantilen\", ScaleBox,\n            {Min( 0 ), Max( 190 ), Inc( 10 ), Minor Ticks( 1 )}\n        ),\n        // Scaling from Y-Axis\n        Dispatch( {}, \"Vorhergesagte Quantilen\", ScaleBox,\n            {Min( 0 ), Max( 190 ), Inc( 10 ), Minor Ticks( 1 )}\n        ),\n        // Graph Title\n        Dispatch( {}, \"graph title\", TextEditBox, \n            {Set Text( \"QQ-Plot\" )}\n        ),\n        // linear function for origin half-line\n        Dispatch( {}, \"Graph Builder\", FrameBox,\n            {Add Graphics Script( 2, Description( \"\" ), Y Function( x, x ) )}\n        )\n    )\n);\n\n\n\n\n\n\nHinweisAusgabe:\n\n\n\n\n\n\n\n\n\nAlternative mit Distribution:\nDistribution(\n    Stack( 1 ),\n    Continuous Distribution(\n        Column( :Beobachtete Quantilen ),\n        Horizontal Layout( 1 ),\n        Vertical( 0 ),\n        Outlier Box Plot( 0 ),\n        Normal Quantile Plot( 1 )\n    )\n);\n\n\n\n\n\n\nHinweisAusgabe:\n\n\n\n\n\n\n\n\n\nHier wird jedoch die Normale-Quantile auf die Y-Achse gelegt",
+    "crumbs": [
+      "Home",
+      "JMP"
+    ]
+  },
+  {
+    "objectID": "jmp/index.html#z-transformation",
+    "href": "jmp/index.html#z-transformation",
+    "title": "JMP",
+    "section": "4.2 z-Transformation",
+    "text": "4.2 z-Transformation\n(:X - Col Mean( :mu )) / Col Std Dev( :sigma )\n\n// or\n\nCol Standardize( :X )",
+    "crumbs": [
+      "Home",
+      "JMP"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Statistik",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n\n\n Zurück nach oben"
+  },
+  {
+    "objectID": "deskriptive_statistik/visualisierung.html",
+    "href": "deskriptive_statistik/visualisierung.html",
+    "title": "Visualisierung",
+    "section": "",
+    "text": "Arten der Darstellung der Daten und deren Aussagegehalt:",
+    "crumbs": [
+      "Home",
+      "I. Deskriptive Statistik",
+      "Visualisierung"
+    ]
+  },
+  {
+    "objectID": "deskriptive_statistik/visualisierung.html#schiefen",
+    "href": "deskriptive_statistik/visualisierung.html#schiefen",
+    "title": "Visualisierung",
+    "section": "1.1 Schiefen",
+    "text": "1.1 Schiefen\nHäufigkeitsverteilungen können verschiedene Formen annehmen:\nLinksschief vs. Rechtsschief:",
+    "crumbs": [
+      "Home",
+      "I. Deskriptive Statistik",
+      "Visualisierung"
+    ]
+  },
+  {
+    "objectID": "deskriptive_statistik/visualisierung.html#modalitäten",
+    "href": "deskriptive_statistik/visualisierung.html#modalitäten",
+    "title": "Visualisierung",
+    "section": "1.2 Modalitäten",
+    "text": "1.2 Modalitäten\n\nUnimodal\n\nBimodal\n\nMultimodal,…",
+    "crumbs": [
+      "Home",
+      "I. Deskriptive Statistik",
+      "Visualisierung"
+    ]
+  },
+  {
+    "objectID": "deskriptive_statistik/visualisierung.html#klassierung-und-häufigkeit",
+    "href": "deskriptive_statistik/visualisierung.html#klassierung-und-häufigkeit",
+    "title": "Visualisierung",
+    "section": "2.1 Klassierung und Häufigkeit",
+    "text": "2.1 Klassierung und Häufigkeit\nAbsolute Häufigkeit in einer Klasse:\n\nh(x_j) = \\text{\"Anzahl der Werte innerhalb Klassengrenzen\"}\n\nAbsolute Häufigkeitsdichte:\n\n\\widehat{h}(x)=\\frac{h(x_j)}{x_j^o - x_j^u}",
+    "crumbs": [
+      "Home",
+      "I. Deskriptive Statistik",
+      "Visualisierung"
+    ]
+  },
+  {
+    "objectID": "deskriptive_statistik/visualisierung.html#vorgehensweise",
+    "href": "deskriptive_statistik/visualisierung.html#vorgehensweise",
+    "title": "Visualisierung",
+    "section": "3.1 Vorgehensweise",
+    "text": "3.1 Vorgehensweise\n\nBestimmung empirischen Quantile x_i\nBestimmung theoretischer Quantile y_i aus der Normalverteilung\n\np_i = F_{\\text{empirisch}}(x_i)\ny_i = F_{\\text{theoretisch}}^{-1}(p_i)\n\nDarstellung als Wertepaare (p_i, y_i) im Diagramm\n\nAussage des Graphen:\nWenn Merkmalswerte der theoretischen Verteilung folgen, stimmen empirische und theoretischen Quantile annähernd überein, die Punkte liegen auf der Winkelhalbierenden",
+    "crumbs": [
+      "Home",
+      "I. Deskriptive Statistik",
+      "Visualisierung"
+    ]
+  },
+  {
+    "objectID": "deskriptive_statistik/visualisierung.html#beispiel",
+    "href": "deskriptive_statistik/visualisierung.html#beispiel",
+    "title": "Visualisierung",
+    "section": "3.2 Beispiel",
+    "text": "3.2 Beispiel\nGegeben ist folgende Tabelle mit den echten Beobachteten Quantilen p_i und der theoretischen Quantilen y_i aus der k-\\sigma-Regel:\n\nDiese werden dann in einem Diagram mit Ursprungshalbgeraden dargestellt:",
+    "crumbs": [
+      "Home",
+      "I. Deskriptive Statistik",
+      "Visualisierung"
+    ]
+  },
+  {
+    "objectID": "deskriptive_statistik/normalverteilung.html",
+    "href": "deskriptive_statistik/normalverteilung.html",
+    "title": "Standardnormalverteilung",
+    "section": "",
+    "text": "HinweisQuelle\n\n\n\n\n\n\nS.123-125 von Folie-19.10.2025\nS.161- von Folie-19.10.2025",
+    "crumbs": [
+      "Home",
+      "I. Deskriptive Statistik",
+      "Standardnormalverteilung"
+    ]
+  },
+  {
+    "objectID": "deskriptive_statistik/normalverteilung.html#das-gaußische-integral",
+    "href": "deskriptive_statistik/normalverteilung.html#das-gaußische-integral",
+    "title": "Standardnormalverteilung",
+    "section": "2.1 Das Gaußische Integral:",
+    "text": "2.1 Das Gaußische Integral:\n\nf(x) = e^{-x^2} \\quad \\Rightarrow \\quad \\int_{-\\infty}^{\\infty} e^{-x^2} dx = \\sqrt{\\pi}\n\\tag{1}\nEnthält keinen Mittelwert sowie Standardabweichung.\n\n2.1.1 Warum PI?\n\n\n\n\n\n\nHinweisQuelle\n\n\n\n\n\n\nS.164 von Folie-19.10.2025",
+    "crumbs": [
+      "Home",
+      "I. Deskriptive Statistik",
+      "Standardnormalverteilung"
+    ]
+  },
+  {
+    "objectID": "deskriptive_statistik/normalverteilung.html#die-normalverteilung",
+    "href": "deskriptive_statistik/normalverteilung.html#die-normalverteilung",
+    "title": "Standardnormalverteilung",
+    "section": "2.2 Die Normalverteilung:",
+    "text": "2.2 Die Normalverteilung:\n\nAuch Dichtefunktion\n\n\nf(x|\\mu, \\sigma^2) = \\frac{1}{\\sqrt{2\\pi\\sigma^2}} \\cdot e^{-\\frac{(x-\\mu)^2}{2\\sigma^2}}\n\\tag{2}\nIst abhängig von Mittelwert \\mu und Standardabweichung(Varian) \\sigma.",
+    "crumbs": [
+      "Home",
+      "I. Deskriptive Statistik",
+      "Standardnormalverteilung"
+    ]
+  },
+  {
+    "objectID": "deskriptive_statistik/normalverteilung.html#fläche-unter-der-kurve-bei-normierung",
+    "href": "deskriptive_statistik/normalverteilung.html#fläche-unter-der-kurve-bei-normierung",
+    "title": "Standardnormalverteilung",
+    "section": "2.3 Fläche unter der Kurve bei Normierung:",
+    "text": "2.3 Fläche unter der Kurve bei Normierung:\n\n\\int_{-\\infty}^{\\infty} \\frac{1}{\\sqrt{2\\pi\\sigma^2}} \\cdot e^{-\\frac{(x-\\mu)^2}{2\\sigma^2}} dx = 1\n\nIst immer 1.",
+    "crumbs": [
+      "Home",
+      "I. Deskriptive Statistik",
+      "Standardnormalverteilung"
+    ]
+  },
+  {
+    "objectID": "deskriptive_statistik/normalverteilung.html#der-spezialfall-die-standardnormalverteilung",
+    "href": "deskriptive_statistik/normalverteilung.html#der-spezialfall-die-standardnormalverteilung",
+    "title": "Standardnormalverteilung",
+    "section": "2.4 Der Spezialfall die Standardnormalverteilung:",
+    "text": "2.4 Der Spezialfall die Standardnormalverteilung:\n\n\\mu = 0, \\sigma = 1 \\quad \\Rightarrow \\quad f(x) = \\frac{1}{\\sqrt{2\\pi}} \\cdot e^{-\\frac{1}{2}x^2}",
+    "crumbs": [
+      "Home",
+      "I. Deskriptive Statistik",
+      "Standardnormalverteilung"
+    ]
+  },
+  {
+    "objectID": "deskriptive_statistik/normalverteilung.html#sec-Sigma-Bereich",
+    "href": "deskriptive_statistik/normalverteilung.html#sec-Sigma-Bereich",
+    "title": "Standardnormalverteilung",
+    "section": "3.1 Sigma-Bereiche",
+    "text": "3.1 Sigma-Bereiche\nDarüber hinaus gibt es noch die sogenannten Sigma-Bereiche, welche einen bestimmten Anteil an Werten enthalten.\nIn folgenden mit ungefähren Werten:\n\n[\\mu - \\sigma; \\mu + \\sigma] enthält 68.27% aller Werte\n[\\mu - 2\\sigma; \\mu + 2\\sigma] enthält 95.73% aller Werte\n[\\mu - 3\\sigma; \\mu + 3\\sigma] enthält 99.73% aller Werte\n[\\mu - 5\\sigma; \\mu + 5\\sigma] enthält 99.99994% aller Werte\n\nund umgekehrt:\n\n50% aller Werte sind zwischen [\\mu - 0.675\\sigma; \\mu + 0.675\\sigma]\n90% aller Werte sind zwischen [\\mu - 1.64\\sigma; \\mu + 1.64\\sigma]\n95% aller Werte sind zwischen [\\mu - 1.96\\sigma; \\mu + 1.96\\sigma]\n99% aller Werte sind zwischen [\\mu - 2.58\\sigma; \\mu + 2.58\\sigma]\n\nFormel für allgemeine Wahrscheinlichkeit für ein Intervall:\n\n\\begin{array}{l}\nP(|X - \\mu| \\le k \\cdot \\sigma) & = & P(\\mu - k \\cdot \\sigma \\le X \\le \\mu + k \\cdot \\sigma) \\\\\n& = & \\int_{\\mu - \\sigma}^{\\mu + \\sigma} f(x|\\mu,\\sigma^2) \\, dx\n\\end{array}\n\nDie Wahrscheinlichkeit (P), dass ein Wert X maximal k Standardabweichungen \\sigma vom Mittelwert \\mu entfernt liegt, ist gleich der Wahrscheinlichkeit, dass dieser im Intervall zwischen μ−kσ und μ+kσ liegt.",
+    "crumbs": [
+      "Home",
+      "I. Deskriptive Statistik",
+      "Standardnormalverteilung"
+    ]
+  },
+  {
+    "objectID": "deskriptive_statistik/normalverteilung.html#warnung-bei-schiefer-verteilung",
+    "href": "deskriptive_statistik/normalverteilung.html#warnung-bei-schiefer-verteilung",
+    "title": "Standardnormalverteilung",
+    "section": "4.1 Warnung bei schiefer Verteilung",
+    "text": "4.1 Warnung bei schiefer Verteilung\n\n\n\n\n\n\nHinweisQuelle\n\n\n\n\n\n\nS.168 von Folie-19.10.2025\n\n\n\n\nBeispiel: Welches Alter haben die meisten Studierenden (95%) in der Vorlesung?\nGegeben:\n\n\\begin{align*}\n\\text{Anzahl Messwerte: } & n = 81 \\\\\n\\text{Mittelwert: } & \\mu = 21.45679 \\text{ Jahre} \\\\\n\\text{Standardabweichung: } & \\sigma = 3.1545577 \\text{ Jahre}\n\\end{align*}\n\nEinfügen:\n\n\\begin{array}{l}\nI& = & [\\mu \\pm 1.96\\sigma]\\\\\n& \\approx & [21.46 \\text{ Jahre} \\pm 1.96 \\cdot 3.15 \\text{ Jahre}] \\\\\n& \\approx & [15.27 \\text{ Jahre}; 27.63 \\text{ Jahre}]\n\\end{array}\n\n\\Rightarrow Laut Sigmaregel soll das Mindestalter 15.27 Jahre sein, was jedoch auch nicht stimmt, wenn man sich die Quantillen anschaut:\n\nDas Problem wird durch Blick auf die Verteilung im Histogram zusammen mit der Formel für die Normalverteilung sichtbar.\n\nMit folgender Dichteformel:\n\nf(x|27.46Y, 3.25Y^2) = \\frac{1}{\\sqrt{2\\pi\\cdot 3.25Y^2}} \\cdot e^{-\\frac{(x-27.46 Y)^2}{2\\cdot3.25Y^2}}",
+    "crumbs": [
+      "Home",
+      "I. Deskriptive Statistik",
+      "Standardnormalverteilung"
+    ]
+  },
+  {
+    "objectID": "deskriptive_statistik/normalverteilung.html#beispiel",
+    "href": "deskriptive_statistik/normalverteilung.html#beispiel",
+    "title": "Standardnormalverteilung",
+    "section": "5.1 Beispiel",
+    "text": "5.1 Beispiel\n\n5.1.1 Pub Quiz\n\nDazu referenzierte Tabelle: Pub_Quiz.jmp\n\nDie Punktzahl aus zwei verschiedenen Quizrunden sollen verglichen werden, jedoch soll die Schwierigkeit der Runde mit einbezogen werden.\n\n\n\nAnzahl der Teilnehmer mit einen bestimmten Punktescore\n\n\nWie zu sehen ist, war die zweite Runde deutlich einfacher, da dort fast jeder genauso viel Punkte hat.\nUm dies auszugleichen führt man bei jeden Wert ein z-Transformation aus. Hierzu die oben gezeigte Formel anwenden: Den Wert X_i vom Mittelwert \\mu abziehen und durch die Standardabweichung \\sigma teilen.\nDurch die z-Tansformation lässt sich nun, die Verteilung der Punkte zwischen den verschieden, schweren Runden besser Vergleichen:\n\nBeispielsweise kann durch berechnen der Mittelwerte, der beiden z-Scores, der wirklich bessere Spieler unter Berücksichtigung des Schwierigkeitsgrades ermittelt werden:\n\n\n\n5.1.2 Verteilung der Größe Deutschland\n\n\n\n\n\n\nHinweisQuelle\n\n\n\n\n\n\nS.201-205 von Folie-04.11.2025\n\n\n\n\nGeben Sie zu einer N(171.55cm, (9.55cm)^2) verteilten Größe Zufallsgröße das um den Erwartungswert symmetrische Intervall an, welches eine Wahrscheinlichkeit von 0,95 hat.\n\nGegeben\nDie Normalverteilung mit:\n\n\\text{Groesse} \\sim N(\\mu, \\sigma) = N(171.55cm, (9.55cm)^2)\n\nDie Tabelle zur Standardnormalverteilung\n\n\\begin{array}{l}\nZ_{0.975} = 1.96 \\\\\nZ_{0.025} = -Z_{0.975} = -1.96\n\\end{array}\n\n\n\nGesucht\nZwischen welchen Größen liegt der Großteil (95%) aller Deutschen?\nBzw.:\n\nP(|X - 171.55cm| \\le 1.96 \\cdot 9.55cm) = 0.95\n\nAnwendung der Z-Trasnformationsformel:\n\nZ_i  = \\frac{X_i - \\mu}{\\sigma} \\Leftrightarrow X_i = \\mu + Z_i \\cdot \\sigma\n\n\n\\begin{array}{l}\nx_{0.975} & = & 171.55cm + 1.96 \\cdot 9.55cm \\\\\n& = & 190.27cm \\\\\nx_{0.025} & = & 171.55cm - 1.96 \\cdot 9.55cm \\\\\n& = & 152.83cm \\\\\n\\end{array}\n\nDer Großteil (95%) aller Deutschen liegt zwischen den Werten: 152.83 cm und 190.27cm.\n\n\n\n5.1.3 Weiteres Beispiel\nWird nicht weiter ausgeführt, siehe hierzu:\n\n\n\n\n\n\nHinweisQuelle\n\n\n\n\nS.207-210 von Folie-04.11.2025",
+    "crumbs": [
+      "Home",
+      "I. Deskriptive Statistik",
+      "Standardnormalverteilung"
+    ]
+  },
+  {
+    "objectID": "deskriptive_statistik/index.html",
+    "href": "deskriptive_statistik/index.html",
+    "title": "I. Deskriptive Statistik",
+    "section": "",
+    "text": "HinweisQuelle\n\n\n\n\n\nS.87 von Folie-13.10.2025\n\n\n\nBeschreibende Statistik mit den Ziel einer übersichtliche Darstellung von empirischen Daten.\nIn Gegensatz zur induktiver Statistik bietet die deskriptive Statistik keine Aussagen über Grundgesamtheit sowie dient sie auch nicht zur Überprüfung von Hypothesen.\n\n\n\n Zurück nach oben",
+    "crumbs": [
+      "Home",
+      "I. Deskriptive Statistik"
+    ]
+  },
+  {
+    "objectID": "anwendungsbereiche/index.html",
+    "href": "anwendungsbereiche/index.html",
+    "title": "Anwendungsbereiche",
+    "section": "",
+    "text": "1 NaKo Studie\n\n\n\n\n\n\nHinweisQuelle\n\n\n\n\n\nS.155 von Folie-27.10.2025\n\n\n\n\nDie NAKO (Nationale Kohorte) ist eine riesige Langzeitstudie, die verstehen will, wie und warum “Volkskrankheiten” entstehen\n\n\nZiel: Erforschung der Volkskrankheiten\nStart 2014, Laufzeit 20 – 30 Jahre\n200.000 freiwillige Menschen zwischen 20 – 69 Jahren\n\nEntsprechend der Deklaration von Helsinki\n\n18 Zentren in Deutschland\nLebensumstände, Krankheitsgeschichte, medizinische Untersuchungen\n\nHerz-Kreislauf\nKrebs\nDiabetes mellitus\nNeurologische und psychiatrische Erkrankungen\nInfektionskrankheiten\nKrankheiten des Bewegungsapparates\n\nUntersuchungsprogramm Level 1\n\nMessung von Körpergröße und Körpergewicht, Taillenumfang und Körperzusammensetzung\n…\n\n\n\n\n2 Deklaration von Helsinki\n\nEin weltweit anerkanntes Dokument des Weltärztebundes, das festlegt, was man mit Menschen in der Forschung tun darf und was nicht.\n\n\n1964 während der 18. Versammlung des Weltärztebundes verabschiedet\n\nEthische Standards für medizinische Forschung am Menschen\nLetzte Überarbeitung 2013\nWeltweit anerkannt\n\nPrinzipien\n\nAufklärung der Studienteilnehmer/-innen\nErfordernis einer Einwilligungserklärung\nFreiwillige Teilnahme\nSchutz nicht-einwilligungsfähiger Patienten/-innen\nNutzen-Risiko-Abwägung\nVorrang des Wohlergehens der Versuchsperson vor Interessen der Wissenschaft\nVerpflichtung der Genehmigung eines Forschungsvorhabens durch eine unabhängige Ethikkommission\nNichtveröffentlichung von Forschungsergebnissen aus unethischen Versuchen\nDatenschutz\n\n\n\n\n\n\n Zurück nach oben",
+    "crumbs": [
+      "Home",
+      "Anwendungsbereiche"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n\n\n Zurück nach oben"
+  },
+  {
+    "objectID": "deskriptive_statistik/haeufigkeiten.html",
+    "href": "deskriptive_statistik/haeufigkeiten.html",
+    "title": "Häufigkeiten",
+    "section": "",
+    "text": "HinweisQuelle\n\n\n\n\n\nS.114 von Folie-13.10.2025\n\n\n\nAbsolute Häufigkeit:\n h(x_i) = h_i \n\nRelative Häufigkeit:\n f(x_i) = \\frac{h(x_i)}{n} = \\frac{h_i}{n}",
+    "crumbs": [
+      "Home",
+      "I. Deskriptive Statistik",
+      "Häufigkeiten"
+    ]
+  },
+  {
+    "objectID": "deskriptive_statistik/haeufigkeiten.html#verschiedene-fälle",
+    "href": "deskriptive_statistik/haeufigkeiten.html#verschiedene-fälle",
+    "title": "Häufigkeiten",
+    "section": "3.1 Verschiedene Fälle",
+    "text": "3.1 Verschiedene Fälle\n\n3.1.1 “Kleiner als…” Fall\n\nWie viel Prozent eines Wertes X ist kleiner als der Wert b?\n\n\nP(X&lt;b) = F(b)\n\n\n\n3.1.2 “Größer als…” Fall (Gegenwahrscheinlichkeit)\n\nWie viel Prozent eines Wertes X ist Größer (oder gleich) als der Wert a?\n\n\nP(X\\ge a) = 1 - F(a)\n\n\n\n3.1.3 “Zwischen einem A & B” Fall (Intervall)\n\nWie viel Prozent eines Wertes X ist zwischen den Wert a und b?\n\n\nP(a \\ge X &lt; b) = F(b) - F(a)",
+    "crumbs": [
+      "Home",
+      "I. Deskriptive Statistik",
+      "Häufigkeiten"
+    ]
+  },
+  {
+    "objectID": "deskriptive_statistik/haeufigkeiten.html#beispiele",
+    "href": "deskriptive_statistik/haeufigkeiten.html#beispiele",
+    "title": "Häufigkeiten",
+    "section": "3.2 Beispiele",
+    "text": "3.2 Beispiele\n\n3.2.1 Wie viele Personen sind wie schwer?\n\nFür Anteil X:\n\nX &lt; 80kg ?\n\n\\Rightarrow F(\"75-80\") = 0.54 \\widehat{=} 54%\n\nX \\ge 80kg ?\n\n\\Rightarrow 1 - F(\"75-80\") = 0.46 \\widehat{=} 46%\n\n50kg \\le X &lt; 100kg ?\n\n\\Rightarrow F(\"75-80\") - F(\"50-55\") = 0.54 - 0.07 = 0.47 \\widehat{=} 47%\n\n\n\n\n3.2.2 Körpergröße für Autosicherheit\n\n\n\n\n\n\nHinweisQuelle\n\n\n\n\n\nS.160 von Folie-27.10.2025\n\n\n\n\nFür welche Körpergröße muss die Sicherheitseinrichtungen in einem Auto (Sitz, Airbag, Gurt, etc.) planen, so dass die meisten Menschen bei einem Unfall geschützt werden?\n\\Rightarrow Z. B. 95% der Menschen\n\nStichprobe (n=89725, aus NaKo):\n\n95% \\widehat{=} 2.5% bis 97.5% Quantilen\n\\Rightarrow Körpergröße von 154cm bis 190.1 cm",
+    "crumbs": [
+      "Home",
+      "I. Deskriptive Statistik",
+      "Häufigkeiten"
+    ]
+  },
+  {
+    "objectID": "deskriptive_statistik/kennzahlen.html",
+    "href": "deskriptive_statistik/kennzahlen.html",
+    "title": "Kennzahlen (Parameter)",
+    "section": "",
+    "text": "Übersicht Aller Parameter",
+    "crumbs": [
+      "Home",
+      "I. Deskriptive Statistik",
+      "Kennzahlen (Parameter)"
+    ]
+  },
+  {
+    "objectID": "deskriptive_statistik/kennzahlen.html#modus-modalwert-x_textmod",
+    "href": "deskriptive_statistik/kennzahlen.html#modus-modalwert-x_textmod",
+    "title": "Kennzahlen (Parameter)",
+    "section": "1.1 Modus, Modalwert x_{\\text{Mod}}",
+    "text": "1.1 Modus, Modalwert x_{\\text{Mod}}\n\nHäufigster Wert\nAnwendung auch bei nominal skalierten Daten x_j\n\n\nx_{\\text{Mod}} =\\max(h(x_i))",
+    "crumbs": [
+      "Home",
+      "I. Deskriptive Statistik",
+      "Kennzahlen (Parameter)"
+    ]
+  },
+  {
+    "objectID": "deskriptive_statistik/kennzahlen.html#median-x_textmed",
+    "href": "deskriptive_statistik/kennzahlen.html#median-x_textmed",
+    "title": "Kennzahlen (Parameter)",
+    "section": "1.2 Median x_{\\text{Med}}",
+    "text": "1.2 Median x_{\\text{Med}}\n\n“mittlerer” Wert: Gleichviele Werte ober- und unterhalb\nMedian = 50%-Quatile (Q2)\nUrliste aufsteigend sortiert (nach Rang geordnet)\nMindestens ordinal skaliert\n\n\nx_{\\text{Med}} = \\left\\{ \\begin{array}{cl}\nx_{\\frac{n+1}{2}} & , \\text{wenn }n\\text{ ungerade} \\\\\n\\frac{x_{\\frac{n}{2}} + x_{\\frac{n}{2}+1}}{2} & , \\text{wenn }n\\text{ gerade}\n\\end{array}\n\\right.\n\n\n1.2.1 Quantile\n\n\n\n\n\n\nHinweisQuelle\n\n\n\n\n\nS.110 von Folie-20.10.2025\n\n\n\nQuantile unterteilen sortierte Datenreihe in gleich große Teile.\nAllgemeine Formel für dem Quantil p:\n\nx_p = \\left\\{ \\begin{array}{cl}\n\\frac{x_{n\\cdot p}+x_{n\\cdot p + 1}}{2} & , \\text{wenn } n\\cdot p\\text{ ganzzahlig} \\\\\nx_{\\left\\lfloor n\\cdot p +1 \\right\\rfloor} & , \\text{wenn } n\\cdot p\\text{ nicht ganzzahlig}\n\\end{array} \\right.",
+    "crumbs": [
+      "Home",
+      "I. Deskriptive Statistik",
+      "Kennzahlen (Parameter)"
+    ]
+  },
+  {
+    "objectID": "deskriptive_statistik/kennzahlen.html#arithmetischer-mittelwert",
+    "href": "deskriptive_statistik/kennzahlen.html#arithmetischer-mittelwert",
+    "title": "Kennzahlen (Parameter)",
+    "section": "1.3 Arithmetischer Mittelwert",
+    "text": "1.3 Arithmetischer Mittelwert\n\nSinnvoll nur bei kardinalskalierten Werten\nMeist nur sinnvoll bei symmetrischer Verteilung (Schiefe \\approx 0)\nNicht robust gegen Außreiser\n\n\n\\bar{x} = \\frac{1}{n} \\sum_{i=1}^{n}{x_i}\n\n\n1.3.1 Berechnung bei klassierten Daten\n\n\\overline{x}^* = \\frac{1}{n} \\sum_{j=1}^{n}{(x_j\\cdot h(x_j))}\n\nMit x_j und h(x_j) als:\n\nx_j := \\text{Klassenmitte} \\\\\nh(x_j) := \\text{Klassenhäufigkeit}",
+    "crumbs": [
+      "Home",
+      "I. Deskriptive Statistik",
+      "Kennzahlen (Parameter)"
+    ]
+  },
+  {
+    "objectID": "deskriptive_statistik/kennzahlen.html#grundlegende-parameter",
+    "href": "deskriptive_statistik/kennzahlen.html#grundlegende-parameter",
+    "title": "Kennzahlen (Parameter)",
+    "section": "2.1 Grundlegende Parameter",
+    "text": "2.1 Grundlegende Parameter\n\n2.1.1 Spannweite SP\nEng.: range\n\nSP = \\max(x_i) - \\min(x_i)\n\n-&gt; Nicht robust gegen Ausreißer\n\n\n2.1.2 Mittlere absolute Abweichung MAD\nEng.: (mean absolute deviation)\n\nMAD = \\sum_{i=1}^{n}{|x_i-\\bar{x}|}\n\n\n\n2.1.3 Summe der Abweichungsquadrate SQ_x\nEng.: sum of squared differences\n\nSQ_x = \\sum_{i=1}^{n} (x_i - \\bar{x})^2\n\n\n\n2.1.4 Empirische Varianz \\tilde{s}_x^2\nEng.: variance\n\n\\tilde{s}_x^2 = \\frac{1}{n} SQ_x = \\frac{1}{n} \\sum_{i=1}^{n} (x_i - \\bar{x})^2\n\n\n\n2.1.5 Empirische Standartabweichung \\tilde{s}\nEng.: standard deviation\n\n\\tilde{s} = \\sqrt{\\tilde{s}_x^2} = \\sqrt{\\frac{1}{n} \\sum_{i=1}^{n} (x_i - \\bar{x})^2}\n\n\n\n2.1.6 Empirischer Variationskoeffizient v\nEng.: coefficient of variation\n\nv = \\frac{\\tilde{s}}{\\bar{x}}",
+    "crumbs": [
+      "Home",
+      "I. Deskriptive Statistik",
+      "Kennzahlen (Parameter)"
+    ]
+  },
+  {
+    "objectID": "deskriptive_statistik/kennzahlen.html#streuungsparameter-um-median",
+    "href": "deskriptive_statistik/kennzahlen.html#streuungsparameter-um-median",
+    "title": "Kennzahlen (Parameter)",
+    "section": "2.2 Streuungsparameter um Median",
+    "text": "2.2 Streuungsparameter um Median\n\n\n\n\n\n\nHinweisQuelle\n\n\n\n\n\nS.104-106 von Folie-13.10.2025\n\n\n\n\nBei den Median handelt es sich um die 50%-Quantile bzw. auch Q2 oder Q_{0.5}\nDarüberhinaus gibt es auch noch weitere Quantilen:\n\nQ1 / Q_{0.25} / 25%-Quantile\n-&gt; 25% viele Werte unterhalb und 75% oberhalb\nQ3 / Q_{0.75} / 75%-Quantile\n-&gt; 75% viele Werte unterhalb und 25% oberhalb\n\n\n2.2.1 Interquartilsabstand\nSagt aus, wie breit die “mittleren 50%” der Daten streuen.\n\nwenn p=0.25 -&gt; Unteres Quantil\nwenn p=0.75 -&gt; Oberes Quantil\n\nAus unterem und oberend Quantil lässt sich schließlich der Interquartilsabstand (Eng.: interquartile range) berechnen:\n\nIQR=Q_{0.75} - Q_{0.25}\n\n\n\n2.2.2 Mittlere absolute Abweichung vom Median\nEng.: mean absolute deviation from the median\n\nMD = \\frac{1}{n}\\sum_{i=1}^{n}{|x_i-x_{\\text{Med}}|}\n\n\n\n2.2.3 Graphische Darstellung von Quantilen\n\nSymmetrisch vs. Asymmetrisch",
+    "crumbs": [
+      "Home",
+      "I. Deskriptive Statistik",
+      "Kennzahlen (Parameter)"
+    ]
+  },
+  {
+    "objectID": "deskriptive_statistik/kennzahlen.html#stichproben",
+    "href": "deskriptive_statistik/kennzahlen.html#stichproben",
+    "title": "Kennzahlen (Parameter)",
+    "section": "2.3 Stichproben",
+    "text": "2.3 Stichproben\nBei Stichproben wird nicht durch die Anzahl n sondern durch die Anzahl der Freiheitsgrade n-1 geteilt.\n\n2.3.1 Anzahl der Freiheitsgrade\nEs gilt die Summe aller Abweichungen vom Mittelwert (Also Wert x_i minus Mittelwert \\bar{x}) ist immer Null.\n\n\\begin{align*}\n\\sum_{i=1}^{n} \\left( x_i - \\frac{1}{n} \\sum_{j=1}^{n} x_j \\right) &=\n    \\underbrace{\\left( x_1 - \\frac{1}{n} \\sum_{j=1}^{n} x_j \\right) + \\ldots\n    + \\left( x_n - \\frac{1}{n} \\sum_{j=1}^{n} x_j \\right)}_{n\\text{ mal}} \\\\\n&= (x_1 + \\ldots + x_n) - n \\cdot \\frac{1}{n} \\sum_{j=1}^{n} x_j \\\\\n&= \\sum_{j=1}^{n} x_j - \\sum_{j=1}^{n} x_j \\\\\n&= 0\n\\end{align*}\n\nBei einer Stichprobe sind jedoch nicht alle Werte (x_1 bis x_n) bekannt, trotzdem lassen sich die Werte bis x_{n-1} frei wählen, was jedoch dann den letzten Wert x_n festmacht, damit die obere Gleichung erfühlt ist.\nSomit gilt, dass die Anzahl der frei zu wählenden Werten - also Freiheitsgrade - n-1 entspricht.\nBei Stichprobenvarianz und -standardabweichung teilt man deswegen durch n-1, um diese “fair” zu berechnen (Man tut so als hätte man n Werte, hat sie jedoch nicht).\n\n\n2.3.2 Stichprobenvarianz\nStreuung der Werte in beobachteter Stichprobe\n\ns^2 = \\frac{1}{n-1} \\sum_{i=1}^{n} (x_i - \\bar{x})^2\n\n\n\n2.3.3 Stichprobenstandardabweichung\n\n\\bar{s} = \\sqrt{\\frac{1}{n-1} \\sum_{i=1}^{n} (x_i - \\bar{x})^2}",
+    "crumbs": [
+      "Home",
+      "I. Deskriptive Statistik",
+      "Kennzahlen (Parameter)"
+    ]
+  },
+  {
+    "objectID": "deskriptive_statistik/kennzahlen.html#schiefe",
+    "href": "deskriptive_statistik/kennzahlen.html#schiefe",
+    "title": "Kennzahlen (Parameter)",
+    "section": "3.1 Schiefe",
+    "text": "3.1 Schiefe\nMaßzahl für Symmetrie einer (Häufigkeits-)Verteilung\n\nIn Vergleich zu Modus und Median:",
+    "crumbs": [
+      "Home",
+      "I. Deskriptive Statistik",
+      "Kennzahlen (Parameter)"
+    ]
+  },
+  {
+    "objectID": "deskriptive_statistik/kennzahlen.html#kortosis-wölbung",
+    "href": "deskriptive_statistik/kennzahlen.html#kortosis-wölbung",
+    "title": "Kennzahlen (Parameter)",
+    "section": "3.2 Kortosis (Wölbung)",
+    "text": "3.2 Kortosis (Wölbung)\nMaßzahl für Steilheit bzw. „Spitzigkeit“ einer (Häufigkeits-)Verteilung",
+    "crumbs": [
+      "Home",
+      "I. Deskriptive Statistik",
+      "Kennzahlen (Parameter)"
+    ]
+  },
+  {
+    "objectID": "deskriptive_statistik/qualitaetskontrolle.html",
+    "href": "deskriptive_statistik/qualitaetskontrolle.html",
+    "title": "Statistische Qualitätskontrolle",
+    "section": "",
+    "text": "HinweisQuelle\n\n\n\n\n\nS.129-136 von Folie-19.10.2025\nVorteile:",
+    "crumbs": [
+      "Home",
+      "I. Deskriptive Statistik",
+      "Statistische Qualitätskontrolle"
+    ]
+  },
+  {
+    "objectID": "deskriptive_statistik/qualitaetskontrolle.html#aufbau-xbars-karte",
+    "href": "deskriptive_statistik/qualitaetskontrolle.html#aufbau-xbars-karte",
+    "title": "Statistische Qualitätskontrolle",
+    "section": "1.1 Aufbau XBarS-Karte",
+    "text": "1.1 Aufbau XBarS-Karte\n\n\n\nXBarS-Karte\n\n\n-&gt; Mittelwert \\bar{x} und Standartabweichung s\nEingriffsgrenzen mit \\frac{1}{\\sqrt{n}} als Standardfehler:\n\nObere Warngrenze: \\text{OWG} = \\mu + 1.96\\sigma\\cdot\\frac{1}{\\sqrt{n}}\nUntere Warngrenze: \\text{UWG} = \\mu - 1.96\\sigma\\cdot\\frac{1}{\\sqrt{n}}\nObere Eingriffsgrenze: \\text{OEG} = \\mu + 2.576\\sigma\\cdot\\frac{1}{\\sqrt{n}}\nUntere Eingriffsgrenze: \\text{UEG} = \\mu + 2.576\\sigma\\cdot\\frac{1}{\\sqrt{n}}\n\nFür die Grenzen müssen der Faktor für \\sigma und der Mittelwert \\mu aus Vorkentnissen bekannt sein.\nEs werden über die Zeit Stichproben entnommen und daraus dann der entsprechende Mittelwert \\bar{x} sowie die Standardabweichung s berechnet und in die Karte eingetragen.\n\nWenn die Werte ober oder unterhalb Warngrenzen liegen, besteht ein Verdacht auf Störung\n-&gt; Weitere Stichproben\nWenn die Werte ober oder unterhalb Eingreifsgrenzen liegen, gibt es vermutlich eine Störung\n-&gt; Sofortiger Eingriff erforderlich\n\nMögliche Schussfolgerungen aus einer XbarS-Karte:",
+    "crumbs": [
+      "Home",
+      "I. Deskriptive Statistik",
+      "Statistische Qualitätskontrolle"
+    ]
+  },
+  {
+    "objectID": "deskriptive_statistik/qualitaetskontrolle.html#aufbau-xbarr-karte",
+    "href": "deskriptive_statistik/qualitaetskontrolle.html#aufbau-xbarr-karte",
+    "title": "Statistische Qualitätskontrolle",
+    "section": "1.2 Aufbau XbarR-Karte",
+    "text": "1.2 Aufbau XbarR-Karte\n\n\n\nXbarR-Karte\n\n\n-&gt; Mittelwert \\bar{x} und Spannweite R",
+    "crumbs": [
+      "Home",
+      "I. Deskriptive Statistik",
+      "Statistische Qualitätskontrolle"
+    ]
+  },
+  {
+    "objectID": "deskriptive_statistik/qualitaetskontrolle.html#ziel-warum-genau-6-sigma",
+    "href": "deskriptive_statistik/qualitaetskontrolle.html#ziel-warum-genau-6-sigma",
+    "title": "Statistische Qualitätskontrolle",
+    "section": "2.1 Ziel: Warum genau “6” Sigma?",
+    "text": "2.1 Ziel: Warum genau “6” Sigma?\n\nDer Kampf gegen die Toleranzgrenze:\nEs gibt einen Idealwert (z. B. eine Schraubenlänge von 50 mm) und Toleranzgrenzen, die erlaubt sind (z. B. ±0,05 mm).\nDie Gefahr:\nJe breiter die Kurve (Standardabweichung σ) ist, desto größer ist das Risiko, dass Teile außerhalb der Toleranz liegen und damit Ausschuss sind.\nDie Lösung:\nProzess so präzise machen (die Kurve so schmal), dass der Mittelwert mindestens 6 Standardabweichungen (6σ) von der Toleranzgrenze entfernt ist.\n\n-&gt; Bei erreichen dieses Level würden 99,99966 % aller Teile innerhalb der Tolleranz liegen. Das würde praktisch eine “Nullfehlerproduktion” bedeuten.\n\n\n\nBeispiel mit Schrauben",
+    "crumbs": [
+      "Home",
+      "I. Deskriptive Statistik",
+      "Statistische Qualitätskontrolle"
+    ]
+  },
+  {
+    "objectID": "deskriptive_statistik/qualitaetskontrolle.html#die-management-methode-dmaic",
+    "href": "deskriptive_statistik/qualitaetskontrolle.html#die-management-methode-dmaic",
+    "title": "Statistische Qualitätskontrolle",
+    "section": "2.2 Die Management-Methode DMAIC",
+    "text": "2.2 Die Management-Methode DMAIC\n\n\n\nDMAIC-Zyklus für bereits existierende Prozesse\n\n\nSix Sigma ist nicht nur Mathe, sondern ein strukturierter Verbesserungsprozess, der ursprünglich von Motorola (1987) entwickelt und durch General Electric (Jack Welch) weltberühmt wurde.",
+    "crumbs": [
+      "Home",
+      "I. Deskriptive Statistik",
+      "Statistische Qualitätskontrolle"
+    ]
+  },
+  {
+    "objectID": "einfuehrung/index.html",
+    "href": "einfuehrung/index.html",
+    "title": "Einführung",
+    "section": "",
+    "text": "HinweisQuelle\n\n\n\n\n\nS.21-24 von Folie-06.10.2025\n\n\n\nDer Begriff leitet sich etymologisch vom Lateinischen statisticum („den Staat betreffend“) ab.\nStatistik wird definiert als die Lehre vom Umgang mit quantitativen Informationen (Daten) und als Methode, eine Verbindung zwischen Empirie (Erfahrung) und Theorie herzustellen.\nSie gilt als Hilfswissenschaft für viele Disziplinen und umfasst das Sammeln, Aufbereiten, Analysieren und Interpretieren von Daten.",
+    "crumbs": [
+      "Home",
+      "Einführung"
+    ]
+  },
+  {
+    "objectID": "einfuehrung/index.html#gute-wissenschaft",
+    "href": "einfuehrung/index.html#gute-wissenschaft",
+    "title": "Einführung",
+    "section": "2.1 Gute Wissenschaft",
+    "text": "2.1 Gute Wissenschaft\nZeichnet sich durch vier Kriterien aus:\n\nempirisch (beobachtbar)\nfalsifizierbar (widerlegbar)\nobjektiv (vom Beobachter unabhängig)\nöffentlich (nachprüfbar)",
+    "crumbs": [
+      "Home",
+      "Einführung"
+    ]
+  },
+  {
+    "objectID": "einfuehrung/index.html#wissenschaftliche-methodik",
+    "href": "einfuehrung/index.html#wissenschaftliche-methodik",
+    "title": "Einführung",
+    "section": "2.2 Wissenschaftliche Methodik",
+    "text": "2.2 Wissenschaftliche Methodik\nFolgt (nach Francis Bacon) einem Zyklus aus:\n\nBeobachtung\nHypothese\nVorhersage\nTest\nEvaluation\n\nKarl Poppers Prinzip der Falsifikation besagt, dass Theorien empirisch überprüfbar sein müssen; ein einziges Gegenbeispiel kann eine Theorie widerlegen (Beispiel Relativitätstheorie).",
+    "crumbs": [
+      "Home",
+      "Einführung"
+    ]
+  },
+  {
+    "objectID": "einfuehrung/index.html#statistik-als-werkzeug-des-staats",
+    "href": "einfuehrung/index.html#statistik-als-werkzeug-des-staats",
+    "title": "Einführung",
+    "section": "3.1 Statistik als Werkzeug des Staats",
+    "text": "3.1 Statistik als Werkzeug des Staats\n\n\n\n\n\n\nHinweisQuelle\n\n\n\n\n\nS.27-30 von Folie-06.10.2025\n\n\n\nUrsprünge liegen in Volkszählungen (Zensus) für Steuern und Militär, z. B. im Römischen Reich oder 1449 in Nürnberg. Gottfried Achenwall prägte den Begriff in Deutschland, Sir John Sinclair verbreitete ihn im Englischen.",
+    "crumbs": [
+      "Home",
+      "Einführung"
+    ]
+  },
+  {
+    "objectID": "einfuehrung/index.html#wahrscheinlichkeitstheorie-im-glücksspiel",
+    "href": "einfuehrung/index.html#wahrscheinlichkeitstheorie-im-glücksspiel",
+    "title": "Einführung",
+    "section": "3.2 Wahrscheinlichkeitstheorie im Glücksspiel",
+    "text": "3.2 Wahrscheinlichkeitstheorie im Glücksspiel\n\n\n\n\n\n\nHinweisQuelle\n\n\n\n\n\nS.32-35 von Folie-06.10.2025\n\n\n\nDie Stochastik entwickelte sich aus der Analyse von Glücksspielen. Wichtige Meilensteine sind das De-Méré-Würfelproblem (gelöst von Pascal und Fermat), das Gesetz der großen Zahlen und die Normalverteilung (Gauß).",
+    "crumbs": [
+      "Home",
+      "Einführung"
+    ]
+  },
+  {
+    "objectID": "einfuehrung/index.html#deskriptive-statistik",
+    "href": "einfuehrung/index.html#deskriptive-statistik",
+    "title": "Einführung",
+    "section": "4.1 Deskriptive Statistik",
+    "text": "4.1 Deskriptive Statistik\nBeschreibende Statistik; Daten werden aufbereitet, grafisch dargestellt und durch Kennzahlen zusammengefasst.",
+    "crumbs": [
+      "Home",
+      "Einführung"
+    ]
+  },
+  {
+    "objectID": "einfuehrung/index.html#induktive-statistik",
+    "href": "einfuehrung/index.html#induktive-statistik",
+    "title": "Einführung",
+    "section": "4.2 Induktive Statistik",
+    "text": "4.2 Induktive Statistik\nSchließende Statistik; schließt von einer Stichprobe auf die Grundgesamtheit unter Verwendung von Wahrscheinlichkeitstheorie .",
+    "crumbs": [
+      "Home",
+      "Einführung"
+    ]
+  },
+  {
+    "objectID": "einfuehrung/index.html#explorative-statistik",
+    "href": "einfuehrung/index.html#explorative-statistik",
+    "title": "Einführung",
+    "section": "4.3 Explorative Statistik",
+    "text": "4.3 Explorative Statistik\nHypothesengenerierende Statistik; sucht systematisch nach unbekannten Zusammenhängen oder Mustern in Daten (Data Mining).",
+    "crumbs": [
+      "Home",
+      "Einführung"
+    ]
+  },
+  {
+    "objectID": "einfuehrung/index.html#merkmalstypen",
+    "href": "einfuehrung/index.html#merkmalstypen",
+    "title": "Einführung",
+    "section": "5.1 Merkmalstypen",
+    "text": "5.1 Merkmalstypen\n\n\n\n\n\n\nHinweisQuelle\n\n\n\n\n\nS.62 von Folie-06.10.2025\n\n\n\n\nQualitative Merkmale: Eigenschaften/Kategorien (z. B. Geschlecht, Farbe,…).\nQuantitative Merkmale: Messbare Werte, unterteilt in diskret (zählbar) und stetig (beliebige Zwischenwerte).\nUnterscheidung in:\n\nDiskret: Abzählbar (z. B. Zahl der Augen eines Würfels, natürliche Zahlen)\nStetig: Alle Zwischenwerte realisierbar (z. B. rationale Zahlen)",
+    "crumbs": [
+      "Home",
+      "Einführung"
+    ]
+  },
+  {
+    "objectID": "einfuehrung/index.html#skalenniveaus",
+    "href": "einfuehrung/index.html#skalenniveaus",
+    "title": "Einführung",
+    "section": "5.2 Skalenniveaus",
+    "text": "5.2 Skalenniveaus\n\n\n\n\n\n\nHinweisQuelle\n\n\n\n\n\nS.63-67 von Folie-06.10.2025\n\n\n\n\n\nNominal:\nKategorien ohne Ordnung (z. B. Geschlecht, Postleitzahl).\nOrdinal:\nGeordnete Kategorien, Abstände nicht interpretierbar (z. B. Schulnoten, Kleidergrößen).\nKardinal:\nMetrische Skalen\n\nIntervallskaliert: Gleiche Abstände, aber willkürlicher Nullpunkt (z. B. Celsius).\nVerhältnisskaliert: Gleiche Abstände und natürlicher Nullpunkt, Verhältnisse interpretierbar (z. B. Kelvin, Länge).\n\nSkalen:\n\n\nSkalendegression: (Informationsverlust durch Herabstufung des Niveaus) ist möglich;\nSkalenprogression: (höheres Niveau ohne Information) ist methodisch falsch .",
+    "crumbs": [
+      "Home",
+      "Einführung"
+    ]
+  },
+  {
+    "objectID": "einfuehrung/index.html#grundgesamtheit-stichprobe",
+    "href": "einfuehrung/index.html#grundgesamtheit-stichprobe",
+    "title": "Einführung",
+    "section": "5.3 Grundgesamtheit, Stichprobe",
+    "text": "5.3 Grundgesamtheit, Stichprobe\n\n\n\n\n\n\nHinweisQuelle\n\n\n\n\n\nS.74 von Folie-06.10.2025\n\n\n\n\n\nGrundgesamtheit (population)\n\nMenge aller Individuen von Interesse (Merkmalträger)\n\nB. Menschen in Deutschland, Studierende FKI, Bäume im Park, installierte Apps,…\n\nUmgang abhängig von Anforderung\nIn der Regel nicht komplett untersuchbar\n\nStichprobe (sample)\n\nAuswahl von Merkmalträgern (unit) aus Grundgesamtheit (population)\nZiel: Repräsentation der Grundgesamtheit\n\nAber: Keine exakte Repräsentation, d.h. immer Fehler/Abweichung\n\ni.d.R. zufällige Auswahl\ni.d.R. Umfang viel kleiner als Grundgesamtheit",
+    "crumbs": [
+      "Home",
+      "Einführung"
+    ]
+  },
+  {
+    "objectID": "einfuehrung/index.html#messung",
+    "href": "einfuehrung/index.html#messung",
+    "title": "Einführung",
+    "section": "5.4 Messung",
+    "text": "5.4 Messung\n\n\n\n\n\n\nHinweisQuelle\n\n\n\n\n\nS.75 von Folie-06.10.2025\n\n\n\nZuweisung von Werten zu Phänomenen. Jeder Messwert beinhaltet einen wahren Wert und einen Fehler (\\varepsilon).\n\nReliabilität: Zuverlässigkeit/Wiederholbarkeit der Messung.\nValidität: Gültigkeit (wird das gemessen, was gemessen werden soll?).\n\n\nX_i = \\tau_i + \\varepsilon\n\nMit:\n\ngemessener Wert: X_i\nechter Wert: \\tau_i\nMessfehler: \\varepsilon\n\nIchikawa-Diagramm der Quellen für Messunsicherheit\n\n\n\n\n\n\n\nHinweisQuelle\n\n\n\n\n\nS.81 von Folie-06.10.2025",
+    "crumbs": [
+      "Home",
+      "Einführung"
+    ]
+  },
+  {
+    "objectID": "einfuehrung/index.html#urliste-urwerte",
+    "href": "einfuehrung/index.html#urliste-urwerte",
+    "title": "Einführung",
+    "section": "5.5 Urliste, Urwerte",
+    "text": "5.5 Urliste, Urwerte\n\n\n\n\n\n\nHinweisQuelle\n\n\n\n\n\nS.77 von Folie-06.10.2025\n\n\n\nDie rohen, unverarbeiteten Daten einer Erhebung. - Ergebnis einer Datenerhebung (Messung) - Liste von Urwerten von Merkmalsträgern Sortiert oder Unsortiert - Unverarbeitet (inkl. Ausreiser, Fehleingaben) - I.d.R. unübersichtlich daher keine Aussagen möglich",
+    "crumbs": [
+      "Home",
+      "Einführung"
+    ]
+  },
+  {
+    "objectID": "induktive_statistik/index.html",
+    "href": "induktive_statistik/index.html",
+    "title": "IV. Induktive Statistik",
+    "section": "",
+    "text": "1 Stichprobentheorie\n\nVerteilung von Stichprobenmittelwerten\nStandardfehler (Standard Error)\nPunktschätzer & Konfidenzintervalle\n\n\n\n2 Hypothesentests: Grundlagen\n\nNullhypothese (H0​) vs. Alternativhypothese (H1​)\nFehler 1. Art (α) und Fehler 2. Art (β)\nSignifikanzniveau & Überschreitungswahrscheinlichkeit (p-Wert)\nPower (Trennschärfe) & Effektstärke (Cohen’s d)\n\n\n\n3 Parametrische Tests\n\nZ-Test (Gauß-Test): Anwendung und Power-Analyse\nStudentscher t-Test:\n\nVerteilungsannahmen (t-Verteilung)\nEinstichproben t-Test\nZweistichproben t-Test (abhängige vs. unabhängige Stichproben)\nPooled vs. unpooled Varianz (Bessel-Korrektur, Freiheitsgrade)\nStichprobenumfangsplanung (G*Power)\n\nVarianzanalyse: χ2-Verteilung (Verteilung der Stichprobenvarianzen)\n\n\n\n\n\n Zurück nach oben",
+    "crumbs": [
+      "Home",
+      "IV. Induktive Statistik"
+    ]
+  },
+  {
+    "objectID": "klassifikation/index.html",
+    "href": "klassifikation/index.html",
+    "title": "III. Statistische Klassifikation",
+    "section": "",
+    "text": "1 Gütemaße (Performance Metrics)\n\nKonfusionsmatrix\nGenauigkeit (Accuracy), Präzision (Precision)\nSensitivität (Recall) & Spezifität\nPrävalenz & False Discovery Rate\n\n\n\n2 Bewertungsmethoden\n\nReceiver Operating Characteristic (ROC)\nArea Under the Curve (ROC AUC)\n\n\n\n\n\n Zurück nach oben",
+    "crumbs": [
+      "Home",
+      "III. Statistische Klassifikation"
+    ]
+  },
+  {
+    "objectID": "wahrscheinlichkeit/missverstaendnisse.html",
+    "href": "wahrscheinlichkeit/missverstaendnisse.html",
+    "title": "Missverständnisse in der Wahrscheinlichkeitstheorie",
+    "section": "",
+    "text": "HinweisQuelle\n\n\n\n\n\n\nS.212-217 von Folie-04.11.2025",
+    "crumbs": [
+      "Home",
+      "II. Wahrscheinlichkeit",
+      "Missverständnisse in der Wahrscheinlichkeitstheorie"
+    ]
+  },
+  {
+    "objectID": "wahrscheinlichkeit/missverstaendnisse.html#das-gedankenexperiment",
+    "href": "wahrscheinlichkeit/missverstaendnisse.html#das-gedankenexperiment",
+    "title": "Missverständnisse in der Wahrscheinlichkeitstheorie",
+    "section": "3.1 Das Gedankenexperiment",
+    "text": "3.1 Das Gedankenexperiment\nStell dir vor, du wirfst einen Pfeil auf eine Dartscheibe. Wir nehmen an:\n\nDu triffst die Scheibe auf jeden Fall.\nJeder Punkt auf der Scheibe ist gleich wahrscheinlich.\nDa die Scheibe eine Fläche ist, besteht sie aus unendlich vielen, unendlich kleinen Punkten.",
+    "crumbs": [
+      "Home",
+      "II. Wahrscheinlichkeit",
+      "Missverständnisse in der Wahrscheinlichkeitstheorie"
+    ]
+  },
+  {
+    "objectID": "wahrscheinlichkeit/missverstaendnisse.html#die-mathematische-zwickmühle",
+    "href": "wahrscheinlichkeit/missverstaendnisse.html#die-mathematische-zwickmühle",
+    "title": "Missverständnisse in der Wahrscheinlichkeitstheorie",
+    "section": "3.2 Die mathematische Zwickmühle",
+    "text": "3.2 Die mathematische Zwickmühle\nWenn du berechnen willst, wie hoch die Wahrscheinlichkeit ist, exakt einen bestimmten Punkt zu treffen, gerätst du in einen Widerspruch:\n\nDie Rechnung: Wahrscheinlichkeit P = \\frac{1}{\\text{Anzahl der Punkte}}. Da es unendlich viele Punkte sind, teilst du 1 durch Unendlich. Der Grenzwert ist \\lim_{\\text{Anzahl der Punkte} \\to \\infty}{\\frac{1}{\\text{Anzahl der Punkte}}}=0.\nDas Paradoxon:\n\nIst die Wahrscheinlichkeit 0? Dann dürftest du die Scheibe eigentlich nie treffen (denn irgendeinen Punkt triffst du ja immer).\nIst die Wahrscheinlichkeit größer als 0? Dann wäre die Summe aller Wahrscheinlichkeiten (bei unendlich vielen Punkten) unendlich groß. Sie muss aber exakt 1 ergeben.",
+    "crumbs": [
+      "Home",
+      "II. Wahrscheinlichkeit",
+      "Missverständnisse in der Wahrscheinlichkeitstheorie"
+    ]
+  },
+  {
+    "objectID": "wahrscheinlichkeit/missverstaendnisse.html#die-auflösung-stetig-vs.-diskret",
+    "href": "wahrscheinlichkeit/missverstaendnisse.html#die-auflösung-stetig-vs.-diskret",
+    "title": "Missverständnisse in der Wahrscheinlichkeitstheorie",
+    "section": "3.3 Die Auflösung: Stetig vs. Diskret",
+    "text": "3.3 Die Auflösung: Stetig vs. Diskret\nA. Die diskrete Welt (z. B. Würfeln) Hier gibt es eine begrenzte Anzahl an Ergebnissen (1, 2, 3, 4, 5, 6).\n\nHier bedeutet Wahrscheinlichkeit 0 tatsächlich UNMÖGLICH.\nBeispiel: Die Wahrscheinlichkeit, eine 7 zu würfeln, ist 0. Das Ereignis tritt niemals ein.\n\nB. Die stetige Welt (z. B. Dartscheibe, Zeit, Länge) Hier ist der Ergebnisraum unendlich (kontinuierlich).\n\nHier bedeutet Wahrscheinlichkeit 0 nicht, dass das Ereignis unmöglich ist.\nEs bedeutet nur, dass es “fast sicher” nicht eintritt, weil es unendlich viele Alternativen gibt.\nDas Ereignis (den Punkt zu treffen) ist möglich, aber seine Wahrscheinlichkeit ist unendlich klein (ein sogenanntes “Nullereignis”).\n\nZusammenfassend: Dass der Pfeil stecken bleibt, beweist, dass Ereignisse mit der Wahrscheinlichkeit 0 eintreten können – solange wir uns in einem unendlichen (stetigen) Raum bewegen.",
+    "crumbs": [
+      "Home",
+      "II. Wahrscheinlichkeit",
+      "Missverständnisse in der Wahrscheinlichkeitstheorie"
+    ]
+  }
+]

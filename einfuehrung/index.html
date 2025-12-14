@@ -1,0 +1,1282 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Lukas Mensch">
+
+<title>Einführung – Statistik</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../deskriptive_statistik/index.html" rel="next">
+<link href="../jmp/index.html" rel="prev">
+<link href="../images/THA_Logo.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b758ccaa5987ceb1b75504551e579abf.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-ea7ed146a7a9993d453f5bc112904cba.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-ca88fcc76f81f2c421754ec00c19b03f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-ea7ed146a7a9993d453f5bc112904cba.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Keine Treffer",
+    "search-matching-documents-text": "Treffer",
+    "search-copy-link-title": "Link in die Suche kopieren",
+    "search-hide-matches-text": "Zusätzliche Treffer verbergen",
+    "search-more-match-text": "weitere Treffer in diesem Dokument",
+    "search-more-matches-text": "weitere Treffer in diesem Dokument",
+    "search-clear-button-title": "Zurücksetzen",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Abbrechen",
+    "search-submit-button-title": "Abschicken",
+    "search-label": "Suchen"
+  }
+}</script>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Statistik</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Suchen"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Navigation umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Dunkelmodus umschalten"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../einfuehrung/index.html">Einführung</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Suchen" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Suchen"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../jmp/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">JMP</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../einfuehrung/index.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Einführung</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../deskriptive_statistik/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">I. Deskriptive Statistik</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="true" aria-label="Abschnitt umschalten">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../deskriptive_statistik/visualisierung.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Visualisierung</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../deskriptive_statistik/kennzahlen.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Kennzahlen (Parameter)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../deskriptive_statistik/haeufigkeiten.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Häufigkeiten</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../deskriptive_statistik/normalverteilung.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Standardnormalverteilung</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../deskriptive_statistik/qualitaetskontrolle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Statistische Qualitätskontrolle</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../wahrscheinlichkeit/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">II. Wahrscheinlichkeit</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="true" aria-label="Abschnitt umschalten">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../wahrscheinlichkeit/missverstaendnisse.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Missverständnisse in der Wahrscheinlichkeitstheorie</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../wahrscheinlichkeit/theorie.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Theoretische Modelle und Verteilungen</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../klassifikation/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">III. Statistische Klassifikation</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../induktive_statistik/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">IV. Induktive Statistik</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../anwendungsbereiche/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Anwendungsbereiche</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="2">
+    <h2 id="toc-title">Auf dieser Seite</h2>
+   
+  <ul>
+  <li><a href="#was-ist-statistik" id="toc-was-ist-statistik" class="nav-link active" data-scroll-target="#was-ist-statistik"><span class="header-section-number">1</span> Was ist Statistik</a></li>
+  <li><a href="#statistik-als-werkzeug-der-wissenschaft" id="toc-statistik-als-werkzeug-der-wissenschaft" class="nav-link" data-scroll-target="#statistik-als-werkzeug-der-wissenschaft"><span class="header-section-number">2</span> Statistik als Werkzeug der Wissenschaft</a>
+  <ul class="collapse">
+  <li><a href="#gute-wissenschaft" id="toc-gute-wissenschaft" class="nav-link" data-scroll-target="#gute-wissenschaft"><span class="header-section-number">2.1</span> Gute Wissenschaft</a></li>
+  <li><a href="#wissenschaftliche-methodik" id="toc-wissenschaftliche-methodik" class="nav-link" data-scroll-target="#wissenschaftliche-methodik"><span class="header-section-number">2.2</span> Wissenschaftliche Methodik</a></li>
+  </ul></li>
+  <li><a href="#geschichte-der-statistik" id="toc-geschichte-der-statistik" class="nav-link" data-scroll-target="#geschichte-der-statistik"><span class="header-section-number">3</span> Geschichte der Statistik</a>
+  <ul class="collapse">
+  <li><a href="#statistik-als-werkzeug-des-staats" id="toc-statistik-als-werkzeug-des-staats" class="nav-link" data-scroll-target="#statistik-als-werkzeug-des-staats"><span class="header-section-number">3.1</span> Statistik als Werkzeug des Staats</a></li>
+  <li><a href="#wahrscheinlichkeitstheorie-im-glücksspiel" id="toc-wahrscheinlichkeitstheorie-im-glücksspiel" class="nav-link" data-scroll-target="#wahrscheinlichkeitstheorie-im-glücksspiel"><span class="header-section-number">3.2</span> Wahrscheinlichkeitstheorie im Glücksspiel</a></li>
+  </ul></li>
+  <li><a href="#teilgebiete-der-statistik" id="toc-teilgebiete-der-statistik" class="nav-link" data-scroll-target="#teilgebiete-der-statistik"><span class="header-section-number">4</span> Teilgebiete der Statistik</a>
+  <ul class="collapse">
+  <li><a href="#deskriptive-statistik" id="toc-deskriptive-statistik" class="nav-link" data-scroll-target="#deskriptive-statistik"><span class="header-section-number">4.1</span> Deskriptive Statistik</a></li>
+  <li><a href="#induktive-statistik" id="toc-induktive-statistik" class="nav-link" data-scroll-target="#induktive-statistik"><span class="header-section-number">4.2</span> Induktive Statistik</a></li>
+  <li><a href="#explorative-statistik" id="toc-explorative-statistik" class="nav-link" data-scroll-target="#explorative-statistik"><span class="header-section-number">4.3</span> Explorative Statistik</a></li>
+  </ul></li>
+  <li><a href="#statistik-terminologie" id="toc-statistik-terminologie" class="nav-link" data-scroll-target="#statistik-terminologie"><span class="header-section-number">5</span> Statistik Terminologie</a>
+  <ul class="collapse">
+  <li><a href="#merkmalstypen" id="toc-merkmalstypen" class="nav-link" data-scroll-target="#merkmalstypen"><span class="header-section-number">5.1</span> Merkmalstypen</a></li>
+  <li><a href="#skalenniveaus" id="toc-skalenniveaus" class="nav-link" data-scroll-target="#skalenniveaus"><span class="header-section-number">5.2</span> Skalenniveaus</a></li>
+  <li><a href="#grundgesamtheit-stichprobe" id="toc-grundgesamtheit-stichprobe" class="nav-link" data-scroll-target="#grundgesamtheit-stichprobe"><span class="header-section-number">5.3</span> Grundgesamtheit, Stichprobe</a></li>
+  <li><a href="#messung" id="toc-messung" class="nav-link" data-scroll-target="#messung"><span class="header-section-number">5.4</span> Messung</a></li>
+  <li><a href="#urliste-urwerte" id="toc-urliste-urwerte" class="nav-link" data-scroll-target="#urliste-urwerte"><span class="header-section-number">5.5</span> Urliste, Urwerte</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Einführung</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Autor:in</div>
+    <div class="quarto-title-meta-contents">
+             <p>Lukas Mensch </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="was-ist-statistik" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Was ist Statistik</h1>
+<div class="callout callout-style-default callout-note callout-titled" title="Quelle">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Hinweis</span>Quelle
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><a href="../folien/Statistik_20251006.pdf#page=21">S.21-24 von Folie-06.10.2025</a></p>
+</div>
+</div>
+</div>
+<p>Der Begriff leitet sich etymologisch vom Lateinischen statisticum („den Staat betreffend“) ab.</p>
+<p>Statistik wird definiert als die Lehre vom Umgang mit quantitativen Informationen (Daten) und als Methode, eine Verbindung zwischen Empirie (Erfahrung) und Theorie herzustellen.</p>
+<p>Sie gilt als Hilfswissenschaft für viele Disziplinen und umfasst das Sammeln, Aufbereiten, Analysieren und Interpretieren von Daten.</p>
+</section>
+<section id="statistik-als-werkzeug-der-wissenschaft" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Statistik als Werkzeug der Wissenschaft</h1>
+<div class="callout callout-style-default callout-note callout-titled" title="Quelle">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Hinweis</span>Quelle
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><a href="../folien/Statistik_20251006.pdf#page=42">S.41-43 von Folie-06.10.2025</a></p>
+</div>
+</div>
+</div>
+<section id="gute-wissenschaft" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="gute-wissenschaft"><span class="header-section-number">2.1</span> Gute Wissenschaft</h2>
+<p>Zeichnet sich durch vier Kriterien aus:</p>
+<ul>
+<li>empirisch (beobachtbar)</li>
+<li>falsifizierbar (widerlegbar)</li>
+<li>objektiv (vom Beobachter unabhängig)</li>
+<li>öffentlich (nachprüfbar)</li>
+</ul>
+</section>
+<section id="wissenschaftliche-methodik" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="wissenschaftliche-methodik"><span class="header-section-number">2.2</span> Wissenschaftliche Methodik</h2>
+<p>Folgt (nach Francis Bacon) einem Zyklus aus:</p>
+<ul>
+<li>Beobachtung</li>
+<li>Hypothese</li>
+<li>Vorhersage</li>
+<li>Test</li>
+<li>Evaluation</li>
+</ul>
+<p>Karl Poppers Prinzip der Falsifikation besagt, dass Theorien empirisch überprüfbar sein müssen; ein einziges Gegenbeispiel kann eine Theorie widerlegen (Beispiel Relativitätstheorie).</p>
+</section>
+</section>
+<section id="geschichte-der-statistik" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Geschichte der Statistik</h1>
+<section id="statistik-als-werkzeug-des-staats" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="statistik-als-werkzeug-des-staats"><span class="header-section-number">3.1</span> Statistik als Werkzeug des Staats</h2>
+<div class="callout callout-style-default callout-note callout-titled" title="Quelle">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Hinweis</span>Quelle
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><a href="../folien/Statistik_20251006.pdf#page=27">S.27-30 von Folie-06.10.2025</a></p>
+</div>
+</div>
+</div>
+<p>Ursprünge liegen in Volkszählungen (Zensus) für Steuern und Militär, z. B. im Römischen Reich oder 1449 in Nürnberg. Gottfried Achenwall prägte den Begriff in Deutschland, Sir John Sinclair verbreitete ihn im Englischen.</p>
+</section>
+<section id="wahrscheinlichkeitstheorie-im-glücksspiel" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="wahrscheinlichkeitstheorie-im-glücksspiel"><span class="header-section-number">3.2</span> Wahrscheinlichkeitstheorie im Glücksspiel</h2>
+<div class="callout callout-style-default callout-note callout-titled" title="Quelle">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Hinweis</span>Quelle
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><a href="../folien/Statistik_20251006.pdf#page=32">S.32-35 von Folie-06.10.2025</a></p>
+</div>
+</div>
+</div>
+<p>Die Stochastik entwickelte sich aus der Analyse von Glücksspielen. Wichtige Meilensteine sind das De-Méré-Würfelproblem (gelöst von Pascal und Fermat), das Gesetz der großen Zahlen und die Normalverteilung (Gauß).</p>
+</section>
+</section>
+<section id="teilgebiete-der-statistik" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Teilgebiete der Statistik</h1>
+<div class="callout callout-style-default callout-note callout-titled" title="Quelle">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Hinweis</span>Quelle
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><a href="../folien/Statistik_20251006.pdf#page=45">S.45 von Folie-06.10.2025</a></p>
+</div>
+</div>
+</div>
+<section id="deskriptive-statistik" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="deskriptive-statistik"><span class="header-section-number">4.1</span> Deskriptive Statistik</h2>
+<p>Beschreibende Statistik; Daten werden aufbereitet, grafisch dargestellt und durch Kennzahlen zusammengefasst.</p>
+</section>
+<section id="induktive-statistik" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="induktive-statistik"><span class="header-section-number">4.2</span> Induktive Statistik</h2>
+<p>Schließende Statistik; schließt von einer Stichprobe auf die Grundgesamtheit unter Verwendung von Wahrscheinlichkeitstheorie .</p>
+</section>
+<section id="explorative-statistik" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="explorative-statistik"><span class="header-section-number">4.3</span> Explorative Statistik</h2>
+<p>Hypothesengenerierende Statistik; sucht systematisch nach unbekannten Zusammenhängen oder Mustern in Daten (Data Mining).</p>
+</section>
+</section>
+<section id="statistik-terminologie" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Statistik Terminologie</h1>
+<div class="callout callout-style-default callout-note callout-titled" title="Quelle">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Hinweis</span>Quelle
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><a href="../folien/Statistik_20251006.pdf#page=61">S.61 von Folie-06.10.2025</a></p>
+</div>
+</div>
+</div>
+<ul>
+<li><strong>Merkmalsträger (Unit)</strong>: die untersuchte Einheit (z.B. Person).</li>
+<li><strong>Merkmal</strong>: die Eigenschaft (z.B. Größe).</li>
+<li><strong>(Merkmals-)Ausprägung</strong>: der konkrete Wert (z. B. 180 cm) .</li>
+<li><strong>Datensatz (data set)</strong>: Zusammengehörige Merkmale eines/mehrerer Merkmalträger(s)</li>
+</ul>
+<section id="merkmalstypen" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="merkmalstypen"><span class="header-section-number">5.1</span> Merkmalstypen</h2>
+<div class="callout callout-style-default callout-note callout-titled" title="Quelle">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Hinweis</span>Quelle
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><a href="../folien/Statistik_20251006.pdf#page=62">S.62 von Folie-06.10.2025</a></p>
+</div>
+</div>
+</div>
+<ul>
+<li><p><strong>Qualitative Merkmale</strong>: Eigenschaften/Kategorien (z. B. Geschlecht, Farbe,…).</p></li>
+<li><p><strong>Quantitative Merkmale</strong>: Messbare Werte, unterteilt in diskret (zählbar) und stetig (beliebige Zwischenwerte).</p>
+<p>Unterscheidung in:</p>
+<ul>
+<li><strong>Diskret</strong>: Abzählbar (z. B. Zahl der Augen eines Würfels, natürliche Zahlen)</li>
+<li><strong>Stetig</strong>: Alle Zwischenwerte realisierbar (z. B. rationale Zahlen)</li>
+</ul></li>
+</ul>
+</section>
+<section id="skalenniveaus" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="skalenniveaus"><span class="header-section-number">5.2</span> Skalenniveaus</h2>
+<div class="callout callout-style-default callout-note callout-titled" title="Quelle">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Hinweis</span>Quelle
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-8" class="callout-8-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><a href="../folien/Statistik_20251006.pdf#page=63">S.63-67 von Folie-06.10.2025</a></p>
+</div>
+</div>
+</div>
+<p><img src="images/skalen2.png" class="img-fluid" width="566"></p>
+<ul>
+<li><p><img src="images/nominal.png" class="img-fluid" style="width:4.0%"><strong>Nominal</strong>:<br>
+Kategorien ohne Ordnung (z. B. Geschlecht, Postleitzahl).</p></li>
+<li><p><img src="images/ordinal.png" class="img-fluid" style="width:4.0%"><strong>Ordinal</strong>:<br>
+Geordnete Kategorien, Abstände nicht interpretierbar (z. B. Schulnoten, Kleidergrößen).</p></li>
+<li><p><img src="images/kardinal.png" class="img-fluid" style="width:4.0%"><strong>Kardinal</strong>:<br>
+Metrische Skalen</p>
+<ul>
+<li><strong>Intervallskaliert</strong>: Gleiche Abstände, aber willkürlicher Nullpunkt (z. B. Celsius).</li>
+<li><strong>Verhältnisskaliert</strong>: Gleiche Abstände und natürlicher Nullpunkt, Verhältnisse interpretierbar (z. B. Kelvin, Länge).</li>
+</ul></li>
+<li><p><strong>Skalen</strong>:<br>
+<img src="images/Skalen1.png" class="img-fluid" width="593"></p>
+<ul>
+<li><strong>Skalendegression</strong>: (Informationsverlust durch Herabstufung des Niveaus) ist möglich;</li>
+<li><strong>Skalenprogression</strong>: (höheres Niveau ohne Information) ist methodisch falsch .</li>
+</ul></li>
+</ul>
+</section>
+<section id="grundgesamtheit-stichprobe" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="grundgesamtheit-stichprobe"><span class="header-section-number">5.3</span> Grundgesamtheit, Stichprobe</h2>
+<div class="callout callout-style-default callout-note callout-titled" title="Quelle">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Hinweis</span>Quelle
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-9" class="callout-9-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><a href="../folien/Statistik_20251006.pdf#page=74">S.74 von Folie-06.10.2025</a></p>
+</div>
+</div>
+</div>
+<p><img src="images/GrudStich.png" class="img-fluid" width="613"></p>
+<ul>
+<li><strong>Grundgesamtheit (population)</strong>
+<ul>
+<li>Menge aller Individuen von Interesse (Merkmalträger)
+<ol start="26" type="a">
+<li>B. Menschen in Deutschland, Studierende FKI, Bäume im Park, installierte Apps,…</li>
+</ol></li>
+<li>Umgang abhängig von Anforderung</li>
+<li>In der Regel nicht komplett untersuchbar</li>
+</ul></li>
+<li><strong>Stichprobe (sample)</strong>
+<ul>
+<li>Auswahl von Merkmalträgern (unit) aus Grundgesamtheit (population)</li>
+<li>Ziel: Repräsentation der Grundgesamtheit
+<ul>
+<li>Aber: Keine exakte Repräsentation, d.h. immer Fehler/Abweichung</li>
+</ul></li>
+<li>i.d.R. zufällige Auswahl</li>
+<li>i.d.R. Umfang viel kleiner als Grundgesamtheit</li>
+</ul></li>
+</ul>
+</section>
+<section id="messung" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="messung"><span class="header-section-number">5.4</span> Messung</h2>
+<div class="callout callout-style-default callout-note callout-titled" title="Quelle">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Hinweis</span>Quelle
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-10" class="callout-10-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><a href="../folien/Statistik_20251006.pdf#page=75">S.75 von Folie-06.10.2025</a></p>
+</div>
+</div>
+</div>
+<p>Zuweisung von Werten zu Phänomenen. Jeder Messwert beinhaltet einen wahren Wert und einen Fehler (<span class="math inline">\varepsilon</span>).</p>
+<ul>
+<li><strong>Reliabilität</strong>: Zuverlässigkeit/Wiederholbarkeit der Messung.</li>
+<li><strong>Validität</strong>: Gültigkeit (wird das gemessen, was gemessen werden soll?).</li>
+</ul>
+<p><span class="math display">
+X_i = \tau_i + \varepsilon
+</span></p>
+<p>Mit:</p>
+<ul>
+<li>gemessener Wert: <span class="math inline">X_i</span></li>
+<li>echter Wert: <span class="math inline">\tau_i</span></li>
+<li>Messfehler: <span class="math inline">\varepsilon</span></li>
+</ul>
+<p>Ichikawa-Diagramm der Quellen für Messunsicherheit<br>
+</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Quelle">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Hinweis</span>Quelle
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-11" class="callout-11-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><a href="../folien/Statistik_20251006.pdf#page=81">S.81 von Folie-06.10.2025</a></p>
+</div>
+</div>
+</div>
+<p><img src="images/Ichikawa.png" class="img-fluid" width="631"></p>
+</section>
+<section id="urliste-urwerte" class="level2" data-number="5.5">
+<h2 data-number="5.5" class="anchored" data-anchor-id="urliste-urwerte"><span class="header-section-number">5.5</span> Urliste, Urwerte</h2>
+<div class="callout callout-style-default callout-note callout-titled" title="Quelle">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Hinweis</span>Quelle
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-12" class="callout-12-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><a href="../folien/Statistik_20251006.pdf#page=77">S.77 von Folie-06.10.2025</a></p>
+</div>
+</div>
+</div>
+<p>Die rohen, unverarbeiteten Daten einer Erhebung. - Ergebnis einer Datenerhebung (Messung) - Liste von Urwerten von Merkmalsträgern Sortiert oder Unsortiert - Unverarbeitet (inkl. Ausreiser, Fehleingaben) - I.d.R. unübersichtlich daher keine Aussagen möglich</p>
+
+
+</section>
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Zurück nach oben</a></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Kopiert");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Kopiert");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../jmp/index.html" class="pagination-link" aria-label="JMP">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">JMP</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../deskriptive_statistik/index.html" class="pagination-link" aria-label="I. Deskriptive Statistik">
+        <span class="nav-page-text">I. Deskriptive Statistik</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

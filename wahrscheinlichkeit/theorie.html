@@ -1,0 +1,1460 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Lukas Mensch">
+
+<title>Theoretische Modelle und Verteilungen – Statistik</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../klassifikation/index.html" rel="next">
+<link href="../wahrscheinlichkeit/missverstaendnisse.html" rel="prev">
+<link href="../images/THA_Logo.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b758ccaa5987ceb1b75504551e579abf.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-ea7ed146a7a9993d453f5bc112904cba.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-ca88fcc76f81f2c421754ec00c19b03f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-ea7ed146a7a9993d453f5bc112904cba.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Keine Treffer",
+    "search-matching-documents-text": "Treffer",
+    "search-copy-link-title": "Link in die Suche kopieren",
+    "search-hide-matches-text": "Zusätzliche Treffer verbergen",
+    "search-more-match-text": "weitere Treffer in diesem Dokument",
+    "search-more-matches-text": "weitere Treffer in diesem Dokument",
+    "search-clear-button-title": "Zurücksetzen",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Abbrechen",
+    "search-submit-button-title": "Abschicken",
+    "search-label": "Suchen"
+  }
+}</script>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Statistik</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Suchen"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Navigation umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Dunkelmodus umschalten"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../wahrscheinlichkeit/index.html">II. Wahrscheinlichkeit</a></li><li class="breadcrumb-item"><a href="../wahrscheinlichkeit/theorie.html">Theoretische Modelle und Verteilungen</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Suchen" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Suchen"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../jmp/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">JMP</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../einfuehrung/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Einführung</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../deskriptive_statistik/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">I. Deskriptive Statistik</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="true" aria-label="Abschnitt umschalten">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../deskriptive_statistik/visualisierung.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Visualisierung</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../deskriptive_statistik/kennzahlen.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Kennzahlen (Parameter)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../deskriptive_statistik/haeufigkeiten.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Häufigkeiten</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../deskriptive_statistik/normalverteilung.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Standardnormalverteilung</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../deskriptive_statistik/qualitaetskontrolle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Statistische Qualitätskontrolle</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../wahrscheinlichkeit/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">II. Wahrscheinlichkeit</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="true" aria-label="Abschnitt umschalten">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../wahrscheinlichkeit/missverstaendnisse.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Missverständnisse in der Wahrscheinlichkeitstheorie</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../wahrscheinlichkeit/theorie.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Theoretische Modelle und Verteilungen</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../klassifikation/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">III. Statistische Klassifikation</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../induktive_statistik/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">IV. Induktive Statistik</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../anwendungsbereiche/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Anwendungsbereiche</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="2">
+    <h2 id="toc-title">Auf dieser Seite</h2>
+   
+  <ul>
+  <li><a href="#einführung" id="toc-einführung" class="nav-link active" data-scroll-target="#einführung"><span class="header-section-number">1</span> Einführung</a>
+  <ul class="collapse">
+  <li><a href="#gendankesexperiment-münzwurf" id="toc-gendankesexperiment-münzwurf" class="nav-link" data-scroll-target="#gendankesexperiment-münzwurf"><span class="header-section-number">1.1</span> Gendankesexperiment Münzwurf</a>
+  <ul class="collapse">
+  <li><a href="#das-extreme-szenario" id="toc-das-extreme-szenario" class="nav-link" data-scroll-target="#das-extreme-szenario"><span class="header-section-number">1.1.1</span> Das extreme Szenario</a></li>
+  <li><a href="#die-verfängliche-frage" id="toc-die-verfängliche-frage" class="nav-link" data-scroll-target="#die-verfängliche-frage"><span class="header-section-number">1.1.2</span> Die verfängliche Frage</a></li>
+  <li><a href="#die-nüchterne-realität-unabhängigkeit" id="toc-die-nüchterne-realität-unabhängigkeit" class="nav-link" data-scroll-target="#die-nüchterne-realität-unabhängigkeit"><span class="header-section-number">1.1.3</span> Die nüchterne Realität: Unabhängigkeit</a></li>
+  </ul></li>
+  <li><a href="#galtonbrett" id="toc-galtonbrett" class="nav-link" data-scroll-target="#galtonbrett"><span class="header-section-number">1.2</span> Galtonbrett</a>
+  <ul class="collapse">
+  <li><a href="#das-gerät-das-galtonbrett" id="toc-das-gerät-das-galtonbrett" class="nav-link" data-scroll-target="#das-gerät-das-galtonbrett"><span class="header-section-number">1.2.1</span> Das Gerät: Das Galtonbrett</a></li>
+  <li><a href="#der-erfinder-sir-francis-galton-18221911" id="toc-der-erfinder-sir-francis-galton-18221911" class="nav-link" data-scroll-target="#der-erfinder-sir-francis-galton-18221911"><span class="header-section-number">1.2.2</span> Der Erfinder: Sir Francis Galton (1822–1911)</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#laplace-experiment" id="toc-laplace-experiment" class="nav-link" data-scroll-target="#laplace-experiment"><span class="header-section-number">2</span> Laplace Experiment</a>
+  <ul class="collapse">
+  <li><a href="#die-definition-was-ist-ein-laplace-experiment" id="toc-die-definition-was-ist-ein-laplace-experiment" class="nav-link" data-scroll-target="#die-definition-was-ist-ein-laplace-experiment"><span class="header-section-number">2.1</span> Die Definition: Was ist ein Laplace-Experiment?</a></li>
+  <li><a href="#die-laplace-formel" id="toc-die-laplace-formel" class="nav-link" data-scroll-target="#die-laplace-formel"><span class="header-section-number">2.2</span> Die Laplace-Formel</a></li>
+  <li><a href="#der-namensgeber" id="toc-der-namensgeber" class="nav-link" data-scroll-target="#der-namensgeber"><span class="header-section-number">2.3</span> Der Namensgeber</a></li>
+  </ul></li>
+  <li><a href="#gleichverteilung" id="toc-gleichverteilung" class="nav-link" data-scroll-target="#gleichverteilung"><span class="header-section-number">3</span> Gleichverteilung</a>
+  <ul class="collapse">
+  <li><a href="#definition" id="toc-definition" class="nav-link" data-scroll-target="#definition"><span class="header-section-number">3.1</span> Definition</a></li>
+  <li><a href="#dazu-benötigte-formeln" id="toc-dazu-benötigte-formeln" class="nav-link" data-scroll-target="#dazu-benötigte-formeln"><span class="header-section-number">3.2</span> Dazu benötigte Formeln</a></li>
+  <li><a href="#praxis-beispiel-mit-würfel" id="toc-praxis-beispiel-mit-würfel" class="nav-link" data-scroll-target="#praxis-beispiel-mit-würfel"><span class="header-section-number">3.3</span> Praxis-Beispiel mit Würfel</a></li>
+  </ul></li>
+  <li><a href="#bernoulli-versuch" id="toc-bernoulli-versuch" class="nav-link" data-scroll-target="#bernoulli-versuch"><span class="header-section-number">4</span> Bernoulli Versuch</a></li>
+  <li><a href="#bernoulli-verteilung" id="toc-bernoulli-verteilung" class="nav-link" data-scroll-target="#bernoulli-verteilung"><span class="header-section-number">5</span> Bernoulli Verteilung</a>
+  <ul class="collapse">
+  <li><a href="#wahrscheinlichkeitsfunktion-fx" id="toc-wahrscheinlichkeitsfunktion-fx" class="nav-link" data-scroll-target="#wahrscheinlichkeitsfunktion-fx"><span class="header-section-number">5.1</span> Wahrscheinlichkeitsfunktion <span class="math inline">f(x)</span></a></li>
+  <li><a href="#verteilungsfunktion-fx" id="toc-verteilungsfunktion-fx" class="nav-link" data-scroll-target="#verteilungsfunktion-fx"><span class="header-section-number">5.2</span> Verteilungsfunktion <span class="math inline">F(x)</span></a></li>
+  <li><a href="#weitere-werte" id="toc-weitere-werte" class="nav-link" data-scroll-target="#weitere-werte"><span class="header-section-number">5.3</span> Weitere Werte</a>
+  <ul class="collapse">
+  <li><a href="#erwartungswert" id="toc-erwartungswert" class="nav-link" data-scroll-target="#erwartungswert"><span class="header-section-number">5.3.1</span> Erwartungswert</a></li>
+  <li><a href="#varianz" id="toc-varianz" class="nav-link" data-scroll-target="#varianz"><span class="header-section-number">5.3.2</span> Varianz</a></li>
+  <li><a href="#standardabweichung" id="toc-standardabweichung" class="nav-link" data-scroll-target="#standardabweichung"><span class="header-section-number">5.3.3</span> Standardabweichung</a></li>
+  </ul></li>
+  <li><a href="#anwendung-bestimmung-von-pi-π" id="toc-anwendung-bestimmung-von-pi-π" class="nav-link" data-scroll-target="#anwendung-bestimmung-von-pi-π"><span class="header-section-number">5.4</span> Anwendung: Bestimmung von Pi (π)</a></li>
+  <li><a href="#beispiele" id="toc-beispiele" class="nav-link" data-scroll-target="#beispiele"><span class="header-section-number">5.5</span> Beispiele</a></li>
+  </ul></li>
+  <li><a href="#binomialverteilung" id="toc-binomialverteilung" class="nav-link" data-scroll-target="#binomialverteilung"><span class="header-section-number">6</span> Binomialverteilung</a>
+  <ul class="collapse">
+  <li><a href="#einschub" id="toc-einschub" class="nav-link" data-scroll-target="#einschub"><span class="header-section-number">6.1</span> Einschub</a>
+  <ul class="collapse">
+  <li><a href="#pfadregeln" id="toc-pfadregeln" class="nav-link" data-scroll-target="#pfadregeln"><span class="header-section-number">6.1.1</span> Pfadregeln</a></li>
+  <li><a href="#binomialkoeffizient" id="toc-binomialkoeffizient" class="nav-link" data-scroll-target="#binomialkoeffizient"><span class="header-section-number">6.1.2</span> Binomialkoeffizient</a></li>
+  </ul></li>
+  <li><a href="#erklärung-der-formel" id="toc-erklärung-der-formel" class="nav-link" data-scroll-target="#erklärung-der-formel"><span class="header-section-number">6.2</span> Erklärung der Formel</a></li>
+  <li><a href="#form-und-symmetrien" id="toc-form-und-symmetrien" class="nav-link" data-scroll-target="#form-und-symmetrien"><span class="header-section-number">6.3</span> Form und Symmetrien</a></li>
+  <li><a href="#kenngrößen" id="toc-kenngrößen" class="nav-link" data-scroll-target="#kenngrößen"><span class="header-section-number">6.4</span> Kenngrößen</a></li>
+  <li><a href="#anwendungsbeispiele" id="toc-anwendungsbeispiele" class="nav-link" data-scroll-target="#anwendungsbeispiele"><span class="header-section-number">6.5</span> Anwendungsbeispiele</a>
+  <ul class="collapse">
+  <li><a href="#roulette" id="toc-roulette" class="nav-link" data-scroll-target="#roulette"><span class="header-section-number">6.5.1</span> Roulette</a></li>
+  <li><a href="#anzahl-benötigter-server" id="toc-anzahl-benötigter-server" class="nav-link" data-scroll-target="#anzahl-benötigter-server"><span class="header-section-number">6.5.2</span> Anzahl Benötigter Server</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#hypermetrische-verteilung" id="toc-hypermetrische-verteilung" class="nav-link" data-scroll-target="#hypermetrische-verteilung"><span class="header-section-number">7</span> Hypermetrische Verteilung</a>
+  <ul class="collapse">
+  <li><a href="#beispiel-mit-gummibärchen" id="toc-beispiel-mit-gummibärchen" class="nav-link" data-scroll-target="#beispiel-mit-gummibärchen"><span class="header-section-number">7.1</span> Beispiel mit Gummibärchen</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../wahrscheinlichkeit/index.html">II. Wahrscheinlichkeit</a></li><li class="breadcrumb-item"><a href="../wahrscheinlichkeit/theorie.html">Theoretische Modelle und Verteilungen</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Theoretische Modelle und Verteilungen</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Autor:in</div>
+    <div class="quarto-title-meta-contents">
+             <p>Lukas Mensch </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="einführung" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Einführung</h1>
+<div class="callout callout-style-default callout-note callout-titled" title="Quelle">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Hinweis</span>Quelle
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><a href="../folien/Statistik_20251103.pdf#page=21">S.219-222 von Folie-04.11.2025</a></li>
+</ul>
+</div>
+</div>
+</div>
+<section id="gendankesexperiment-münzwurf" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="gendankesexperiment-münzwurf"><span class="header-section-number">1.1</span> Gendankesexperiment Münzwurf</h2>
+<section id="das-extreme-szenario" class="level3" data-number="1.1.1">
+<h3 data-number="1.1.1" class="anchored" data-anchor-id="das-extreme-szenario"><span class="header-section-number">1.1.1</span> Das extreme Szenario</h3>
+<p>Stell dir vor, du hast eine Münze bereits <strong>100 Mal</strong> geworfen. Das Ergebnis war absolut unglaublich: Es kam <strong>100 Mal “Kopf”</strong>.</p>
+</section>
+<section id="die-verfängliche-frage" class="level3" data-number="1.1.2">
+<h3 data-number="1.1.2" class="anchored" data-anchor-id="die-verfängliche-frage"><span class="header-section-number">1.1.2</span> Die verfängliche Frage</h3>
+<p>Nun wirfst du die Münze ein einziges weiteres Mal (das 101. Mal). Unser Bauchgefühl sagt oft: “Jetzt <em>muss</em> doch endlich mal ‘Zahl’ kommen, um das auszugleichen!”</p>
+</section>
+<section id="die-nüchterne-realität-unabhängigkeit" class="level3" data-number="1.1.3">
+<h3 data-number="1.1.3" class="anchored" data-anchor-id="die-nüchterne-realität-unabhängigkeit"><span class="header-section-number">1.1.3</span> Die nüchterne Realität: Unabhängigkeit</h3>
+<p>Die Wahrscheinlichkeit für “Zahl” ist immer noch exakt <strong>50 %</strong> (genauso wie beim allerersten Wurf).</p>
+<ul>
+<li><strong>Der Grund:</strong> Zufallsereignisse wie Münzwürfe sind <strong>voneinander unabhängig</strong>.</li>
+<li><strong>Die anschauliche Erklärung:</strong> Die Münze hat kein Gehirn und kein Gedächtnis. Sie “weiß” nicht, dass sie gerade 100 Mal auf Kopf gelandet ist. Für die Münze ist jeder Wurf ein kompletter Neustart.</li>
+</ul>
+</section>
+</section>
+<section id="galtonbrett" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="galtonbrett"><span class="header-section-number">1.2</span> Galtonbrett</h2>
+<iframe scrolling="no" title="Interaktives Galton-Brett" src="https://www.geogebra.org/material/iframe/id/tcR9U7zG/width/730/height/632/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="730px" height="632px" style="border:2px;">
+</iframe>
+<section id="das-gerät-das-galtonbrett" class="level3" data-number="1.2.1">
+<h3 data-number="1.2.1" class="anchored" data-anchor-id="das-gerät-das-galtonbrett"><span class="header-section-number">1.2.1</span> Das Gerät: Das Galtonbrett</h3>
+<p>Das Galtonbrett (oder “Galtonsche Nagelbrett”) ist ein berühmtes <strong>mechanisches Modell</strong>.</p>
+<ul>
+<li><strong>Funktion:</strong> Man lässt Kugeln durch ein Raster von Nägeln fallen. Bei jedem Nagel entscheidet der Zufall, ob die Kugel nach links oder rechts fällt.</li>
+<li><strong>Das Ergebnis:</strong> Unten sammeln sich die Kugeln und bilden erstaunlicherweise fast immer eine <strong>perfekte Glockenkurve</strong> (Normalverteilung). Es macht abstrakte Statistik sichtbar.</li>
+</ul>
+</section>
+<section id="der-erfinder-sir-francis-galton-18221911" class="level3" data-number="1.2.2">
+<h3 data-number="1.2.2" class="anchored" data-anchor-id="der-erfinder-sir-francis-galton-18221911"><span class="header-section-number">1.2.2</span> Der Erfinder: Sir Francis Galton (1822–1911)</h3>
+<p>Galton war ein extrem vielseitiger, aber auch kontroverser Wissenschaftler (und übrigens der Cousin von <strong>Charles Darwin</strong>).</p>
+<p><strong>Seine wissenschaftlichen Leistungen:</strong></p>
+<ul>
+<li><strong>Fingerabdrücke:</strong> Er gilt als “Vater der Daktyloskopie” (Fingerabdruckverfahren), das wir heute noch nutzen.</li>
+<li><strong>Psychologie:</strong> Er begründete die Differenzial- und Experimentalpsychologie mit.</li>
+<li><strong>Die Weisheit der Vielen:</strong> Er wollte eigentlich beweisen, dass die “Masse” dumm ist. Sein Experiment (das Gewicht eines Ochsen schätzen lassen) zeigte aber das Gegenteil: Der Durchschnitt aller Schätzungen war extrem präzise. Er nannte dies <em>Vox populi</em> (“Stimme des Volkes”).</li>
+</ul>
+<p><strong>Die Schattenseite:</strong></p>
+<ul>
+<li>Er ist einer der Väter der <strong>Eugenik</strong>. Sein Ziel war die “Verbesserung der menschlichen Rasse” durch gezielte Auslese, eine Ideologie, die später missbraucht wurde.</li>
+</ul>
+</section>
+</section>
+</section>
+<section id="laplace-experiment" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Laplace Experiment</h1>
+<div class="callout callout-style-default callout-note callout-titled" title="Quelle">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Hinweis</span>Quelle
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><a href="../folien/Statistik_20251103.pdf#page=26">S.223-224 von Folie-04.11.2025</a></li>
+</ul>
+</div>
+</div>
+</div>
+<section id="die-definition-was-ist-ein-laplace-experiment" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="die-definition-was-ist-ein-laplace-experiment"><span class="header-section-number">2.1</span> Die Definition: Was ist ein Laplace-Experiment?</h2>
+<p>Ein Zufallsexperiment darf sich nur dann “Laplace-Experiment” nennen, wenn zwei harte Bedingungen erfüllt sind:</p>
+<ol type="1">
+<li><strong>Endliche Ergebnisse:</strong> Es gibt eine begrenzte Anzahl an Möglichkeiten (z. B. 6 Seiten beim Würfel, nicht unendlich viele wie bei der Dartscheibe).</li>
+<li><strong>Gleichwahrscheinlichkeit:</strong> Jedes einzelne Ergebnis ist exakt gleich wahrscheinlich (z. B. ein “fairer” Würfel oder eine “faire” Münze).</li>
+</ol>
+</section>
+<section id="die-laplace-formel" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="die-laplace-formel"><span class="header-section-number">2.2</span> Die Laplace-Formel</h2>
+<p>Wenn diese Bedingungen erfüllt sind, darf man die einfachste aller Wahrscheinlichkeitsformeln benutzen:</p>
+<p><span class="math display">
+P(A) = \frac{\text{Anzahl der günstigen Ereignisse}}{\text{Anzahl aller möglichen Ereignisse}} = \frac{|A|}{|\Omega|}
+</span></p>
+<ul>
+<li><strong>Beispiel:</strong> Wie hoch ist die Wahrscheinlichkeit, eine gerade Zahl zu würfeln?
+<ul>
+<li><em>Mögliche Ereignisse (</em><span class="math inline">\Omega</span>): <span class="math inline">\{1, 2, 3, 4, 5, 6\}</span> <span class="math inline">\rightarrow</span> <strong>6</strong> Möglichkeiten.</li>
+<li><em>Günstige Ereignisse (</em><span class="math inline">A</span>): <span class="math inline">\{2, 4, 6\}</span> <span class="math inline">\rightarrow</span> <strong>3</strong> Möglichkeiten.</li>
+<li><em>Rechnung:</em> <span class="math inline">3 / 6 = 0,5</span> (<span class="math inline">50 \%</span>).</li>
+</ul></li>
+</ul>
+</section>
+<section id="der-namensgeber" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="der-namensgeber"><span class="header-section-number">2.3</span> Der Namensgeber</h2>
+<p>Pierre-Simon Laplace (1749–1827) war ein französischer Mathematiker und Astronom, der maßgeblich dazu beitrug, Wahrscheinlichkeiten berechenbar zu machen.</p>
+</section>
+</section>
+<section id="gleichverteilung" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Gleichverteilung</h1>
+<div class="callout callout-style-default callout-note callout-titled" title="Quelle">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Hinweis</span>Quelle
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><a href="../folien/Statistik_20251103.pdf#page=28">S.225-226 von Folie-04.11.2025</a></li>
+</ul>
+</div>
+</div>
+</div>
+<p>Die Gleichverteilung ist die mathematische Formalisierung des Laplace-Experiments.</p>
+<section id="definition" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="definition"><span class="header-section-number">3.1</span> Definition</h2>
+<p>Dies ist die einfachste Form einer Wahrscheinlichkeitsverteilung. Sie liegt vor, wenn <strong>jedes mögliche Ergebnis genau die gleiche Wahrscheinlichkeit</strong> hat.</p>
+<ul>
+<li><p><strong>Parameter:</strong> Das wichtigste Maß ist <span class="math inline">n</span> (die Anzahl der möglichen Ergebnisse).</p></li>
+<li><p><strong>Wahrscheinlichkeitsfunktion:</strong> Die Wahrscheinlichkeit für jeden einzelnen Wert <span class="math inline">x_i</span> ist einfach der Kehrwert der Anzahl:</p>
+<p><span class="math display">
+  P(X = x) = f(x) = \left\{\begin{array}{l}
+  \frac{1}{n} &amp; , \text{wenn } x = x_i u. x_i \in \{1,...,n\} \\
+  0 &amp; , \text{sonst}
+  \end{array} \right.
+</span></p></li>
+</ul>
+</section>
+<section id="dazu-benötigte-formeln" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="dazu-benötigte-formeln"><span class="header-section-number">3.2</span> Dazu benötigte Formeln</h2>
+<ul>
+<li><p><strong>Verteilungsfunktion (</strong><span class="math inline">F(x)</span>):<br>
+<span class="math display">
+  P(X \le x) = F(x) = \left\{\begin{array}{l}
+  0 &amp; , \text{wenn } x &lt; 1 \\
+  \frac{\left\lfloor x \right\rfloor}{n} &amp; , \text{wenn } 1 \le x &lt; n \\
+  1 &amp; , \text{wenn } x \ge n
+  \end{array} \right.
+</span></p>
+<p><strong>Alternative:</strong> Summiert die Wahrscheinlichkeiten auf. Z. B. bei der Frage: “Wie wahrscheinlich ist eine Zahl <span class="math inline">\le 3</span>?”, <span class="math inline">\Rightarrow</span> <span class="math inline">\frac{1}{n} + \frac{1}{n} + \frac{1}{n}</span>.</p></li>
+<li><p><strong>Erwartungswert (</strong><span class="math inline">E(x)</span>): Der Durchschnittswert, den man auf lange Sicht erhältst.</p>
+<p><span class="math display">
+E(x) = \frac{1}{n} \sum_{i=1}^{n} x_i
+</span></p>
+<ul>
+<li><strong>Abgrenzung zum Mittelwert:</strong><br>
+Das <em>arithmetische Mittel</em> besteht aus konkret gemessenen Zahlen. Während der Erwartungswert ein vorhergesagter Wert ist, den man “auf lange Sicht” erwartet, wenn man ein Zufallsexperiment unendlich oft wiederholen würde.</li>
+</ul></li>
+<li><p><strong>Streuung:</strong> Auch Varianz (<span class="math inline">Var</span>) und Standardabweichung (<span class="math inline">\sigma</span>) lassen sich berechnen, um zu sehen, wie weit die Ergebnisse vom Durchschnitt weg liegen.</p></li>
+</ul>
+</section>
+<section id="praxis-beispiel-mit-würfel" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="praxis-beispiel-mit-würfel"><span class="header-section-number">3.3</span> Praxis-Beispiel mit Würfel</h2>
+<ul>
+<li><strong>Die Situation:</strong> Wir haben <span class="math inline">n = 6</span> Seiten.</li>
+<li><strong>Die Wahrscheinlichkeit:</strong> Jede Zahl (1 bis 6) fällt mit der Wahrscheinlichkeit <span class="math inline">f(x) = \frac{1}{6}</span>.</li>
+<li><strong>Das Diagramm:</strong> Das Histogramm (die grünen Balken) zeigen dass alle Balken fast gleich hoch sind. Man spricht von einer <em>Gleichverteiltverteilung</em>.<br>
+<img src="images/paste-1.png" class="img-fluid" width="332"></li>
+</ul>
+<p><strong>Der Erwartungswert</strong> Die Rechnung zeigt:</p>
+<p><span class="math display">
+E(x) = \frac{1}{6} \sum_{i=1}^{6} x_i = 3.5
+</span></p>
+<p>Das bedeutet: Wenn man tausendmal würfelt und den Durchschnitt bildet, wird das Ergebnis sehr nahe bei <strong>3,5</strong> liegen – obwohl es die Zahl 3,5 auf dem Würfel gar nicht gibt.</p>
+</section>
+</section>
+<section id="bernoulli-versuch" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Bernoulli Versuch</h1>
+<div class="callout callout-style-default callout-note callout-titled" title="Quelle">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Hinweis</span>Quelle
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><a href="../folien/Statistik_20251103.pdf#page=31">S.227-233 von Folie-04.11.2025</a></li>
+</ul>
+</div>
+</div>
+</div>
+<p>Ein Bernoulli-Versuch ein simples Zufallsexperiment der Statistik mit der Bedingung, dass es genau zwei mögliche Ergebnisse <strong>Erfolg</strong> <span class="math inline">p</span> (Das Ergebnis von Interesse) und <strong>Misserfolg</strong> <span class="math inline">q</span> (alles andere) gibt.</p>
+<p><span class="math display">
+p = 1 - q
+</span></p>
+</section>
+<section id="bernoulli-verteilung" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Bernoulli Verteilung</h1>
+<div class="callout callout-style-default callout-note callout-titled" title="Quelle">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Hinweis</span>Quelle
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><a href="../folien/Statistik_20251103.pdf#page=37">S.234-237 von Folie-04.11.2025</a></li>
+</ul>
+</div>
+</div>
+</div>
+<blockquote class="blockquote">
+<p>Beschreibung zwei mögliche Ausgänge haben (Ja/Nein, Treffer/Niete, 1/0).<br>
+<span class="math inline">X\sim Ber(p)</span> mit <span class="math inline">X\in\{0, 1\}</span> als die Zufallsgröße</p>
+</blockquote>
+<iframe src="https://www.geogebra.org/material/iframe/id/b7efdxzt/width/600/height/350/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/true" width="600px" height="350px" style="border:0px;">
+</iframe>
+<section id="wahrscheinlichkeitsfunktion-fx" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="wahrscheinlichkeitsfunktion-fx"><span class="header-section-number">5.1</span> Wahrscheinlichkeitsfunktion <span class="math inline">f(x)</span></h2>
+<p>Gibt die Wahrscheinlichkeit für den Erfolg <span class="math inline">x=1</span> oder Misserfolg <span class="math inline">x=0</span> zurück:</p>
+<p><span class="math display">
+f(x) = P(X=x) = \left\{\begin{array}{lc}
+p &amp; , &amp; x=1 &amp; \text{(Erfolg)} \\
+1-p &amp; , &amp; x=0 &amp; \text{(Misserfolg)} \\
+0 &amp; , &amp; \text{sonst}  &amp; \text{(Unmöglich)}
+\end{array}\right.
+</span></p>
+</section>
+<section id="verteilungsfunktion-fx" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="verteilungsfunktion-fx"><span class="header-section-number">5.2</span> Verteilungsfunktion <span class="math inline">F(x)</span></h2>
+<p>Gibt die Summe aller Wahrscheinlichkeiten zurück für <span class="math inline">X \le x</span>:</p>
+<p><span class="math display">
+F(x) = P(X \le x) = \left\{\begin{array}{lc}
+1 &amp; , &amp; x \ge 1 &amp; \text{(Erfolg)} \\
+1-p &amp; , &amp; 0 \le x &lt; 1 &amp; \text{(Misserfolg)} \\
+0 &amp; , &amp; x &lt; 0 &amp; \text{(Unmöglich)}
+\end{array}\right.
+</span></p>
+</section>
+<section id="weitere-werte" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="weitere-werte"><span class="header-section-number">5.3</span> Weitere Werte</h2>
+<section id="erwartungswert" class="level3" data-number="5.3.1">
+<h3 data-number="5.3.1" class="anchored" data-anchor-id="erwartungswert"><span class="header-section-number">5.3.1</span> Erwartungswert</h3>
+<p><span class="math display">
+E(x) = p
+</span></p>
+</section>
+<section id="varianz" class="level3" data-number="5.3.2">
+<h3 data-number="5.3.2" class="anchored" data-anchor-id="varianz"><span class="header-section-number">5.3.2</span> Varianz</h3>
+<p><span class="math display">
+Var(x) = p \cdot (1-p) = pq
+</span></p>
+</section>
+<section id="standardabweichung" class="level3" data-number="5.3.3">
+<h3 data-number="5.3.3" class="anchored" data-anchor-id="standardabweichung"><span class="header-section-number">5.3.3</span> Standardabweichung</h3>
+<p><span class="math display">
+\sigma_x = \sqrt{pq}
+</span></p>
+</section>
+</section>
+<section id="anwendung-bestimmung-von-pi-π" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="anwendung-bestimmung-von-pi-π"><span class="header-section-number">5.4</span> Anwendung: Bestimmung von Pi (π)</h2>
+<ul>
+<li><p><strong>Das Setup:</strong> Ein Kreis liegt in einem Quadrat.</p></li>
+<li><p><strong>Das Experiment:</strong> Man lässt zufällige Punkte auf das Quadrat “regnen”.</p></li>
+<li><p><strong>Die Bernoulli-Logik:</strong></p>
+<ul>
+<li><p>Punkt im Kreis = Erfolg (Treffer).</p></li>
+<li><p>Punkt außerhalb = Misserfolg.</p></li>
+</ul></li>
+<li><p><strong>Das Ergebnis:</strong> Das Verhältnis der Treffer zur Gesamtzahl nähert sich dem Verhältnis der Flächen an (π/4). So kann man durch bloßes Zählen von Zufallstreffern den Wert von π annähern.</p></li>
+</ul>
+</section>
+<section id="beispiele" class="level2" data-number="5.5">
+<h2 data-number="5.5" class="anchored" data-anchor-id="beispiele"><span class="header-section-number">5.5</span> Beispiele</h2>
+<ul>
+<li><p>Münzwurf: Kopf oder Zahl <span class="math inline">p=0,51</span>, <span class="math inline">q=49</span><br>
+Anschaulich anhand von Galtonbrett:<br>
+<iframe scrolling="no" title="Máquina de Galton virtual | Münzwurf" src="https://www.geogebra.org/material/iframe/id/yzpjmrfc/width/600/height/350/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/true" width="600px" height="350px" style="border:0px;"> </iframe></p></li>
+<li><p>Würfeln: Eine bestimmte Zahl würfeln <span class="math inline">p=\frac{1}{6}</span>, <span class="math inline">q=\frac{5}{6}</span></p></li>
+</ul>
+</section>
+</section>
+<section id="binomialverteilung" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> Binomialverteilung</h1>
+<div class="callout callout-style-default callout-note callout-titled" title="Quelle">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Hinweis</span>Quelle
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><a href="../folien/Statistik_20251103.pdf#page=41">S.237-2 von Folie-04.11.2025</a></li>
+</ul>
+</div>
+</div>
+</div>
+<blockquote class="blockquote">
+<p>Im Gegensatz zum Bernoulli-Versuch, werden nun die Experimente mehrmals wiederholt.</p>
+</blockquote>
+<p>Die Binomialverteilung beschreibt die Anzahl der Erfolge in einer Serie von Versuchen.</p>
+<p>Die Formel berechnet die Wahrscheinlichkeit <span class="math inline">P(X=k)</span>, also wie viele Treffer <span class="math inline">k</span> man bei <span class="math inline">n</span> Versuche unter der Erfolgswahrscheinlichkeit <span class="math inline">p</span> landet:</p>
+<p><span class="math display">
+P(X=k) = \binom{n}{k} \cdot p^k \cdot (1-p)^{n-k}
+</span></p>
+<section id="einschub" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="einschub"><span class="header-section-number">6.1</span> Einschub</h2>
+<p>Um die Formel für die Binomialverteilung besser zu verstehen können, müssen zuerst die Konzepte Pfadregel und Binomialkoeffizient verstanden werden.</p>
+<section id="pfadregeln" class="level3" data-number="6.1.1">
+<h3 data-number="6.1.1" class="anchored" data-anchor-id="pfadregeln"><span class="header-section-number">6.1.1</span> Pfadregeln</h3>
+<p>Beispiel zweimal Würfeln <span class="math inline">\Rightarrow</span> Wahrscheinlichkeit auf eine 6:<br>
+<img src="images/paste-2.png" class="img-fluid" width="549"></p>
+<ul>
+<li><p>Durch die <strong>1. Pfadregel (Produktregel)</strong> lassen sich mehrere hintereinander ausgeführte Wahrscheinlichkeiten verketten:<br>
+<span class="math display">
+P((6,\bar{6})) = \frac{1}{6} \cdot \frac{5}{6} = \frac{5}{36}
+</span></p></li>
+<li><p>Durch die <strong>2. Pfadregel (Summenregel)</strong> lassen sich mehere voneinander unabhängige Wahrscheinlichkeiten verketten:<br>
+<span class="math display">
+P(\{(6,6),(6,\bar{6}),(\bar{6},6)\})=\frac{1}{36} + \frac{5}{36} + \frac{5}{36} = \frac{11}{36}
+</span></p></li>
+</ul>
+</section>
+<section id="binomialkoeffizient" class="level3" data-number="6.1.2">
+<h3 data-number="6.1.2" class="anchored" data-anchor-id="binomialkoeffizient"><span class="header-section-number">6.1.2</span> Binomialkoeffizient</h3>
+<blockquote class="blockquote">
+<p>Wie viele Möglichkeiten gibt es, <span class="math inline">k</span> Dinge aus einer Gesamtmenge von <span class="math inline">n</span> Dingen auszuwählen?</p>
+<ul>
+<li>Ohne zurücklegen</li>
+<li>Reihenfolge ist egal</li>
+</ul>
+</blockquote>
+<p><span class="math display">
+\binom{n}{k} = \frac{n!}{k! \cdot (n-k)!}
+</span></p>
+<section id="herleitung" class="level4">
+<h4 class="anchored" data-anchor-id="herleitung">Herleitung</h4>
+<p>Von <span class="math inline">n</span> Kugeln sollen <span class="math inline">k</span> Kugeln ausgewählt werden:</p>
+<ul>
+<li><p>Bei der ersten Kugel gibt es <span class="math inline">n</span> Optionen</p></li>
+<li><p>Bei der zweiten Kugel gibt es <span class="math inline">n-1</span> Optionen</p>
+<p><span class="math inline">\vdots</span></p></li>
+<li><p>Bei der <span class="math inline">k</span>-ten Kugel gibt es <span class="math inline">n-k+1</span> Optionen</p></li>
+</ul>
+<p>Dies macht eine Anzahl an Möglichkeiten von:</p>
+<p><span class="math display">
+\begin{array}{l}
+n \cdot (n-1) \cdot ... \cdot (n-k+1) &amp; = &amp; n \cdot (n-1) \cdot ... \cdot (n-k+1) \cdot \frac{n!}{n!} \\
+&amp; = &amp; \frac{ n \cdot (n-1) \cdot ... \cdot (n-k+1) \cdot n!}{n \cdot (n-1) \cdot ... \cdot (n-k+1) \cdot (n-k)!} \\
+&amp; = &amp; \frac{n!}{(n-k)!}
+\end{array}
+</span></p>
+<p>Um die Reihenfolge zu vernachlässigen, wird durch <span class="math inline">k!</span>, die Anzahl der Möglichkeiten <span class="math inline">k</span> Element Anzuordnen, geteilt.</p>
+<p><span class="math display">
+\frac{n!}{k! \cdot (n-k)!} = \binom{n}{k}
+</span></p>
+<p><strong>Anschauliches Beispiel:</strong><br>
+<img src="images/paste-3.png" class="img-fluid" width="522"></p>
+</section>
+</section>
+</section>
+<section id="erklärung-der-formel" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="erklärung-der-formel"><span class="header-section-number">6.2</span> Erklärung der Formel</h2>
+<p>Die Binomialverteilung setzt sich aus folgenden 2 Faktoren zusammen:</p>
+<ol type="1">
+<li><p>Der Verkettung (1. Pfadregel) von all den Wahrscheinlichkeiten einen Treffer zu landen sowie auch die um keine Treffer zu landen:<br>
+<span class="math display">
+\begin{array}{lll}
+\overbrace{p\cdot...\cdot p}^{k\text{ mal Treffer}}\cdot
+\overbrace{q\cdot...\cdot q}^{\begin{array}{} n-k\text{ mal} \\ \text{keine Treffer}\end{array}}
+&amp; = &amp; p^k \cdot q^{n-k} \\
+&amp; = &amp; p^k \cdot (1-p)^{n-k}
+\end{array}
+</span></p></li>
+<li><p>Der Verkettung (2. Pfadregel) von all den Wahrscheinlichkeiten die in 1. definiert sind:<br>
+<span class="math display">
+\overbrace{p^k q^{n-k}+...+p^k q^{n-k}}^{\binom{n}{k} \text{ mal}} = \binom{n}{k}\cdot p^k q^{n-k}
+</span></p></li>
+</ol>
+<p><strong>Anschauliches Beispiel:</strong><br>
+<img src="images/paste-4.png" class="img-fluid" width="666"></p>
+</section>
+<section id="form-und-symmetrien" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="form-und-symmetrien"><span class="header-section-number">6.3</span> Form und Symmetrien</h2>
+</section>
+<section id="kenngrößen" class="level2" data-number="6.4">
+<h2 data-number="6.4" class="anchored" data-anchor-id="kenngrößen"><span class="header-section-number">6.4</span> Kenngrößen</h2>
+</section>
+<section id="anwendungsbeispiele" class="level2" data-number="6.5">
+<h2 data-number="6.5" class="anchored" data-anchor-id="anwendungsbeispiele"><span class="header-section-number">6.5</span> Anwendungsbeispiele</h2>
+<section id="roulette" class="level3" data-number="6.5.1">
+<h3 data-number="6.5.1" class="anchored" data-anchor-id="roulette"><span class="header-section-number">6.5.1</span> Roulette</h3>
+</section>
+<section id="anzahl-benötigter-server" class="level3" data-number="6.5.2">
+<h3 data-number="6.5.2" class="anchored" data-anchor-id="anzahl-benötigter-server"><span class="header-section-number">6.5.2</span> Anzahl Benötigter Server</h3>
+</section>
+</section>
+</section>
+<section id="hypermetrische-verteilung" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> Hypermetrische Verteilung</h1>
+<div class="callout callout-style-default callout-note callout-titled" title="Quelle">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Hinweis</span>Quelle
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><a href="../folien/Statistik_20251103.pdf#page=63">S.261- von Folie-04.11.2025</a></li>
+</ul>
+</div>
+</div>
+</div>
+<p>Beschreibt die Wahrscheinlichkeit <span class="math inline">k</span> Angestrebte Treffer von <span class="math inline">M</span> möglichen Erfolgen aus <span class="math inline">n</span> Versuchen unter einer <strong>Grundgesamtheit von</strong> <span class="math inline">N</span> zu landen.<br>
+Dazu wird das Produkt aus der Anzahl aller Erfolge und Misserfolge durch die Anzahl aller möglichen Fälle geteilt.</p>
+<blockquote class="blockquote">
+<p>Das Produkt von Erfolge und Misserfolge schließt sich aus den <strong>Zählprinzip der Kombinatorik</strong>: Jede mögliche Kombination der Treffer kann mit jeder möglichen Kombination der Nieten kombiniert werden.</p>
+</blockquote>
+<p><span class="math display">
+P(X=k) = \frac{
+\overbrace{\binom{M}{k}}^{\begin{array}{c}\text{Anzahl } \\ \text{aller Erfolge}\end{array}} \cdot
+\overbrace{\binom{N-M}{n-k}}^{\begin{array}{c}\text{Anzahl } \\ \text{der Misserfolge}\end{array}}
+}{
+\underbrace{\binom{N}{n}}_\text{Anzahl aller möglichen Fälle}
+}
+</span></p>
+<section id="beispiel-mit-gummibärchen" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="beispiel-mit-gummibärchen"><span class="header-section-number">7.1</span> Beispiel mit Gummibärchen</h2>
+<p>In einer Packung Gummibärchen (<span class="math inline">GB</span>) sind 11 rote und 27 grüne drin. Wie hoch liegt die Wahrscheinlichkeit 5-mal ein rotes Gummibärchen <strong>ohne Zurücklegen</strong> zu ziehen bei 8 Versuchen?</p>
+<p><strong>Gegeben:</strong></p>
+<p><span class="math display">
+\begin{array}{l}
+\text{Grundgesamtheit:} &amp; N &amp; = 11GB + 27GB = 38GB \\
+\text{Anzahl möglicher Erfolge:} &amp; M &amp; = 11GB \\
+\text{Versuche/Stichprobe:} &amp; n &amp; = 8GB \\
+\text{Angestrebter Treffer:} &amp; k &amp; = 5GB
+\end{array}
+</span></p>
+<p><strong>Gesucht:</strong> Wahrscheinlichkeit für <span class="math inline">k=5</span> rote Gummibärchen als Treffer.</p>
+<p><strong>Einsetzen:</strong></p>
+<p><span class="math display">
+\begin{array}{l}
+P(k = 5GB) &amp; = &amp; h(k|N,M,n)
+&amp; = &amp; \frac{\binom{M}{k} \cdot \binom{N-M}{n-k}}{\binom{N}{n}} \\
+&amp; = &amp; \frac{\binom{11GB}{5GB} \cdot \binom{38GB-11GB}{8GB-5GB}}{\binom{38GB}{8GB}}
+&amp; = &amp; \frac{\binom{11GB}{5GB} \cdot \binom{27GB}{3GB}}{\binom{38GB}{8GB}} \\
+&amp; = &amp; \frac{462 \cdot 2,925}{48,903,492} &amp; \approx &amp; 0.028 \\
+\end{array}
+</span></p>
+
+
+</section>
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Zurück nach oben</a></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Kopiert");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Kopiert");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../wahrscheinlichkeit/missverstaendnisse.html" class="pagination-link" aria-label="Missverständnisse in der Wahrscheinlichkeitstheorie">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Missverständnisse in der Wahrscheinlichkeitstheorie</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../klassifikation/index.html" class="pagination-link" aria-label="III. Statistische Klassifikation">
+        <span class="nav-page-text">III. Statistische Klassifikation</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
